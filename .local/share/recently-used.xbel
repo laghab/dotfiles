@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0" xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks" xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info">
+  <bookmark href="https://discordapp.com/handoff?rpc=6464&amp;key=5c1597c6-f04b-40a2-bc7d-64767a3de3aa" added="2026-06-05T06:52:44.970000Z" modified="2026-06-05T06:52:44.970000Z" visited="2026-06-05T06:52:44.970000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="brave-browser" exec="brave %u" modified="2026-06-05T06:52:44.970000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="https://discordapp.com/handoff?rpc=6463&amp;key=e554b66e-15b1-4413-bd89-ade4817c2c39" added="2026-06-05T06:53:57.035000Z" modified="2026-06-05T06:53:57.035000Z" visited="2026-06-05T06:53:57.035000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="brave-browser" exec="brave %u" modified="2026-06-05T06:53:57.035000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="https://discordapp.com/handoff?rpc=6463&amp;key=db43ebab-3edd-4f24-a371-c07a500a3f31" added="2026-06-05T07:01:57.824000Z" modified="2026-06-05T07:01:57.824000Z" visited="2026-06-05T07:01:57.824000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="brave-browser" exec="brave %u" modified="2026-06-05T07:01:57.824000Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

@@ -221,6 +221,8 @@ unzip
 upower
 usb_modeswitch
 usbutils
+vencord-hook
+vencord-installer
 vim
 vlc
 vlc-plugins-all

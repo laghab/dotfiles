@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=discord-fix
+StartupWMClass=discord
+Comment=Discord with GPU crash workaround
+GenericName=Internet Messenger
+Exec=/usr/bin/discord --no-sandbox --in-process-gpu --disable-gpu-sandbox
+Icon=discord
+Type=Application
+Categories=Network;InstantMessaging;
+Path=/usr/bin
