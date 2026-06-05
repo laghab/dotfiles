@@ -121,7 +121,7 @@ AnimationDurationFactor=0.5
 LookAndFeelPackage=darkly-fav-1.0
 contrast=0
 frameContrast=0.2
-widgetStyle=Darkly
+widgetStyle=darkly
 
 [KFileDialog Settings]
 Allow Expansion=false

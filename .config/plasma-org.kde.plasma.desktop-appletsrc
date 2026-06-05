@@ -33,11 +33,11 @@ DialogWidth=810
 [Containments][173][General]
 changedPositions={}
 lastResolution=1920x1080
-positions={"1920x1080":["1","17"],"640x480":["4","5","desktop:/sync-readme.md","1","0","desktop:/opencode-session-chatlog.md","0","0"]}
+positions={"1920x1080":["1","17","desktop:/dotfiles-guide.html","0","0"],"640x480":["4","5","desktop:/sync-readme.md","1","0","desktop:/opencode-session-chatlog.md","0","0"]}
 sortMode=-1
 
 [Containments][173][Wallpaper][org.kde.image][General]
-Image=/home/laghab/Pictures/Walls/954384.jpg
+Image=/home/laghab/Pictures/Walls/wallhaven-d8w3gj.jpg
 
 [Containments][174]
 activityId=
@@ -53,8 +53,8 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][174][Applets][175][Configuration]
-popupHeight=493
-popupWidth=611
+popupHeight=509
+popupWidth=647
 
 [Containments][174][Applets][175][Configuration][General]
 favoritesPortedToKAstats=true
@@ -191,4 +191,4 @@ AppletOrder=175;177;210;208;209;179;192;193
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=
+screenMapping=desktop:/dotfiles-guide.html,0,558f32a4-2d65-4a46-a508-f70f62939d63
