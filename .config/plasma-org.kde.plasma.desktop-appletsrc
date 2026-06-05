@@ -69,7 +69,7 @@ DialogWidth=810
 
 [Containments][174][Applets][177][Configuration][General]
 groupingStrategy=0
-launchers=applications:systemsettings.desktop,applications:anki.desktop,applications:org.kde.dolphin.desktop,applications:brave-browser.desktop
+launchers=applications:anki.desktop,applications:org.kde.dolphin.desktop,applications:brave-browser.desktop
 sortingStrategy=4
 
 [Containments][174][Applets][179]
