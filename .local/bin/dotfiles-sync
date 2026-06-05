@@ -1,18 +1,36 @@
 #!/bin/bash
 set -e
 
+echo "=== dotfiles-sync ==="
+
 # 1. Refresh package lists
+echo "> Updating package lists..."
 pacman -Qqe > ~/pkglist.txt
 pacman -Qqem > ~/aur-pkglist.txt
 
 # 2. Add any new/changed files (respecting .gitignore)
+echo "> Staging changes..."
 yadm add -A
 
-# 3. Commit if there are changes
+# 3. Safety check: warn if any staged file is over 10MB
+big_files=$(yadm diff --cached --name-only -z | xargs -0 -I{} sh -c 'test -f "{}" && test "$(stat -c%s "{}")" -gt 10000000 && echo "{}"' 2>/dev/null || true)
+if [ -n "$big_files" ]; then
+  echo "WARNING: Large files staged:"
+  echo "$big_files" | while read f; do
+    size=$(stat -c%s "$f" 2>/dev/null | numfmt --to=iec 2>/dev/null || echo "?")
+    echo "  $size  $f"
+  done
+  echo "Check your .gitignore! Commit cancelled."
+  yadm reset HEAD
+  exit 1
+fi
+
+# 4. Commit if there are changes
 if ! yadm diff --cached --quiet; then
   yadm commit -m "sync $(date +%Y-%m-%d_%H:%M)"
+  echo "> Pushing to GitHub..."
   yadm push
-  echo "Synced and pushed."
+  echo "Done."
 else
   echo "Nothing changed."
 fi
