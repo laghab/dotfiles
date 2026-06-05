@@ -1,0 +1,22 @@
+[Desktop Entry]
+Version=1.0
+Name=Brave (Laghab)
+GenericName=Web Browser (Laghab Profile)
+Comment=Access the Internet - Laghab Profile
+Exec=kstart5 --desktopfile brave-laghab brave --profile-directory="Default" %U
+Terminal=false
+Icon=brave-laghab
+Type=Application
+Categories=Network;WebBrowser;
+StartupNotify=true
+StartupWMClass=brave-laghab
+MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;
+Actions=new-window;new-private-window;
+
+[Desktop Action new-window]
+Name=New Window
+Exec=kstart5 --desktopfile brave-laghab brave --profile-directory="Default"
+
+[Desktop Action new-private-window]
+Name=New Incognito Window
+Exec=kstart5 --desktopfile brave-laghab brave --incognito --profile-directory="Default"

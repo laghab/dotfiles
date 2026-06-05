@@ -1,7 +1,8 @@
 [Desktops]
 Id_1=85903718-38b8-4f51-aad3-0c943b8f5249
 Id_2=11fe64e9-1b3e-4ca8-947a-f57a25296c17
-Number=2
+Id_3=fe4d7cdc-6a77-43ca-9c1e-a7eb2d3609de
+Number=3
 Rows=1
 
 [EdgeBarrier]
@@ -95,6 +96,10 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][fe4d7cdc-6a77-43ca-9c1e-a7eb2d3609de][0d24a2da-5a79-482a-bb23-102037d6ad5a]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Windows]
 BorderSnapZone=20
 ElectricBorderCooldown=400
@@ -108,7 +113,3 @@ Reference=320
 
 [Xwayland]
 Scale=1
-
-[org.kde.kdecoration2]
-library=org.kde.darkly
-theme=Darkly

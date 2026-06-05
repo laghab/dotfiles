@@ -2,7 +2,7 @@
 ColorScheme=Darkly
 
 [Icons]
-Theme=breeze
+Theme=Papirus
 
 [KDE]
-widgetStyle=Breeze
+widgetStyle=darkly

@@ -36,6 +36,3 @@ enabled=true
 
 [Libinput][9610][268][BY Tech Gaming Keyboard Mouse]
 enabled=false
-
-[Mouse]
-cursorTheme=capitaine-cursors-light

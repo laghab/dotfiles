@@ -113,15 +113,11 @@ fixed=JetBrainsMonoNL Nerd Font,10,-1,5,50,0,0,0,0,0
 font=Inter,10,-1,5,50,0,0,0,0,0
 smallestReadableFont=Inter,8,-1,5,50,0,0,0,0,0
 
-[Icons]
-Theme=Papirus
-
 [KDE]
 AnimationDurationFactor=0.5
-LookAndFeelPackage=darkly-fav-1.0
+LookAndFeelPackage=Current
 contrast=0
 frameContrast=0.2
-widgetStyle=darkly
 
 [KFileDialog Settings]
 Allow Expansion=false
