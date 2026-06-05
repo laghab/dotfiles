@@ -1,0 +1,18 @@
+#!/bin/bash
+set -e
+
+# 1. Refresh package lists
+pacman -Qqe > ~/pkglist.txt
+pacman -Qqem > ~/aur-pkglist.txt
+
+# 2. Add any new/changed files (respecting .gitignore)
+yadm add -A
+
+# 3. Commit if there are changes
+if ! yadm diff --cached --quiet; then
+  yadm commit -m "sync $(date +%Y-%m-%d_%H:%M)"
+  yadm push
+  echo "Synced and pushed."
+else
+  echo "Nothing changed."
+fi

@@ -1,0 +1,25 @@
+#!/bin/bash
+# yadm bootstrap — runs automatically after `yadm clone` on a new machine
+set -e
+
+echo "=== Restoring packages ==="
+if command -v pacman &>/dev/null; then
+  if [ -f ~/pkglist.txt ]; then
+    sudo pacman -S --needed --noconfirm - < ~/pkglist.txt 2>/dev/null || echo "Some packages may have been skipped"
+  fi
+  if [ -f ~/aur-pkglist.txt ]; then
+    if command -v paru &>/dev/null; then
+      paru -S --needed --noconfirm - < ~/aur-pkglist.txt 2>/dev/null || echo "Some AUR packages may have been skipped"
+    elif command -v yay &>/dev/null; then
+      yay -S --needed --noconfirm - < ~/aur-pkglist.txt 2>/dev/null || echo "Some AUR packages may have been skipped"
+    else
+      echo "No AUR helper found. Install paru or yay, then run:"
+      echo "  paru -S --needed - < ~/aur-pkglist.txt"
+    fi
+  fi
+fi
+
+echo ""
+echo "=== Setup complete ==="
+echo "All config files have been restored to ~/.config/"
+echo "You may need to log out and back in for all settings to apply."
