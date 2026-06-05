@@ -1,0 +1,12 @@
+[Unit]
+Description=Restart plasmashell after resume from suspend
+After=sleep.target
+Conflicts=sleep.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/restart-plasmashell
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target

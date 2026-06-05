@@ -1,0 +1,20 @@
+[Desktop Entry]
+FullScreen=false
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+ToolBarsMovable=Enabled
+
+[MainWindow][Toolbar mainToolBar]
+ToolButtonStyle=IconOnly
+
+[Recent Files]
+File1[$e]=$HOME/Downloads/_OceanofPDF.com_ReZERO_-Starting_Life_in_Another_World_Vol_23_-_Tappei_Nagatsuki.epub
+File2[$e]=$HOME/Downloads/_OceanofPDF.com_ReZERO_-Starting_Life_in_Another_World_Vol_23_-_Tappei_Nagatsuki.pdf
+File3[$e]=$HOME/Downloads/_OceanofPDF.com_ReZERO_-Starting_Life_in_Another_World_Vol_23_-_Tappei_Nagatsuki (1).pdf
+Name1[$e]=_OceanofPDF.com_ReZERO_-Starting_Life_in_Another_World_Vol_23_-_Tappei_Nagatsuki.epub
+Name2[$e]=_OceanofPDF.com_ReZERO_-Starting_Life_in_Another_World_Vol_23_-_Tappei_Nagatsuki.pdf
+Name3[$e]=_OceanofPDF.com_ReZERO_-Starting_Life_in_Another_World_Vol_23_-_Tappei_Nagatsuki (1).pdf

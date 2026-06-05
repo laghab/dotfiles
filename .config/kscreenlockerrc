@@ -1,0 +1,9 @@
+[Daemon]
+Autolock=false
+LockOnResume=false
+RequirePassword=false
+Timeout=0
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=/home/laghab/Pictures/Walls/954384.jpg
+PreviewImage=/home/laghab/Pictures/Walls/954384.jpg

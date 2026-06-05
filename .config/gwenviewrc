@@ -1,0 +1,33 @@
+[General]
+LastUsedVersion=210800
+
+[MainWindow]
+MenuBar=Disabled
+
+[Print]
+PrintHeight=21.64
+
+[Recent Files]
+File1[$e]=/run/media/laghab/Stash/Hardly a Drive/Laghab's Vault/Images/IMG_20211106_065632.jpg
+File10[$e]=$HOME/Pictures/Walls/954410.png
+File2[$e]=/run/media/laghab/Stash/Hardly a Drive/Laghab's Vault/Images/IMG-20240607-WA0071.jpg
+File3[$e]=/run/media/laghab/Stash/Hardly a Drive/Laghab's Vault/Images/IMG-20240607-WA0095.jpg
+File4[$e]=/run/media/laghab/Stash/Hardly a Drive/Laghab's Vault/Images/IMG-20240607-WA0097.jpg
+File5[$e]=/run/media/laghab/Stash/Hardly a Drive/Laghab's Vault/Images/IMG-20240607-WA0099.jpg
+File6[$e]=/run/media/laghab/Stash/Hardly a Drive/Laghab's Vault/Images/IMG-20240608-WA0009.jpeg
+File7[$e]=/run/media/laghab/Stash/Hardly a Drive/Laghab's Vault/Images/IMG-20240518-WA0020.jpeg
+File8[$e]=$HOME/Downloads/Gemini_Generated_Image_xv50xgxv50xgxv50.png
+File9[$e]=$HOME/Downloads/Gemini_Generated_Image_x86mpox86mpox86m.png
+Name1[$e]=IMG_20211106_065632.jpg
+Name10[$e]=954410.png
+Name2[$e]=IMG-20240607-WA0071.jpg
+Name3[$e]=IMG-20240607-WA0095.jpg
+Name4[$e]=IMG-20240607-WA0097.jpg
+Name5[$e]=IMG-20240607-WA0099.jpg
+Name6[$e]=IMG-20240608-WA0009.jpeg
+Name7[$e]=IMG-20240518-WA0020.jpeg
+Name8[$e]=Gemini_Generated_Image_xv50xgxv50xgxv50.png
+Name9[$e]=Gemini_Generated_Image_x86mpox86mpox86m.png
+
+[SideBar]
+InformationSplitterSizes=211,244

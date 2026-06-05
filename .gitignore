@@ -1,0 +1,89 @@
+# Caches & temp
+.cache/
+.cache/**
+**/cache/**
+**/*.cache
+.npm/
+.cargo/
+.viminfo
+.bash_history
+.zsh_history
+.wget-hsts
+**/__pycache__/
+*.pyc
+
+# Sessions & locks
+.session/
+session/
+**/session/**
+**/*.lock
+**/*.pid
+
+# Browser profiles (massive, auto-generated)
+BraveSoftware/
+.mozilla/
+.chromium/
+google-chrome/
+
+# Gaming (massive)
+Steam/
+.steam/
+Proton/
+.proton/
+
+# Flatpak
+.var/
+
+# Secrets (handle separately)
+.ssh/
+.gnupg/
+**/secrets/
+**/authinfo*
+**/netrc
+
+# Large app data
+libreoffice/
+obsidian/**
+obsidian/.obsidian/workspace
+.aws/
+.docker/
+
+# Audio state (changes constantly)
+pulse/
+pipewire/
+wireplumber/
+.alsaequal/
+
+# Desktop trash/thumbnails
+.trash/
+.thumbnails/
+**.Trash-*/
+
+# Local directories
+.local/share/Trash/
+.local/share/baloo/
+.local/share/kactivitymanagerd/
+
+# Node / JS
+node_modules/
+**/node_modules/
+**/package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build artifacts
+**/*.o
+**/*.so
+**/*.a
+**/*.exe
+**/*.dll
+**/*.class
+**/*.jar
+
+# Editor backups
+**/*~
+**/*.swp
+**/*.swo
+**/*.un~
+**/*.bak.*
+**/*.backup*

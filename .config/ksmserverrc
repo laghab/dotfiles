@@ -1,0 +1,19 @@
+[General]
+loginMode=restoreSavedSession
+
+[LegacySession: saved at previous logout]
+count=0
+
+[LegacySession: saved by user]
+count=0
+
+[Session: saved at previous logout]
+clientId1=10bcb0b668000177910068700000011830000
+count=1
+program1=zen
+restartCommand1=/opt/zen-browser-bin/zen,--sm-client-id,10bcb0b668000177910068700000011830000
+restartStyleHint1=0
+userId1=laghab
+
+[Session: saved by user]
+count=0
