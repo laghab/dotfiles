@@ -81,6 +81,23 @@ snap/
 .thumbnails/
 **.Trash-*/
 
+# Discord / Vesktop / Vencord caches (not config)
+.config/vesktop/sessionData/
+.config/vesktop/Crashpad/
+.config/Vencord/dist/
+
+# Shell history (changes constantly)
+.local/share/fish/fish_history
+.local/share/fish/fish_history_*
+
+# Recently-used files (changes constantly)
+.local/share/recently-used.xbel
+
+# Certificate databases (auto-generated)
+.pki/
+
+
+
 # Node / JS
 node_modules/
 **/node_modules/
