@@ -1,3 +1,17 @@
+# YADM REPO (critical - never track yadm tracking itself)
+.local/share/yadm/
+
+# Standard user data dirs (not configs)
+Desktop/
+Documents/
+Downloads/
+Music/
+Pictures/
+Videos/
+Public/
+Templates/
+Projects/
+
 # Caches & temp
 .cache/
 .cache/**
@@ -11,16 +25,20 @@
 .wget-hsts
 **/__pycache__/
 *.pyc
+.local/share/Trash/
+.local/share/baloo/
+.local/share/kactivitymanagerd/
 
-# Sessions & locks
+# Sessions, locks & state
 .session/
 session/
 **/session/**
 **/*.lock
 **/*.pid
+.local/state/
 
 # Browser profiles (massive, auto-generated)
-BraveSoftware/
+.config/BraveSoftware/
 .mozilla/
 .chromium/
 google-chrome/
@@ -28,11 +46,15 @@ google-chrome/
 # Gaming (massive)
 Steam/
 .steam/
-Proton/
+.config/Proton/
 .proton/
+
+# Discord (huge binaries: 180MB app, 100MB modules)
+.config/discord/
 
 # Flatpak
 .var/
+snap/
 
 # Secrets (handle separately)
 .ssh/
@@ -42,27 +64,22 @@ Proton/
 **/netrc
 
 # Large app data
-libreoffice/
-obsidian/**
-obsidian/.obsidian/workspace
+.config/libreoffice/
+.config/obsidian/**
+.config/obsidian/.obsidian/workspace
 .aws/
 .docker/
 
 # Audio state (changes constantly)
-pulse/
-pipewire/
-wireplumber/
+.config/pulse/
+.config/pipewire/
+.config/wireplumber/
 .alsaequal/
 
 # Desktop trash/thumbnails
 .trash/
 .thumbnails/
 **.Trash-*/
-
-# Local directories
-.local/share/Trash/
-.local/share/baloo/
-.local/share/kactivitymanagerd/
 
 # Node / JS
 node_modules/
