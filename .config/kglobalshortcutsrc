@@ -7,16 +7,13 @@ Switch to Last-Used Keyboard Layout=none,Meta+Alt+L,Switch to Last-Used Keyboard
 Switch to Next Keyboard Layout=none,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
-[Strawberry]
-_k_friendly_name=Strawberry
-next_track=,none,Next track
-play_pause=,none,Play/Pause
-prev_track=,none,Previous track
-stop=,none,Stop
-
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
+
+[kitty]
+_k_friendly_name=kitty
+_launch=Meta+T,Meta+T,Launch Kitty
 
 [kmix]
 _k_friendly_name=Audio Volume
@@ -46,7 +43,7 @@ Cube=Meta+C,none,Toggle Cube
 Cycle Overview=none,none,Cycle through Overview and Grid View
 Cycle Overview Opposite=none,none,Cycle through Grid View and Overview
 Decrease Opacity=,,Decrease Opacity of Active Window by 5%
-Edit Tiles=Meta+T,Meta+T,Toggle Tiles Editor
+Edit Tiles=,Meta+T,Toggle Tiles Editor
 Expose=Meta+F9\tCtrl+F9,Meta+F9\tCtrl+F9,Toggle Present Windows (Current desktop)
 ExposeAll=Meta+F10\tLaunch (C)\tCtrl+F10,Meta+F10\tLaunch (C)\tCtrl+F10,Toggle Present Windows (All desktops)
 ExposeClass=Meta+F7\tCtrl+F7,Meta+F7\tCtrl+F7,Toggle Present Windows (Window class)
@@ -324,3 +321,7 @@ _launch=Meta+Shift+Esc
 
 [services][org.kde.konsole.desktop]
 _launch=none
+
+[services][org.kde.spectacle.desktop]
+CurrentMonitorScreenShot=
+OpenWithoutScreenshot=

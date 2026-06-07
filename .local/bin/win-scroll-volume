@@ -1,0 +1,144 @@
+#!/usr/bin/env python3
+import os
+import sys
+import signal
+import select
+import time
+import logging
+import subprocess
+
+import evdev
+from evdev import ecodes, InputDevice, list_devices
+
+KEY_LEFTALT = ecodes.KEY_LEFTALT
+REL_WHEEL = ecodes.REL_WHEEL
+EV_KEY = ecodes.EV_KEY
+EV_REL = ecodes.EV_REL
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s %(message)s",
+    datefmt="%H:%M:%S",
+)
+
+import pwd
+
+STEP = "5%"
+_USER = None
+for u in pwd.getpwall():
+    if 1000 <= u.pw_uid < 65534:
+        _USER = u.pw_name
+        break
+
+
+def volume(direction):
+    if os.geteuid() == 0 and _USER:
+        cmd = ["runuser", "-u", _USER, "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@"]
+    else:
+        cmd = ["wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@"]
+
+    if direction == "up":
+        subprocess.run(cmd + [f"{STEP}+"], capture_output=True)
+    elif direction == "down":
+        subprocess.run(cmd + [f"{STEP}-"], capture_output=True)
+
+
+def find_devices():
+    kbs = []
+    mice = []
+    for path in list_devices():
+        try:
+            dev = InputDevice(path)
+        except (OSError, PermissionError):
+            continue
+        caps = dev.capabilities(absinfo=False)
+        keys = caps.get(EV_KEY, [])
+        rel = caps.get(EV_REL, [])
+        is_kb = ecodes.KEY_A in keys
+        is_mouse = rel and REL_WHEEL in rel
+        if is_kb:
+            kbs.append(dev)
+        elif is_mouse:
+            mice.append(dev)
+        else:
+            dev.close()
+    return kbs, mice
+
+
+def main():
+    kbs, mice = find_devices()
+    if not kbs or not mice:
+        logging.error("no keyboards or mice found")
+        sys.exit(1)
+
+    logging.info("kb=%d ms=%d", len(kbs), len(mice))
+    for d in kbs:
+        logging.info("  KB: %s  %s", d.path, d.name)
+    for d in mice:
+        logging.info("  MS: %s  %s", d.path, d.name)
+
+    alt_pressed = {dev.path: False for dev in kbs}
+    devices = {dev.fd: dev for dev in kbs + mice}
+    grabbed_mice = []
+
+    while True:
+        try:
+            r, w, x = select.select(list(devices.keys()), [], [])
+            for fd in r:
+                dev = devices[fd]
+                for event in dev.read():
+                    if event.type == EV_KEY:
+                        if event.code == KEY_LEFTALT:
+                            alt_pressed[dev.path] = bool(event.value)
+
+                            if event.value == 1 and not grabbed_mice:
+                                for md in mice:
+                                    try:
+                                        md.grab()
+                                        grabbed_mice.append(md)
+                                    except Exception:
+                                        continue
+                                if grabbed_mice:
+                                    logging.info("mice grabbed (%d)", len(grabbed_mice))
+                            elif event.value == 0 and grabbed_mice and not any(alt_pressed.values()):
+                                for md in grabbed_mice:
+                                    try:
+                                        md.ungrab()
+                                    except Exception:
+                                        continue
+                                grabbed_mice.clear()
+                                logging.info("mice ungrabbed")
+
+                    elif event.type == EV_REL and event.code == REL_WHEEL:
+                        if any(alt_pressed.values()):
+                            if event.value == 1:
+                                volume("up")
+                                logging.info("volume up")
+                            elif event.value == -1:
+                                volume("down")
+                                logging.info("volume down")
+        except (select.error, OSError):
+            logging.error("device error, re-scanning...")
+            for md in grabbed_mice:
+                try:
+                    md.ungrab()
+                except Exception:
+                    pass
+            grabbed_mice.clear()
+            for dev in devices.values():
+                dev.close()
+            time.sleep(2)
+            kbs, mice = find_devices()
+            if not kbs or not mice:
+                logging.error("no devices found, retrying...")
+                time.sleep(5)
+                continue
+            alt_pressed = {dev.path: False for dev in kbs}
+            devices = {dev.fd: dev for dev in kbs + mice}
+            grabbed_mice = []
+            logging.info("re-connected")
+
+
+if __name__ == "__main__":
+    signal.signal(signal.SIGINT, signal.SIG_DFL)
+    main()

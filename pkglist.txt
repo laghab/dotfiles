@@ -70,6 +70,8 @@ exfatprogs
 extra-cmake-modules
 f2fs-tools
 fastfetch
+faugus-launcher
+featherpad
 ffmpegthumbnailer
 ffmpegthumbs
 filelight
@@ -91,9 +93,9 @@ hdparm
 hwdetect
 hwinfo
 inetutils
+input-remapper
 iwd
 jfsutils
-kate
 kcalc
 kde-gtk-config
 kdeconnect
@@ -119,6 +121,7 @@ libva-nvidia-driver
 limine
 limine-mkinitcpio-hook
 limine-snapper-sync
+linutil-bin
 linux-cachyos
 linux-cachyos-nvidia-open
 linux-firmware
@@ -149,6 +152,7 @@ noto-fonts-cjk
 noto-fonts-emoji
 nss-mdns
 ntfs-3g
+ntfsprogs
 nvidia-settings
 nvidia-utils
 obsidian
@@ -188,6 +192,7 @@ python-defusedxml
 python-packaging
 python-pip
 python-pipx
+qbittorrent
 rebuild-detector
 reflector
 ripgrep
@@ -229,6 +234,7 @@ vlc-plugins-all
 vulkan-icd-loader
 wget
 which
+wine-ge-custom
 wireplumber
 wl-clipboard
 wpa_supplicant
@@ -236,6 +242,7 @@ xdg-user-dirs
 xfsprogs
 xl2tpd
 xsettingsd
+xwaylandvideobridge
 yadm
 yt-dlp
 zed

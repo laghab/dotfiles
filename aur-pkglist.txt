@@ -1,7 +1,10 @@
 darkly
 epson-inkjet-printer-201601w
 epson-inkjet-printer-escpr
+input-remapper
+linutil-bin
 plasma6-themes-layan-git
 stremio
 vencord-hook
 vencord-installer
+xwaylandvideobridge

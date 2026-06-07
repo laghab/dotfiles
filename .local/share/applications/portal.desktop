@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Portal
+Comment=Portal - AnkerGames
+Exec=/usr/bin/faugus-launcher --game portal
+Icon=/home/laghab/.config/faugus-launcher/icons/portal.ico
+Path=/home/laghab/Games/Portal
+Terminal=false
+Type=Application
+Categories=Game;
+StartupWMClass=portal

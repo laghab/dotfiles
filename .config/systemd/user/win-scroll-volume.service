@@ -1,0 +1,11 @@
+[Unit]
+Description=Win+Scroll Volume Control
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/win-scroll-volume
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

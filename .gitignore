@@ -93,10 +93,31 @@ snap/
 # Recently-used files (changes constantly)
 .local/share/recently-used.xbel
 
+# Clipboard history (changes constantly)
+.local/share/klipper/
+
+# Opencode logs (change constantly)
+.local/share/opencode/log/
+
 # Certificate databases (auto-generated)
 .pki/
 
 
+
+# Android / ADB (keys, sockets, port files)
+.android/
+
+# Gaming data (too large, changes constantly)
+Games/
+Faugus/
+.local/share/umu/
+.wine/
+
+# GPU state
+.nv/
+
+# Launcher game icons (binaries, not configs)
+.config/faugus-launcher/icons/
 
 # Node / JS
 node_modules/

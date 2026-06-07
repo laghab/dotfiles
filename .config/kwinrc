@@ -14,6 +14,9 @@ BlurStrength=8
 [Effect-magiclamp]
 AnimationDuration=300
 
+[Effect-slide]
+SlideBackground=false
+
 [Effect-translucency]
 ComboboxPopups=81
 Dialogs=81
@@ -27,19 +30,17 @@ TornOffMenus=72
 [NightColor]
 Active=true
 DayTemperature=4500
-NightTemperature=3400
+NightTemperature=2600
 
 [Plugins]
 blurEnabled=false
 eyeonscreenEnabled=true
-fadedesktopEnabled=true
 fadingpopupsEnabled=false
 glideEnabled=true
 krohnkiteEnabled=false
 magiclampEnabled=true
 scaleEnabled=false
 screenedgeEnabled=false
-slideEnabled=false
 slidingpopupsEnabled=false
 squashEnabled=false
 windowapertureEnabled=false
@@ -93,6 +94,10 @@ padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][f06256b7-f2f1-49f6-a74d-aa58fab48132][0d24a2da-5a79-482a-bb23-102037d6ad5a]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][fe4d7cdc-6a77-43ca-9c1e-a7eb2d3609de][]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 

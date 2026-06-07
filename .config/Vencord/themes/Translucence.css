@@ -6561,4 +6561,92 @@ body,
   border-radius: var(--space-16);
 }
 
+/*
+ *
+ *  LIQUID GLASS ENHANCEMENTS
+ *  Stronger blur, light refraction, specular highlights & edge glow
+ *
+ */
+:root {
+  --liquid-blur: 30px;
+  --liquid-edge: rgba(255,255,255,0.2);
+  --liquid-edge-bright: rgba(255,255,255,0.35);
+  --liquid-shimmer: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 30%,
+    rgba(255,255,255,0.07) 45%,
+    rgba(200,220,255,0.05) 50%,
+    transparent 65%,
+    transparent 100%
+  );
+}
+
+/* --- BLUR ENHANCEMENTS (pure blur, no tint) --- */
+.content__5e434 {
+  backdrop-filter: blur(var(--liquid-blur)) !important;
+}
+
+.channelTextArea__74017 {
+  backdrop-filter: blur(16px) !important;
+}
+
+.searchBar_c322aa {
+  backdrop-filter: blur(16px) !important;
+}
+
+.jumpToPresentBar__0f481 {
+  backdrop-filter: blur(calc(var(--liquid-blur) / 1.5)) !important;
+}
+
+/* --- GLASS EDGE HIGHLIGHTS (outer app glow) --- */
+.appMount__51fd7::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  border: 1.5px solid var(--liquid-edge);
+  border-radius: var(--app-radius, 10px);
+  margin: var(--app-margin, 24px);
+}
+
+/* --- LIQUID SHIMMER ON SIDEBAR & PANELS --- */
+.sidebar__5e434 {
+  background-image: var(--liquid-shimmer), var(--sidebar-color);
+}
+
+.panels__5e434 {
+  background-image: var(--liquid-shimmer), transparent;
+}
+
+.container__9293f {
+  background-image: var(--liquid-shimmer);
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  animation: liquid-shimmer 12s linear infinite;
+}
+
+/* --- SPECULAR GLINT ON ACTIVE CHANNEL --- */
+.channel__972a0.modeSelected__2ea32 {
+  box-shadow: inset 4px 0 0 hsla(var(--accent-hsl), 0.6);
+}
+
+/* --- ANIMATED SHIMMER KEYFRAMES --- */
+@keyframes liquid-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* --- LIQUID GLASS SCROLLBAR --- */
+.scrollerBase_d125d2::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.15) !important;
+  border-radius: 8px !important;
+  border: 2px solid transparent !important;
+  background-clip: content-box !important;
+}
+
+.scrollerBase_d125d2::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.3) !important;
+}
 /*# sourceMappingURL=main.css.map */
