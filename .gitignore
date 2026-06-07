@@ -96,8 +96,8 @@ snap/
 # Clipboard history (changes constantly)
 .local/share/klipper/
 
-# Opencode logs (change constantly)
-.local/share/opencode/log/
+# Opencode data + logs (change constantly)
+.local/share/opencode/
 
 # Certificate databases (auto-generated)
 .pki/
@@ -116,8 +116,27 @@ Faugus/
 # GPU state
 .nv/
 
-# Launcher game icons (binaries, not configs)
+# Launcher game icons + backups (binaries, not configs)
 .config/faugus-launcher/icons/
+.config/faugus-launcher/games-backup/
+
+# Python local packages (not configs)
+.local/lib/
+
+# Anki flashcards (SQLite DBs + backups)
+.local/share/Anki2/
+
+# qBittorrent state (queue, GeoIP, logs)
+.local/share/qBittorrent/
+
+# Volatile KDE state files (change constantly)
+.config/kactivitymanagerd-statsrc
+.config/okularpartrc
+.config/plasmanotifyrc
+.config/trashrc
+
+# Tools installed to ~/.local/bin
+.local/bin/git-filter-repo
 
 # Node / JS
 node_modules/
