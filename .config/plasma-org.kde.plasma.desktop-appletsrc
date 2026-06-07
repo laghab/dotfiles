@@ -24,7 +24,7 @@ DialogWidth=810
 [Containments][222][General]
 changedPositions={}
 lastResolution=1920x1080
-positions={"1920x1080":["1","17","desktop:/DCIM","0","0"],"640x480":["4","5","desktop:/sync-readme.md","1","0","desktop:/opencode-session-chatlog.md","0","0"]}
+positions={"1920x1080":["1","17","desktop:/DCIM","0","0","desktop:/dcim_filenames.txt","0","1"],"640x480":["4","5","desktop:/sync-readme.md","1","0","desktop:/opencode-session-chatlog.md","0","0"]}
 sortMode=-1
 
 [Containments][222][Wallpaper][org.kde.image][General]
@@ -168,4 +168,4 @@ AppletOrder=225;226;227;228;229;230;243;244
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/DCIM,0,558f32a4-2d65-4a46-a508-f70f62939d63
+screenMapping=desktop:/DCIM,0,558f32a4-2d65-4a46-a508-f70f62939d63,desktop:/dcim_filenames.txt,0,558f32a4-2d65-4a46-a508-f70f62939d63
