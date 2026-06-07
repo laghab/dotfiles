@@ -138,6 +138,34 @@ Faugus/
 # Tools installed to ~/.local/bin
 .local/bin/git-filter-repo
 
+# KDE secrets & wallets
+.config/kdeconnect/privateKey.pem
+.config/kdeconnect/certificate.pem
+.config/libaccounts-glib/accounts.db
+.config/libaccounts-glib/accounts.db-shm
+.config/libaccounts-glib/accounts.db-wal
+.local/share/keyrings/
+.local/share/kwalletd/
+
+# Temporary KDE state files
+.local/share/kwrite/anonymous.katesession
+.local/share/plasmalogin/
+.local/share/user-places.xbel
+.local/share/user-places.xbel.bak
+.local/share/user-places.xbel.tbcache
+
+# VLC media library
+.local/share/vlc/ml.xspf
+
+# Opentui WASM binaries + queries
+.local/share/opentui/
+
+# Go telemetry
+.config/go/telemetry/
+
+# Kitty terminal backups
+.config/kitty-bak/
+
 # Node / JS
 node_modules/
 **/node_modules/
