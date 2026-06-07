@@ -5,8 +5,8 @@ echo "=== dotfiles-sync ==="
 
 # 1. Refresh package lists
 echo "> Updating package lists..."
-pacman -Qqe > ~/pkglist.txt
-pacman -Qqem > ~/aur-pkglist.txt
+pacman -Qqe > ~/.config/pkglist.txt
+pacman -Qqm > ~/.config/aur-pkglist.txt
 
 # 2. Add any new/changed files (respecting .gitignore)
 echo "> Staging changes..."

@@ -138,6 +138,43 @@ Faugus/
 # Tools installed to ~/.local/bin
 .local/bin/git-filter-repo
 
+# Package lists now live under .config/
+pkglist.txt
+aur-pkglist.txt
+
+# KDE runtime state
+.local/share/krunnerstaterc
+.local/share/libkunitconversion/
+
+# Faugus launcher runtime files
+.local/share/faugus-launcher/running_games.json
+.local/share/faugus-launcher/version.txt
+.local/share/faugus-launcher/umu-run
+
+# CachyOS hello log
+.config/cachyos/cachyos-hello/cachyos-hello.log
+
+# yt-dlp cookies (regenerated)
+.config/yt-dlp/cookies.txt
+
+# Kitty backup
+.config/kitty/kitty.conf.bak
+
+# gh hosts (per-machine)
+.config/gh/hosts.yml
+
+# GTK asset SVGs (bundled with theme packages)
+.config/gtk-3.0/assets/
+.config/gtk-4.0/assets/
+
+# Cursor themes (reinstallable via AUR)
+.icons/Future-cursors/
+.icons/Future-cyan-cursors/
+
+# Micro editor bundled syntax/colors (reinstallable)
+.config/micro/syntax/
+.config/micro/colorschemes/
+
 # KDE secrets & wallets
 .config/kdeconnect/privateKey.pem
 .config/kdeconnect/certificate.pem
