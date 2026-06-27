@@ -1,5 +1,19 @@
+[Annotations]
+annotationToolType=3
+
+[General]
+clipboardGroup=PostScreenshotCopyImage
+
 [ImageSave]
+lastImageSaveAsLocation=file:///home/laghab/Desktop/d.png
+lastImageSaveLocation=file:///home/laghab/Desktop/d.png
 translatedScreenshotsFolder=Screenshots
 
 [VideoSave]
+preferredVideoFormat=2
+saveVideoFormat=mp4
 translatedScreencastsFolder=Screencasts
+
+[ViewerWindow]
+1920x1080 screen: Height=570
+1920x1080 screen: Width=821

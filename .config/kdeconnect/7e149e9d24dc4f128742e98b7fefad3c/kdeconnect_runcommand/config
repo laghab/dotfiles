@@ -1,0 +1,2 @@
+[General]
+commands="@ByteArray({\"01d8fdc0_1e04_47d3_8621_1273f9d79fdb\":{\"command\":\"systemctl suspend\",\"name\":\"Suspend\"},\"5b6236ba_def5_4d08_908f_229e8733c50a\":{\"command\":\"loginctl unlock-session\",\"name\":\"Unlock Screen\"},\"d53043eb_b63c_443a_b72f_512b85dab60f\":{\"command\":\"loginctl lock-session\",\"name\":\"Lock Screen\"}})"

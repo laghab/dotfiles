@@ -18,14 +18,17 @@ AnimationDuration=300
 SlideBackground=false
 
 [Effect-translucency]
-ComboboxPopups=81
-Dialogs=81
-DropdownMenus=70
-Inactive=81
+ComboboxPopups=100
+Dialogs=100
+DropdownMenus=100
+Inactive=100
 IndividualMenuConfig=true
-MoveResize=62
-PopupMenus=71
-TornOffMenus=72
+MoveResize=100
+PopupMenus=100
+TornOffMenus=100
+
+[MouseBindings]
+CommandAllKey=Meta
 
 [NightColor]
 Active=true
@@ -57,11 +60,19 @@ screenGapLeft=3
 screenGapRight=3
 screenGapTop=3
 
+[TabBox]
+ActivitiesMode=0
+DesktopMode=0
+
 [Tiling][11fe64e9-1b3e-4ca8-947a-f57a25296c17][]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][11fe64e9-1b3e-4ca8-947a-f57a25296c17][0d24a2da-5a79-482a-bb23-102037d6ad5a]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][11fe64e9-1b3e-4ca8-947a-f57a25296c17][65192e26-046c-47c5-986b-2ae13e17f147]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -89,6 +100,10 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][85903718-38b8-4f51-aad3-0c943b8f5249][65192e26-046c-47c5-986b-2ae13e17f147]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][f06256b7-f2f1-49f6-a74d-aa58fab48132][]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
@@ -105,8 +120,11 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][fe4d7cdc-6a77-43ca-9c1e-a7eb2d3609de][65192e26-046c-47c5-986b-2ae13e17f147]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Windows]
-BorderSnapZone=20
 ElectricBorderCooldown=400
 ElectricBorderDelay=0
 ElectricBorders=1

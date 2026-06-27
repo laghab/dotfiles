@@ -1,11 +1,12 @@
 [Unit]
-Description=Win+Scroll Volume Control
+Description=Alt+Scroll Volume Control
 
 [Service]
 Type=simple
 ExecStart=%h/.local/bin/win-scroll-volume
 Restart=always
 RestartSec=5
+Environment=PYTHONUNBUFFERED=1
 
 [Install]
 WantedBy=default.target

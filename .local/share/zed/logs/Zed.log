@@ -1,0 +1,286 @@
+2026-06-07T22:12:36+05:30 INFO  [zed] ========== starting zed version 1.5.4+stable, sha unknown ==========
+2026-06-07T22:12:37+05:30 INFO  [gpui_linux::linux::platform] Compositor GPU hint: vendor=0x10de, device=0x2187 (from dev 226:128)
+2026-06-07T22:12:37+05:30 INFO  [sqlez::migrations] Found 10 foreign key relationships to check
+2026-06-07T22:12:37+05:30 INFO  [sqlez::migrations] Found 11 foreign key relationships to check
+2026-06-07T22:12:37+05:30 INFO  [sqlez::migrations] Found 11 foreign key relationships to check
+2026-06-07T22:12:37+05:30 INFO  [sqlez::migrations] Found 12 foreign key relationships to check
+2026-06-07T22:12:37+05:30 INFO  [sqlez::migrations] Found 13 foreign key relationships to check
+2026-06-07T22:12:37+05:30 INFO  [sqlez::migrations] Found 14 foreign key relationships to check
+2026-06-07T22:12:37+05:30 INFO  [sqlez::migrations] Found 15 foreign key relationships to check
+2026-06-07T22:12:37+05:30 INFO  [sqlez::migrations] Found 16 foreign key relationships to check
+2026-06-07T22:12:37+05:30 INFO  [sqlez::migrations] Found 17 foreign key relationships to check
+2026-06-07T22:12:37+05:30 INFO  [sqlez::migrations] Found 23 foreign key relationships to check
+2026-06-07T22:12:37+05:30 INFO  [sqlez::migrations] Found 23 foreign key relationships to check
+2026-06-07T22:12:37+05:30 INFO  [sqlez::migrations] Found 24 foreign key relationships to check
+2026-06-07T22:12:37+05:30 INFO  [sqlez::migrations] Found 24 foreign key relationships to check
+2026-06-07T22:12:37+05:30 INFO  [sqlez::migrations] Found 24 foreign key relationships to check
+2026-06-07T22:12:37+05:30 INFO  [sqlez::migrations] Found 25 foreign key relationships to check
+2026-06-07T22:12:37+05:30 INFO  [crashes] spawning crash handler process
+2026-06-07T22:12:37+05:30 INFO  [util] set environment variables from shell:/bin/fish, path:/home/laghab/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+2026-06-07T22:12:37+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-07T22:12:37+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-07T22:12:37+05:30 INFO  [crashes] connected to crash handler process after 100ms
+2026-06-07T22:12:37+05:30 INFO  [crashes] panic handler registered
+2026-06-07T22:12:37+05:30 INFO  [crashes] crash signal handlers installed
+2026-06-07T22:12:37+05:30 INFO  [crashes] crash handler registered
+2026-06-07T22:12:37+05:30 INFO  [project::trusted_worktrees] Worktree "/mnt/buffer/.Trash-1000/directorysizes" is not trusted
+2026-06-07T22:12:37+05:30 INFO  [wgpu_hal::gles::egl] EGL says it can present to the window but not natively
+2026-06-07T22:12:37+05:30 INFO  [gpui_wgpu::wgpu_context] Found 2 GPU adapter(s):
+2026-06-07T22:12:37+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER (vendor=0x10de, device=0x2187, backend=Vulkan, type=DiscreteGpu)
+2026-06-07T22:12:37+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER/PCIe/SSE2 (vendor=0x10de, device=0x0000, backend=Gl, type=Other)
+2026-06-07T22:12:37+05:30 INFO  [gpui_wgpu::wgpu_context] Testing adapter: NVIDIA GeForce GTX 1650 SUPER (Vulkan)...
+2026-06-07T22:12:38+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU (passed configuration test): NVIDIA GeForce GTX 1650 SUPER (Vulkan)
+2026-06-07T22:12:38+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU adapter: "NVIDIA GeForce GTX 1650 SUPER" (Vulkan)
+2026-06-07T22:12:38+05:30 INFO  [workspace] Rendered first frame
+2026-06-07T22:12:38+05:30 INFO  [zed::zed] Using GPU: GpuSpecs { is_software_emulated: false, device_name: "NVIDIA GeForce GTX 1650 SUPER", driver_name: "NVIDIA", driver_info: "610.43.02" }
+2026-06-07T22:12:38+05:30 INFO  [extension_host] rebuilt extension index in 485.529µs
+2026-06-07T22:12:38+05:30 INFO  [extension_host] installing extension html latest version
+2026-06-07T22:12:38+05:30 ERROR [agent] Failed to authenticate provider: ChatGPT Subscription: Sign in with your ChatGPT Plus or Pro subscription to use this provider.
+2026-06-07T22:12:38+05:30 ERROR [gpui_linux::linux::wayland::client] activation token received with no pending activation
+2026-06-07T22:12:40+05:30 INFO  [extension_host] rebuilt extension index in 4.729412ms
+2026-06-07T22:12:40+05:30 INFO  [extension_host] extensions updated. loading 1, reloading 0, unloading 0
+2026-06-08T09:18:25+05:30 INFO  [zed] ========== starting zed version 1.5.4+stable, sha unknown ==========
+2026-06-08T09:18:26+05:30 INFO  [gpui_linux::linux::platform] Compositor GPU hint: vendor=0x10de, device=0x2187 (from dev 226:128)
+2026-06-08T09:18:26+05:30 INFO  [crashes] spawning crash handler process
+2026-06-08T09:18:26+05:30 INFO  [extension_host] extensions updated. loading 1, reloading 0, unloading 0
+2026-06-08T09:18:26+05:30 INFO  [util] set environment variables from shell:/bin/fish, path:/home/laghab/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+2026-06-08T09:18:26+05:30 INFO  [crashes] connected to crash handler process after 100ms
+2026-06-08T09:18:26+05:30 INFO  [crashes] panic handler registered
+2026-06-08T09:18:26+05:30 INFO  [crashes] crash signal handlers installed
+2026-06-08T09:18:26+05:30 INFO  [crashes] crash handler registered
+2026-06-08T09:18:26+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-08T09:18:26+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-08T09:18:26+05:30 INFO  [project::trusted_worktrees] Worktree "/mnt/stash/Backups/Phone/WA_Backup/.stfolder/.directory" is not trusted
+2026-06-08T09:18:26+05:30 INFO  [wgpu_hal::gles::egl] EGL says it can present to the window but not natively
+2026-06-08T09:18:26+05:30 INFO  [gpui_wgpu::wgpu_context] Found 2 GPU adapter(s):
+2026-06-08T09:18:26+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER (vendor=0x10de, device=0x2187, backend=Vulkan, type=DiscreteGpu)
+2026-06-08T09:18:26+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER/PCIe/SSE2 (vendor=0x10de, device=0x0000, backend=Gl, type=Other)
+2026-06-08T09:18:26+05:30 INFO  [gpui_wgpu::wgpu_context] Testing adapter: NVIDIA GeForce GTX 1650 SUPER (Vulkan)...
+2026-06-08T09:18:26+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU (passed configuration test): NVIDIA GeForce GTX 1650 SUPER (Vulkan)
+2026-06-08T09:18:26+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU adapter: "NVIDIA GeForce GTX 1650 SUPER" (Vulkan)
+2026-06-08T09:18:26+05:30 INFO  [workspace] Rendered first frame
+2026-06-08T09:18:26+05:30 INFO  [zed::zed] Using GPU: GpuSpecs { is_software_emulated: false, device_name: "NVIDIA GeForce GTX 1650 SUPER", driver_name: "NVIDIA", driver_info: "610.43.02" }
+2026-06-08T09:18:26+05:30 ERROR [gpui_linux::linux::wayland::client] activation token received with no pending activation
+2026-06-08T09:28:13+05:30 INFO  [zed] ========== starting zed version 1.5.4+stable, sha unknown ==========
+2026-06-08T09:28:14+05:30 INFO  [gpui_linux::linux::platform] Compositor GPU hint: vendor=0x10de, device=0x2187 (from dev 226:128)
+2026-06-08T09:28:14+05:30 INFO  [crashes] spawning crash handler process
+2026-06-08T09:28:14+05:30 INFO  [extension_host] extensions updated. loading 1, reloading 0, unloading 0
+2026-06-08T09:28:14+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-08T09:28:14+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-08T09:28:14+05:30 INFO  [util] set environment variables from shell:/bin/fish, path:/home/laghab/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+2026-06-08T09:28:14+05:30 INFO  [crashes] connected to crash handler process after 100ms
+2026-06-08T09:28:14+05:30 INFO  [crashes] panic handler registered
+2026-06-08T09:28:14+05:30 INFO  [crashes] crash signal handlers installed
+2026-06-08T09:28:14+05:30 INFO  [crashes] crash handler registered
+2026-06-08T09:28:14+05:30 INFO  [wgpu_hal::gles::egl] EGL says it can present to the window but not natively
+2026-06-08T09:28:14+05:30 INFO  [gpui_wgpu::wgpu_context] Found 2 GPU adapter(s):
+2026-06-08T09:28:14+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER (vendor=0x10de, device=0x2187, backend=Vulkan, type=DiscreteGpu)
+2026-06-08T09:28:14+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER/PCIe/SSE2 (vendor=0x10de, device=0x0000, backend=Gl, type=Other)
+2026-06-08T09:28:14+05:30 INFO  [gpui_wgpu::wgpu_context] Testing adapter: NVIDIA GeForce GTX 1650 SUPER (Vulkan)...
+2026-06-08T09:28:14+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU (passed configuration test): NVIDIA GeForce GTX 1650 SUPER (Vulkan)
+2026-06-08T09:28:14+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU adapter: "NVIDIA GeForce GTX 1650 SUPER" (Vulkan)
+2026-06-08T09:28:14+05:30 INFO  [workspace] Rendered first frame
+2026-06-08T09:28:14+05:30 INFO  [zed::zed] Using GPU: GpuSpecs { is_software_emulated: false, device_name: "NVIDIA GeForce GTX 1650 SUPER", driver_name: "NVIDIA", driver_info: "610.43.02" }
+2026-06-08T09:28:14+05:30 ERROR [crates/languages/src/bash.rs:61] missing executable in directory "/home/laghab/.local/share/zed/languages/bash-language-server/node_modules/bash-language-server/out/cli.js"
+2026-06-08T09:28:14+05:30 INFO  [node_runtime] using Node.js found on PATH: SystemNodeRuntime { node: "/usr/bin/node", npm: "/usr/bin/npm", scratch_dir: "/home/laghab/.local/share/zed/node" }
+2026-06-08T09:28:18+05:30 ERROR [gpui::app] timed out waiting on app_will_quit
+2026-06-08T22:01:23+05:30 INFO  [zed] ========== starting zed version 1.5.4+stable, sha unknown ==========
+2026-06-08T22:01:24+05:30 INFO  [gpui_linux::linux::platform] Compositor GPU hint: vendor=0x10de, device=0x2187 (from dev 226:128)
+2026-06-08T22:01:24+05:30 INFO  [crashes] spawning crash handler process
+2026-06-08T22:01:24+05:30 INFO  [extension_host] extensions updated. loading 1, reloading 0, unloading 0
+2026-06-08T22:01:24+05:30 INFO  [util] set environment variables from shell:/bin/fish, path:/home/laghab/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+2026-06-08T22:01:24+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-08T22:01:24+05:30 INFO  [crashes] connected to crash handler process after 100ms
+2026-06-08T22:01:24+05:30 INFO  [crashes] panic handler registered
+2026-06-08T22:01:24+05:30 INFO  [crashes] crash signal handlers installed
+2026-06-08T22:01:24+05:30 INFO  [crashes] crash handler registered
+2026-06-08T22:01:24+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-08T22:01:24+05:30 INFO  [wgpu_hal::gles::egl] EGL says it can present to the window but not natively
+2026-06-08T22:01:24+05:30 INFO  [gpui_wgpu::wgpu_context] Found 2 GPU adapter(s):
+2026-06-08T22:01:24+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER (vendor=0x10de, device=0x2187, backend=Vulkan, type=DiscreteGpu)
+2026-06-08T22:01:24+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER/PCIe/SSE2 (vendor=0x10de, device=0x0000, backend=Gl, type=Other)
+2026-06-08T22:01:24+05:30 INFO  [gpui_wgpu::wgpu_context] Testing adapter: NVIDIA GeForce GTX 1650 SUPER (Vulkan)...
+2026-06-08T22:01:25+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU (passed configuration test): NVIDIA GeForce GTX 1650 SUPER (Vulkan)
+2026-06-08T22:01:25+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU adapter: "NVIDIA GeForce GTX 1650 SUPER" (Vulkan)
+2026-06-08T22:01:25+05:30 INFO  [crates/workspace/src/workspace.rs:4140] Couldn't find any enabled panel for the Left dock.
+2026-06-08T22:01:25+05:30 INFO  [workspace] Rendered first frame
+2026-06-08T22:01:25+05:30 INFO  [zed::zed] Using GPU: GpuSpecs { is_software_emulated: false, device_name: "NVIDIA GeForce GTX 1650 SUPER", driver_name: "NVIDIA", driver_info: "610.43.02" }
+2026-06-22T12:02:35+05:30 INFO  [zed] ========== starting zed version 1.7.2+stable, sha unknown ==========
+2026-06-22T12:02:35+05:30 INFO  [gpui_linux::linux::platform] Compositor GPU hint: vendor=0x10de, device=0x2187 (from dev 226:128)
+2026-06-22T12:02:35+05:30 INFO  [crashes] spawning crash handler process
+2026-06-22T12:02:35+05:30 INFO  [util] set environment variables from shell:/bin/fish, path:/home/laghab/.opencode/bin:/home/laghab/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+2026-06-22T12:02:35+05:30 INFO  [extension_host] extensions updated. loading 1, reloading 0, unloading 0
+2026-06-22T12:02:35+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-22T12:02:35+05:30 INFO  [prompt_store::rules_to_skills_migration] Starting rules-to-skills migration; skills_dir=/home/laghab/.agents/skills, agents_md=/home/laghab/.config/zed/AGENTS.md, prompts_dir=/home/laghab/.local/share/zed/prompts
+2026-06-22T12:02:35+05:30 INFO  [prompt_store::rules_to_skills_migration] Rules-to-skills migration found 0 non-default rules and 0 default rules
+2026-06-22T12:02:35+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-22T12:02:35+05:30 INFO  [prompt_store::rules_to_skills_migration] Finished rules-to-skills migration; skill_names=0, agents_md_names=0, customized_builtins=0
+2026-06-22T12:02:35+05:30 INFO  [crashes] connected to crash handler process after 100ms
+2026-06-22T12:02:35+05:30 INFO  [crashes] panic handler registered
+2026-06-22T12:02:35+05:30 INFO  [crashes] crash signal handlers installed
+2026-06-22T12:02:35+05:30 INFO  [crashes] crash handler registered
+2026-06-22T12:02:35+05:30 INFO  [wgpu_hal::gles::egl] EGL says it can present to the window but not natively
+2026-06-22T12:02:36+05:30 INFO  [gpui_wgpu::wgpu_context] Found 2 GPU adapter(s):
+2026-06-22T12:02:36+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER (vendor=0x10de, device=0x2187, backend=Vulkan, type=DiscreteGpu)
+2026-06-22T12:02:36+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER/PCIe/SSE2 (vendor=0x10de, device=0x0000, backend=Gl, type=Other)
+2026-06-22T12:02:36+05:30 INFO  [gpui_wgpu::wgpu_context] Testing adapter: NVIDIA GeForce GTX 1650 SUPER (Vulkan)...
+2026-06-22T12:02:36+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU (passed configuration test): NVIDIA GeForce GTX 1650 SUPER (Vulkan)
+2026-06-22T12:02:36+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU adapter: "NVIDIA GeForce GTX 1650 SUPER" (Vulkan)
+2026-06-22T12:02:36+05:30 INFO  [workspace] Rendered first frame
+2026-06-22T12:02:36+05:30 INFO  [zed::zed] Using GPU: GpuSpecs { is_software_emulated: false, device_name: "NVIDIA GeForce GTX 1650 SUPER", driver_name: "NVIDIA", driver_info: "610.43.02" }
+2026-06-22T12:02:36+05:30 ERROR [gpui_linux::linux::wayland::client] activation token received with no pending activation
+2026-06-22T12:02:36+05:30 INFO  [node_runtime] using Node.js found on PATH: SystemNodeRuntime { node: "/usr/bin/node", npm: "/usr/bin/npm", scratch_dir: "/home/laghab/.local/share/zed/node" }
+2026-06-22T12:02:37+05:30 INFO  [lsp] starting language server process. binary path: "/usr/bin/node", working directory: "/usr/bin", args: ["/home/laghab/.local/share/zed/languages/bash-language-server/node_modules/bash-language-server/out/cli.js", "start"]
+2026-06-22T21:44:00+05:30 INFO  [zed] ========== starting zed version 1.7.2+stable, sha unknown ==========
+2026-06-22T21:44:01+05:30 INFO  [gpui_linux::linux::platform] Compositor GPU hint: vendor=0x10de, device=0x2187 (from dev 226:128)
+2026-06-22T21:44:01+05:30 INFO  [crashes] spawning crash handler process
+2026-06-22T21:44:01+05:30 INFO  [extension_host] extensions updated. loading 1, reloading 0, unloading 0
+2026-06-22T21:44:01+05:30 INFO  [prompt_store::rules_to_skills_migration] Rules-to-skills migration already marked done; skipping startup migration
+2026-06-22T21:44:01+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-22T21:44:01+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-22T21:44:01+05:30 INFO  [util] set environment variables from shell:/bin/fish, path:/home/laghab/.opencode/bin:/home/laghab/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+2026-06-22T21:44:01+05:30 INFO  [crashes] connected to crash handler process after 100ms
+2026-06-22T21:44:01+05:30 INFO  [crashes] panic handler registered
+2026-06-22T21:44:01+05:30 INFO  [crashes] crash signal handlers installed
+2026-06-22T21:44:01+05:30 INFO  [crashes] crash handler registered
+2026-06-22T21:44:01+05:30 INFO  [wgpu_hal::gles::egl] EGL says it can present to the window but not natively
+2026-06-22T21:44:01+05:30 INFO  [gpui_wgpu::wgpu_context] Found 2 GPU adapter(s):
+2026-06-22T21:44:01+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER (vendor=0x10de, device=0x2187, backend=Vulkan, type=DiscreteGpu)
+2026-06-22T21:44:01+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER/PCIe/SSE2 (vendor=0x10de, device=0x0000, backend=Gl, type=Other)
+2026-06-22T21:44:01+05:30 INFO  [gpui_wgpu::wgpu_context] Testing adapter: NVIDIA GeForce GTX 1650 SUPER (Vulkan)...
+2026-06-22T21:44:01+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU (passed configuration test): NVIDIA GeForce GTX 1650 SUPER (Vulkan)
+2026-06-22T21:44:01+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU adapter: "NVIDIA GeForce GTX 1650 SUPER" (Vulkan)
+2026-06-22T21:44:01+05:30 INFO  [workspace] Rendered first frame
+2026-06-22T21:44:01+05:30 INFO  [zed::zed] Using GPU: GpuSpecs { is_software_emulated: false, device_name: "NVIDIA GeForce GTX 1650 SUPER", driver_name: "NVIDIA", driver_info: "610.43.02" }
+2026-06-22T21:44:01+05:30 ERROR [gpui_linux::linux::wayland::client] activation token received with no pending activation
+2026-06-22T21:44:38+05:30 INFO  [client] set status on client 0: Authenticating
+2026-06-22T21:45:00+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-22T21:45:00+05:30 INFO  [client] set status on client 906374: Authenticated
+2026-06-22T21:46:58+05:30 INFO  [zed] ========== starting zed version 1.7.2+stable, sha unknown ==========
+2026-06-22T21:46:58+05:30 INFO  [gpui_linux::linux::platform] Compositor GPU hint: vendor=0x10de, device=0x2187 (from dev 226:128)
+2026-06-22T21:46:58+05:30 INFO  [crashes] spawning crash handler process
+2026-06-22T21:46:58+05:30 INFO  [extension_host] extensions updated. loading 1, reloading 0, unloading 0
+2026-06-22T21:46:58+05:30 INFO  [prompt_store::rules_to_skills_migration] Rules-to-skills migration already marked done; skipping startup migration
+2026-06-22T21:46:58+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-22T21:46:58+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-22T21:46:58+05:30 INFO  [util] set environment variables from shell:/bin/fish, path:/home/laghab/.opencode/bin:/home/laghab/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+2026-06-22T21:46:58+05:30 INFO  [crashes] connected to crash handler process after 100ms
+2026-06-22T21:46:58+05:30 INFO  [crashes] panic handler registered
+2026-06-22T21:46:58+05:30 INFO  [crashes] crash signal handlers installed
+2026-06-22T21:46:58+05:30 INFO  [crashes] crash handler registered
+2026-06-22T21:46:58+05:30 INFO  [wgpu_hal::gles::egl] EGL says it can present to the window but not natively
+2026-06-22T21:46:58+05:30 INFO  [gpui_wgpu::wgpu_context] Found 2 GPU adapter(s):
+2026-06-22T21:46:58+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER (vendor=0x10de, device=0x2187, backend=Vulkan, type=DiscreteGpu)
+2026-06-22T21:46:58+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER/PCIe/SSE2 (vendor=0x10de, device=0x0000, backend=Gl, type=Other)
+2026-06-22T21:46:58+05:30 INFO  [gpui_wgpu::wgpu_context] Testing adapter: NVIDIA GeForce GTX 1650 SUPER (Vulkan)...
+2026-06-22T21:46:58+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU (passed configuration test): NVIDIA GeForce GTX 1650 SUPER (Vulkan)
+2026-06-22T21:46:58+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU adapter: "NVIDIA GeForce GTX 1650 SUPER" (Vulkan)
+2026-06-22T21:46:58+05:30 INFO  [workspace] Rendered first frame
+2026-06-22T21:46:58+05:30 INFO  [zed::zed] Using GPU: GpuSpecs { is_software_emulated: false, device_name: "NVIDIA GeForce GTX 1650 SUPER", driver_name: "NVIDIA", driver_info: "610.43.02" }
+2026-06-22T21:46:58+05:30 INFO  [client] set status on client 0: Authenticating
+2026-06-22T21:46:58+05:30 ERROR [gpui_linux::linux::wayland::client] activation token received with no pending activation
+2026-06-22T21:47:01+05:30 INFO  [client] set status on client 906374: Authenticated
+2026-06-22T21:49:21+05:30 INFO  [zed] ========== starting zed version 1.7.2+stable, sha unknown ==========
+2026-06-22T21:49:21+05:30 INFO  [gpui_linux::linux::platform] Compositor GPU hint: vendor=0x10de, device=0x2187 (from dev 226:128)
+2026-06-22T21:49:21+05:30 INFO  [crashes] spawning crash handler process
+2026-06-22T21:49:21+05:30 INFO  [extension_host] extensions updated. loading 1, reloading 0, unloading 0
+2026-06-22T21:49:21+05:30 INFO  [prompt_store::rules_to_skills_migration] Rules-to-skills migration already marked done; skipping startup migration
+2026-06-22T21:49:21+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-22T21:49:21+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-22T21:49:21+05:30 INFO  [util] set environment variables from shell:/bin/fish, path:/home/laghab/.opencode/bin:/home/laghab/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+2026-06-22T21:49:21+05:30 INFO  [crashes] connected to crash handler process after 100ms
+2026-06-22T21:49:21+05:30 INFO  [crashes] panic handler registered
+2026-06-22T21:49:21+05:30 INFO  [crashes] crash signal handlers installed
+2026-06-22T21:49:21+05:30 INFO  [crashes] crash handler registered
+2026-06-22T21:49:21+05:30 INFO  [wgpu_hal::gles::egl] EGL says it can present to the window but not natively
+2026-06-22T21:49:21+05:30 INFO  [gpui_wgpu::wgpu_context] Found 2 GPU adapter(s):
+2026-06-22T21:49:21+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER (vendor=0x10de, device=0x2187, backend=Vulkan, type=DiscreteGpu)
+2026-06-22T21:49:21+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER/PCIe/SSE2 (vendor=0x10de, device=0x0000, backend=Gl, type=Other)
+2026-06-22T21:49:21+05:30 INFO  [gpui_wgpu::wgpu_context] Testing adapter: NVIDIA GeForce GTX 1650 SUPER (Vulkan)...
+2026-06-22T21:49:21+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU (passed configuration test): NVIDIA GeForce GTX 1650 SUPER (Vulkan)
+2026-06-22T21:49:21+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU adapter: "NVIDIA GeForce GTX 1650 SUPER" (Vulkan)
+2026-06-22T21:49:21+05:30 INFO  [workspace] Rendered first frame
+2026-06-22T21:49:21+05:30 INFO  [zed::zed] Using GPU: GpuSpecs { is_software_emulated: false, device_name: "NVIDIA GeForce GTX 1650 SUPER", driver_name: "NVIDIA", driver_info: "610.43.02" }
+2026-06-22T21:49:21+05:30 INFO  [client] set status on client 0: Authenticating
+2026-06-22T21:49:21+05:30 ERROR [gpui_linux::linux::wayland::client] activation token received with no pending activation
+2026-06-22T21:49:24+05:30 INFO  [client] set status on client 906374: Authenticated
+2026-06-24T18:50:34+05:30 INFO  [zed] ========== starting zed version 1.7.2+stable, sha unknown ==========
+2026-06-24T18:50:34+05:30 INFO  [gpui_linux::linux::platform] Compositor GPU hint: vendor=0x10de, device=0x2187 (from dev 226:128)
+2026-06-24T18:50:34+05:30 INFO  [crashes] spawning crash handler process
+2026-06-24T18:50:34+05:30 INFO  [util] set environment variables from shell:/bin/fish, path:/home/laghab/.opencode/bin:/home/laghab/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+2026-06-24T18:50:34+05:30 INFO  [extension_host] extensions updated. loading 1, reloading 0, unloading 0
+2026-06-24T18:50:34+05:30 INFO  [prompt_store::rules_to_skills_migration] Rules-to-skills migration already marked done; skipping startup migration
+2026-06-24T18:50:34+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-24T18:50:34+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-24T18:50:34+05:30 INFO  [crashes] connected to crash handler process after 100ms
+2026-06-24T18:50:34+05:30 INFO  [crashes] panic handler registered
+2026-06-24T18:50:34+05:30 INFO  [crashes] crash signal handlers installed
+2026-06-24T18:50:34+05:30 INFO  [crashes] crash handler registered
+2026-06-24T18:50:34+05:30 INFO  [wgpu_hal::gles::egl] EGL says it can present to the window but not natively
+2026-06-24T18:50:34+05:30 INFO  [gpui_wgpu::wgpu_context] Found 2 GPU adapter(s):
+2026-06-24T18:50:34+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER (vendor=0x10de, device=0x2187, backend=Vulkan, type=DiscreteGpu)
+2026-06-24T18:50:34+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER/PCIe/SSE2 (vendor=0x10de, device=0x0000, backend=Gl, type=Other)
+2026-06-24T18:50:34+05:30 INFO  [gpui_wgpu::wgpu_context] Testing adapter: NVIDIA GeForce GTX 1650 SUPER (Vulkan)...
+2026-06-24T18:50:34+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU (passed configuration test): NVIDIA GeForce GTX 1650 SUPER (Vulkan)
+2026-06-24T18:50:34+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU adapter: "NVIDIA GeForce GTX 1650 SUPER" (Vulkan)
+2026-06-24T18:50:34+05:30 INFO  [workspace] Rendered first frame
+2026-06-24T18:50:34+05:30 INFO  [zed::zed] Using GPU: GpuSpecs { is_software_emulated: false, device_name: "NVIDIA GeForce GTX 1650 SUPER", driver_name: "NVIDIA", driver_info: "610.43.02" }
+2026-06-24T18:50:35+05:30 INFO  [node_runtime] using Node.js found on PATH: SystemNodeRuntime { node: "/usr/bin/node", npm: "/usr/bin/npm", scratch_dir: "/home/laghab/.local/share/zed/node" }
+2026-06-24T18:50:41+05:30 INFO  [lsp] starting language server process. binary path: "/usr/bin/node", working directory: "/home/laghab/Desktop", args: ["/home/laghab/.local/share/zed/languages/bash-language-server/node_modules/bash-language-server/out/cli.js", "start"]
+2026-06-24T18:51:06+05:30 ERROR [agent] Failed to authenticate provider: ChatGPT Subscription: Sign in with your ChatGPT Plus or Pro subscription to use this provider.
+2026-06-24T18:51:06+05:30 INFO  [client] set status on client 0: Authenticating
+2026-06-24T18:51:09+05:30 INFO  [client] set status on client 906374: Authenticated
+2026-06-24T18:51:22+05:30 ERROR [crates/edit_prediction/src/edit_prediction.rs:1865] task 42 was cancelled
+2026-06-24T18:51:33+05:30 INFO  [zed] ========== starting zed version 1.7.2+stable, sha unknown ==========
+2026-06-24T18:51:33+05:30 INFO  [gpui_linux::linux::platform] Compositor GPU hint: vendor=0x10de, device=0x2187 (from dev 226:128)
+2026-06-24T18:51:33+05:30 INFO  [crashes] spawning crash handler process
+2026-06-24T18:51:33+05:30 INFO  [extension_host] extensions updated. loading 1, reloading 0, unloading 0
+2026-06-24T18:51:33+05:30 INFO  [prompt_store::rules_to_skills_migration] Rules-to-skills migration already marked done; skipping startup migration
+2026-06-24T18:51:33+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-24T18:51:33+05:30 INFO  [util] set environment variables from shell:/bin/fish, path:/home/laghab/.opencode/bin:/home/laghab/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+2026-06-24T18:51:33+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-24T18:51:33+05:30 INFO  [crashes] connected to crash handler process after 100ms
+2026-06-24T18:51:33+05:30 INFO  [crashes] panic handler registered
+2026-06-24T18:51:33+05:30 INFO  [crashes] crash signal handlers installed
+2026-06-24T18:51:33+05:30 INFO  [crashes] crash handler registered
+2026-06-24T18:51:33+05:30 INFO  [wgpu_hal::gles::egl] EGL says it can present to the window but not natively
+2026-06-24T18:51:33+05:30 INFO  [gpui_wgpu::wgpu_context] Found 2 GPU adapter(s):
+2026-06-24T18:51:33+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER (vendor=0x10de, device=0x2187, backend=Vulkan, type=DiscreteGpu)
+2026-06-24T18:51:33+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER/PCIe/SSE2 (vendor=0x10de, device=0x0000, backend=Gl, type=Other)
+2026-06-24T18:51:33+05:30 INFO  [gpui_wgpu::wgpu_context] Testing adapter: NVIDIA GeForce GTX 1650 SUPER (Vulkan)...
+2026-06-24T18:51:33+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU (passed configuration test): NVIDIA GeForce GTX 1650 SUPER (Vulkan)
+2026-06-24T18:51:33+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU adapter: "NVIDIA GeForce GTX 1650 SUPER" (Vulkan)
+2026-06-24T18:51:33+05:30 INFO  [workspace] Rendered first frame
+2026-06-24T18:51:33+05:30 INFO  [zed::zed] Using GPU: GpuSpecs { is_software_emulated: false, device_name: "NVIDIA GeForce GTX 1650 SUPER", driver_name: "NVIDIA", driver_info: "610.43.02" }
+2026-06-24T18:51:33+05:30 INFO  [client] set status on client 0: Authenticating
+2026-06-24T18:51:33+05:30 ERROR [gpui_linux::linux::wayland::client] activation token received with no pending activation
+2026-06-24T18:51:33+05:30 INFO  [node_runtime] using Node.js found on PATH: SystemNodeRuntime { node: "/usr/bin/node", npm: "/usr/bin/npm", scratch_dir: "/home/laghab/.local/share/zed/node" }
+2026-06-24T18:51:34+05:30 INFO  [lsp] starting language server process. binary path: "/usr/bin/node", working directory: "/home/laghab/Desktop", args: ["/home/laghab/.local/share/zed/languages/bash-language-server/node_modules/bash-language-server/out/cli.js", "start"]
+2026-06-24T18:51:36+05:30 INFO  [client] set status on client 906374: Authenticated
+2026-06-24T18:51:38+05:30 ERROR [agent] Failed to authenticate provider: ChatGPT Subscription: Sign in with your ChatGPT Plus or Pro subscription to use this provider.
+2026-06-24T21:31:05+05:30 INFO  [client] cloud websocket disconnected, will reconnect
+2026-06-24T21:38:42+05:30 INFO  [language_models_cloud] LLM token rejected; refreshing and retrying request
+2026-06-26T01:50:03+05:30 INFO  [zed] ========== starting zed version 1.8.2+stable, sha unknown ==========
+2026-06-26T01:50:03+05:30 INFO  [gpui_linux::linux::platform] Compositor GPU hint: vendor=0x10de, device=0x2187 (from dev 226:128)
+2026-06-26T01:50:03+05:30 INFO  [sqlez::migrations] Found 26 foreign key relationships to check
+2026-06-26T01:50:03+05:30 INFO  [crashes] spawning crash handler process
+2026-06-26T01:50:03+05:30 INFO  [util] set environment variables from shell:/bin/fish, path:/home/laghab/.opencode/bin:/home/laghab/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+2026-06-26T01:50:03+05:30 INFO  [extension_host] extensions updated. loading 1, reloading 0, unloading 0
+2026-06-26T01:50:03+05:30 INFO  [prompt_store::rules_to_skills_migration] Rules-to-skills migration already marked done; skipping startup migration
+2026-06-26T01:50:03+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-26T01:50:03+05:30 INFO  [crashes] connected to crash handler process after 100ms
+2026-06-26T01:50:03+05:30 INFO  [crashes] panic handler registered
+2026-06-26T01:50:03+05:30 INFO  [crashes] crash signal handlers installed
+2026-06-26T01:50:03+05:30 INFO  [crashes] crash handler registered
+2026-06-26T01:50:03+05:30 INFO  [gpui_linux::linux::platform] activate is not implemented on Linux, ignoring the call
+2026-06-26T01:50:03+05:30 INFO  [wgpu_hal::gles::egl] EGL says it can present to the window but not natively
+2026-06-26T01:50:03+05:30 INFO  [gpui_wgpu::wgpu_context] Found 2 GPU adapter(s):
+2026-06-26T01:50:03+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER (vendor=0x10de, device=0x2187, backend=Vulkan, type=DiscreteGpu)
+2026-06-26T01:50:03+05:30 INFO  [gpui_wgpu::wgpu_context]   - NVIDIA GeForce GTX 1650 SUPER/PCIe/SSE2 (vendor=0x10de, device=0x0000, backend=Gl, type=Other)
+2026-06-26T01:50:03+05:30 INFO  [gpui_wgpu::wgpu_context] Testing adapter: NVIDIA GeForce GTX 1650 SUPER (Vulkan)...
+2026-06-26T01:50:04+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU (passed configuration test): NVIDIA GeForce GTX 1650 SUPER (Vulkan)
+2026-06-26T01:50:04+05:30 INFO  [gpui_wgpu::wgpu_context] Selected GPU adapter: "NVIDIA GeForce GTX 1650 SUPER" (Vulkan)
+2026-06-26T01:50:04+05:30 INFO  [workspace] Rendered first frame
+2026-06-26T01:50:04+05:30 INFO  [zed::zed] Using GPU: GpuSpecs { is_software_emulated: false, device_name: "NVIDIA GeForce GTX 1650 SUPER", driver_name: "NVIDIA", driver_info: "610.43.02" }
+2026-06-26T01:50:04+05:30 INFO  [node_runtime] using Node.js found on PATH: SystemNodeRuntime { node: "/usr/bin/node", npm: "/usr/bin/npm", scratch_dir: "/home/laghab/.local/share/zed/node" }
+2026-06-26T01:50:05+05:30 INFO  [lsp] starting language server process. binary path: "/usr/bin/node", working directory: "/home/laghab/Desktop", args: ["/home/laghab/.local/share/zed/languages/bash-language-server/node_modules/bash-language-server/out/cli.js", "start"]

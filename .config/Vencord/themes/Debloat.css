@@ -1,0 +1,88 @@
+/**
+ * @name Debloat
+ * @description Hides Discord bloat: ads, nitro promos, gift buttons, shop, quests, explore, etc.
+ */
+
+/* Hide gift button in chat bar */
+button[aria-label="Send a Gift"] { display: none !important; }
+
+/* Hide nitro/store link in sidebar */
+a[href="/store"] { display: none !important; }
+
+/* Hide shop link in sidebar */
+a[href="/shop"] { display: none !important; }
+
+/* Hide quests */
+a[href="/quests"] { display: none !important; }
+a[href^="/quest"] { display: none !important; }
+[class*="privateChannels"] [class*="link"]:has([class*="quest"]) { display: none !important; }
+[class*="privateChannels"] [class*="link"]:has([class*="Quest"]) { display: none !important; }
+[class*="privateChannels"] [class*="wrapper"]:has([class*="quest"]) { display: none !important; }
+[class*="private"] [class*="channel"]:has(a[href^="/quest"]) { display: none !important; }
+[class*="private"] [class*="channel"]:has(a[href^="/quests"]) { display: none !important; }
+[class*="navItem"]:has(a[href^="/quest"]) { display: none !important; }
+div[role="listitem"]:has(a[href^="/quest"]) { display: none !important; }
+[class*="sidebar"] div:has(> a[href^="/quest"]) { display: none !important; }
+[class*="content"]:has(> div > div > a[href^="/quest"]) { display: none !important; }
+
+/* Hide gift button in profile popout */
+[class*="giftButton"] { display: none !important; }
+[class*="gift"] [class*="button"] { display: none !important; }
+
+/* Hide boost progress bar */
+[class*="progressBarContainer"] { display: none !important; }
+
+/* Hide explore/discover button */
+a[href="/guild-discovery"] { display: none !important; }
+a[href*="discover"] { display: none !important; }
+
+/* Hide super reaction buttons */
+[class*="superReactions"] { display: none !important; }
+[class*="superReactionButton"] { display: none !important; }
+[class*="sparkle"] { display: none !important; }
+
+/* Hide "Try Nitro" and premium promos */
+[class*="tryNitro"],
+[class*="premiumPromo"],
+[class*="nitroPromo"],
+[class*="premiumUpsell"],
+[class*="upsell"] { display: none !important; }
+
+/* Hide upgrade banners */
+[class*="banner"] [class*="nitro"],
+[class*="premiumBanner"],
+[class*="trialBanner"] { display: none !important; }
+
+/* Hide activity feed events */
+[class*="homeBody"] [class*="card"]:has([class*="event"]) { display: none !important; }
+[class*="activityFeed"] { display: none !important; }
+
+/* Hide invite rewards sidebar */
+[class*="inviteRewards"],
+[class*="inviteBanner"] { display: none !important; }
+
+/* Hide for you feed tab */
+[class*="forYou"] { display: none !important; }
+
+/* Hide streamer mode quick link */
+[class*="quickLinks"] [href*="streamer"] { display: none !important; }
+
+/* Hide nitro tab in settings */
+[class*="settings"] a[href="/store"] { display: none !important; }
+[class*="premiumTab"] { display: none !important; }
+
+/* Hide nitro banner in user panel */
+[class*="userPanel"] [class*="banner"] { display: none !important; }
+
+/* Hide nitro icon/badge */
+[class*="premiumIcon"] { display: none !important; }
+
+/* Hide nitro home banner */
+[class*="banner"] img[class*="nitro"] { display: none !important; }
+
+/* Hide leave/skip buttons on nitro promos */
+button:has(div[class*="nitro"]) { display: none !important; }
+
+/* Hide "Get Nitro" in channel header */
+button[aria-label*="Nitro"],
+button[aria-label*="nitro"] { display: none !important; }

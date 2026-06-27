@@ -2,9 +2,15 @@
     {
         "data": [
             {
+                "abmLevel": 0,
                 "allowDdcCi": true,
                 "allowSdrSoftwareBrightness": false,
                 "autoBrightnessCurve": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
                     0,
                     0,
                     0,
@@ -15,7 +21,7 @@
                 "autoRotation": "InTabletMode",
                 "automaticBrightness": false,
                 "brightness": 1,
-                "colorPowerTradeoff": "PreferEfficiency",
+                "colorPowerTradeoff": "PreferAccuracy",
                 "colorProfileSource": "sRGB",
                 "connectorName": "DP-1",
                 "customModes": [
@@ -24,6 +30,8 @@
                 "edidHash": "e44b1a3b57cc5f56fae18609f2313bc0",
                 "edidIdentifier": "MSI 23490 4294967295 27 2025 0",
                 "edrPolicy": "always",
+                "hdrColorProfileSource": "EDID",
+                "hdrIccProfilePath": "",
                 "highDynamicRange": true,
                 "iccProfilePath": "",
                 "maxBitsPerColor": 0,
@@ -44,6 +52,57 @@
                 "uuid": "0d24a2da-5a79-482a-bb23-102037d6ad5a",
                 "vrrPolicy": "Never",
                 "wideColorGamut": true
+            },
+            {
+                "abmLevel": 0,
+                "allowDdcCi": true,
+                "allowSdrSoftwareBrightness": true,
+                "autoBrightnessCurve": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "autoRotation": "InTabletMode",
+                "automaticBrightness": false,
+                "brightness": 1,
+                "colorPowerTradeoff": "PreferAccuracy",
+                "colorProfileSource": "sRGB",
+                "connectorName": "DP-1",
+                "customModes": [
+                ],
+                "detectedDdcCi": false,
+                "edidHash": "47a2ff926b20a50fa955d4e855878f11",
+                "edidIdentifier": "NVD 0 0 0 0 0",
+                "edrPolicy": "always",
+                "hdrColorProfileSource": "EDID",
+                "hdrIccProfilePath": "",
+                "highDynamicRange": false,
+                "iccProfilePath": "",
+                "maxBitsPerColor": 0,
+                "mode": {
+                    "flags": 0,
+                    "height": 480,
+                    "refreshRate": 59940,
+                    "width": 640
+                },
+                "overscan": 0,
+                "rgbRange": "Automatic",
+                "scale": 1,
+                "sdrBrightness": 200,
+                "sdrGamutWideness": 0,
+                "sharpness": 0,
+                "transform": "Normal",
+                "uuid": "65192e26-046c-47c5-986b-2ae13e17f147",
+                "vrrPolicy": "Never",
+                "wideColorGamut": false
             }
         ],
         "name": "outputs"
@@ -56,6 +115,21 @@
                     {
                         "enabled": true,
                         "outputIndex": 0,
+                        "position": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "priority": 1,
+                        "replicationSource": ""
+                    }
+                ]
+            },
+            {
+                "lidClosed": false,
+                "outputs": [
+                    {
+                        "enabled": true,
+                        "outputIndex": 1,
                         "position": {
                             "x": 0,
                             "y": 0

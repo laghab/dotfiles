@@ -1,6 +1,7 @@
 [Common]
 CornerRadius=12
 OutlineCloseButton=true
+ScrollBarTransient=true
 ShadowStrength=51
 
 [Style]

@@ -1,7 +1,18 @@
 [ButtonRebinds][Mouse]
 extrabutton2=Key,Meta
 
+[Libinput][1][1][ws-vol-Compx 2.4G Wireless Receiver Mouse]
+Enabled=false
+PointerAcceleration=-0.400
+PointerAccelerationProfile=1
+
+[Libinput][1][1][ws-vol-Compx VXE Mouse 1K Dongle]
+PointerAcceleration=-0.400
+PointerAccelerationProfile=1
+ScrollMethod=4
+
 [Libinput][13652][62862][Compx VXE Mouse 1K Dongle]
+Enabled=false
 PointerAcceleration=-0.400
 PointerAccelerationProfile=1
 ScrollMethod=4

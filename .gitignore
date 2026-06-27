@@ -96,8 +96,9 @@ snap/
 # Clipboard history (changes constantly)
 .local/share/klipper/
 
-# Opencode data + logs (change constantly)
+# Opencode data + logs + binary (change constantly)
 .local/share/opencode/
+.opencode/
 
 # Certificate databases (auto-generated)
 .pki/
@@ -209,6 +210,9 @@ node_modules/
 **/package-lock.json
 yarn.lock
 pnpm-lock.yaml
+
+# Stremio cache (huge video blobs)
+.stremio-server/
 
 # Build artifacts
 **/*.o

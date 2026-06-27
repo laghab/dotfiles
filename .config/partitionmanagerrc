@@ -1,6 +1,7 @@
 [KDE Partition Manager]
 backend=pmsfdiskbackendplugin
 firstRun=false
+hideDeviceDockWidgetByCmdArgs=true
 treeLogColumnWidths=49,192,800
 
 [applyProgressDialog]

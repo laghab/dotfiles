@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="710">
+  <name>CatWalk</name>
+  <providerid>api.kde-look.org</providerid>
+  <author>driglu4it</author>
+  <homepage>https://store.kde.org/p/2137844</homepage>
+  <licence></licence>
+  <version>2.4</version>
+  <rating>83</rating>
+  <downloads>34298</downloads>
+  <installedfile>/home/laghab/.local/share/plasma/plasmoids/org.kde.plasma.catwalk/</installedfile>
+  <id>2137844</id>
+  <releasedate>2025-10-29</releasedate>
+  <summary>&lt;p>A simple plasmoid showing the total CPU usage. &lt;br />Visually made like RunCat.&lt;br />&lt;br />Manual installation: unpacking to /.local/share/plasma/plasmoids. &lt;br />&lt;br />Special thanks to &lt;a href="https://github.com/NikitaBeloglazov"> Nikita Beloglazov&lt;/a> for animated preview!&lt;/p></summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/770x540-4/img/00/00/52/72/79/2137844/catwalk.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-4/img/00/00/52/72/79/2137844/catwalk.png</previewBig>
+  <payload>https://files06.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTc2MTc0NDA5MSwibyI6IjEiLCJzIjoiODliOGZmYTljOTFjNmYxMGY4N2MwYmYwODhiMmEzYWJlMzUyZWU0OTYwNDllN2Q0YTQ4M2QyYTlmOTVjNzU3ZDkyNGRiN2E4MDVmNDFhNDQxYTQxMTljZTdiN2QxZTZkYTNlMzIzZDk0ZTE5MmU0OTc2ZjA1MTU1YTUxYzBmZjIiLCJ0IjoxNzgxMjY5NDE2LCJzdGZwIjpudWxsLCJzdGlwIjoiMTAzLjE4OS4xMDEuMjE4In0.4ToxhgxPSMeY6O1h6lDjpaiIUDnN7JosVlCP5fwtvbQ/org.kde.plasma.catwalk.tar.gz</payload>
+  <tags>extension,cpu,plasma##majorversion=6,plasmoid,plasma,original-product,unix,linux,monitoring,kde,gplv2-later,widget</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="706">
+  <name>plasmusic-toolbar</name>
+  <providerid>api.kde-look.org</providerid>
+  <author>ccatterina</author>
+  <homepage>https://store.kde.org/p/2128143</homepage>
+  <licence></licence>
+  <version>4.0.0</version>
+  <rating>87</rating>
+  <downloads>82927</downloads>
+  <installedfile>/home/laghab/.local/share/plasma/plasmoids/plasmusic-toolbar/</installedfile>
+  <id>2128143</id>
+  <releasedate>2026-03-14</releasedate>
+  <summary>&lt;p>⚠ Compatible with KDE Plasma 6.0.4 and newer&lt;br />&lt;br />Last compatible release for older Plasma 6 versions: v3.7.0&lt;br />&lt;br />KDE Plasma widget that shows currently playing song information and provide playback controls. &lt;br />&lt;br /> -  Show the currently playing song's title and artist in the KDE panel&lt;br /> -  Manage your music effortlessly with Play, Pause, Next, and Previous controls directly from the KDE panel.&lt;br /> -  Full View provides the album image, along with Play, Pause, Next, Previous, Shuffle, and Repeat controls. Adjust the volume and track position with ease.&lt;br /> -  Icon customization: Change the widget's icon in the panel view to suit your preferences. You can also choose to display the album cover.&lt;br />  - Playback controls visibility: Choose whether to display Play, Pause, Next, and Previous controls in the panel view.&lt;br />  - Preferred source: Change the widget preferred source for music information (spotify, vlc, etc).  The name of the source is the same of desktop file name of the application (see &lt;code>/usr/share/applications/&lt;/code>).&lt;br />  - Playing song max display width: Determine the maximum width for displaying the currently playing song in the panel. When the song's text exceeds this maximum width, the text will scroll horizontally.&lt;br />  - Playing song scrolling speed: Change the scrolling speed of the song's text.&lt;br />&lt;br />Feel free to contribute, whether you'd like to open an issue, submit a pull request, or simply show your support by starring the repository, your involvement is greatly appreciated.&lt;/p></summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/770x540-4/img/00/00/73/70/89/2128143/plasmusic-screenshot-2.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-4/img/00/00/73/70/89/2128143/plasmusic-screenshot-2.png</previewBig>
+  <payload>https://files06.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTc3MzQ5OTk3OSwibyI6IjEiLCJzIjoiMjlmN2M4NGQxMGQ0NjA3YzE4ZTcxOWY1ZTM2OWY5ZGE2MDRkOThjNWZiMDMzMjNhNzY5MDA2Yjg3NTk4OTc3MWViYjEyYzIyNWYxMjY4NjVjMzNlOGI5OGJiNjQxNDcwNmZhODMwMGVhMTdjZjRiYTI3NDQ5N2VlNmJlZWJjZWYiLCJ0IjoxNzgxMjY5Mzc0LCJzdGZwIjpudWxsLCJzdGlwIjoiMTAzLjE4OS4xMDEuMjE4In0.JLh-4kIqDtScKFtlrZd6JBU7v7oBh5cfoL-ESZs6Nv0/plasmusic-toolbar-v4.0.0.plasmoid</payload>
+  <tags>widget,extension,plasma##majorversion=6,player,plasma,original-product,unix,vlc,toolbar,spotify,gplv3,kde,linux,music</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>

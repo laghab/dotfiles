@@ -8,12 +8,21 @@ import logging
 import subprocess
 
 import evdev
-from evdev import ecodes, InputDevice, list_devices
+from evdev import ecodes, InputDevice, list_devices, UInput
 
 KEY_LEFTALT = ecodes.KEY_LEFTALT
 REL_WHEEL = ecodes.REL_WHEEL
+REL_WHEEL_HI_RES = ecodes.REL_WHEEL_HI_RES
+REL_HWHEEL = ecodes.REL_HWHEEL
+REL_HWHEEL_HI_RES = ecodes.REL_HWHEEL_HI_RES
+REL_X = ecodes.REL_X
+REL_Y = ecodes.REL_Y
 EV_KEY = ecodes.EV_KEY
 EV_REL = ecodes.EV_REL
+EV_SYN = ecodes.EV_SYN
+SYN_REPORT = ecodes.SYN_REPORT
+
+SCROLL_CODES = {REL_WHEEL, REL_WHEEL_HI_RES, REL_HWHEEL, REL_HWHEEL_HI_RES}
 
 logging.basicConfig(
     level=logging.INFO,
@@ -21,26 +30,47 @@ logging.basicConfig(
     datefmt="%H:%M:%S",
 )
 
-import pwd
-
 STEP = "5%"
-_USER = None
-for u in pwd.getpwall():
-    if 1000 <= u.pw_uid < 65534:
-        _USER = u.pw_name
-        break
+
+grabbed_mice = []
+uinput_devices = []
+
+
+def cleanup():
+    for md in grabbed_mice:
+        try:
+            md.ungrab()
+        except Exception:
+            pass
+    for ui in uinput_devices:
+        try:
+            ui.close()
+        except Exception:
+            pass
 
 
 def volume(direction):
-    if os.geteuid() == 0 and _USER:
-        cmd = ["runuser", "-u", _USER, "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@"]
-    else:
-        cmd = ["wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@"]
+    suffix = f"{STEP}+" if direction == "up" else f"{STEP}-"
+    subprocess.run(
+        ["wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", suffix],
+        capture_output=True,
+    )
 
-    if direction == "up":
-        subprocess.run(cmd + [f"{STEP}+"], capture_output=True)
-    elif direction == "down":
-        subprocess.run(cmd + [f"{STEP}-"], capture_output=True)
+
+def build_uinput_caps(dev):
+    caps = dev.capabilities(absinfo=False)
+    result = {}
+    for etype, codes in caps.items():
+        if etype == EV_SYN:
+            continue
+        clean = []
+        for c in codes:
+            if isinstance(c, tuple):
+                clean.append(c[0])
+            else:
+                clean.append(c)
+        result[etype] = clean
+    return result
 
 
 def find_devices():
@@ -66,6 +96,8 @@ def find_devices():
 
 
 def main():
+    global grabbed_mice, uinput_devices
+
     kbs, mice = find_devices()
     if not kbs or not mice:
         logging.error("no keyboards or mice found")
@@ -77,68 +109,79 @@ def main():
     for d in mice:
         logging.info("  MS: %s  %s", d.path, d.name)
 
+    # Create uinput passthrough devices BEFORE grabbing
+    mouse_to_ui = {}
+    for md in mice:
+        caps = build_uinput_caps(md)
+        try:
+            ui = UInput(caps, name=f"ws-vol-{md.name}", version=1)
+            uinput_devices.append(ui)
+            mouse_to_ui[md.path] = ui
+        except Exception as e:
+            logging.error("failed to create uinput for %s: %s", md.path, e)
+            cleanup()
+            sys.exit(1)
+
+    # Now grab all mice exclusively
+    for md in mice:
+        try:
+            md.grab()
+            grabbed_mice.append(md)
+        except Exception as e:
+            logging.error("failed to grab %s: %s", md.path, e)
+
+    if not grabbed_mice:
+        logging.error("no mice could be grabbed")
+        cleanup()
+        sys.exit(1)
+
+    logging.info("grabbed %d mice, created %d uinput passthrough devices",
+                 len(grabbed_mice), len(uinput_devices))
+
     alt_pressed = {dev.path: False for dev in kbs}
-    devices = {dev.fd: dev for dev in kbs + mice}
-    grabbed_mice = []
+    fd_to_dev = {}
+    for dev in kbs + grabbed_mice:
+        fd_to_dev[dev.fd] = dev
 
     while True:
         try:
-            r, w, x = select.select(list(devices.keys()), [], [])
+            r, w, x = select.select(list(fd_to_dev.keys()), [], [])
             for fd in r:
-                dev = devices[fd]
+                dev = fd_to_dev[fd]
                 for event in dev.read():
-                    if event.type == EV_KEY:
-                        if event.code == KEY_LEFTALT:
+                    if dev.path in alt_pressed:
+                        # Keyboard event — track Alt
+                        if event.type == EV_KEY and event.code == KEY_LEFTALT:
                             alt_pressed[dev.path] = bool(event.value)
+                            continue
+                        continue
 
-                            if event.value == 1 and not grabbed_mice:
-                                for md in mice:
-                                    try:
-                                        md.grab()
-                                        grabbed_mice.append(md)
-                                    except Exception:
-                                        continue
-                                if grabbed_mice:
-                                    logging.info("mice grabbed (%d)", len(grabbed_mice))
-                            elif event.value == 0 and grabbed_mice and not any(alt_pressed.values()):
-                                for md in grabbed_mice:
-                                    try:
-                                        md.ungrab()
-                                    except Exception:
-                                        continue
-                                grabbed_mice.clear()
-                                logging.info("mice ungrabbed")
+                    # Mouse event — forward everything except scroll when Alt held
+                    is_scroll = event.type == EV_REL and event.code in SCROLL_CODES
+                    alt_held = any(alt_pressed.values())
 
-                    elif event.type == EV_REL and event.code == REL_WHEEL:
-                        if any(alt_pressed.values()):
+                    if is_scroll and alt_held:
+                        if event.code == REL_WHEEL:
                             if event.value == 1:
                                 volume("up")
                                 logging.info("volume up")
                             elif event.value == -1:
                                 volume("down")
                                 logging.info("volume down")
-        except (select.error, OSError):
-            logging.error("device error, re-scanning...")
-            for md in grabbed_mice:
-                try:
-                    md.ungrab()
-                except Exception:
-                    pass
-            grabbed_mice.clear()
-            for dev in devices.values():
-                dev.close()
-            time.sleep(2)
-            kbs, mice = find_devices()
-            if not kbs or not mice:
-                logging.error("no devices found, retrying...")
-                time.sleep(5)
-                continue
-            alt_pressed = {dev.path: False for dev in kbs}
-            devices = {dev.fd: dev for dev in kbs + mice}
-            grabbed_mice = []
-            logging.info("re-connected")
+                        continue
+
+                    ui = mouse_to_ui.get(dev.path)
+                    if ui:
+                        ui.write(event.type, event.code, event.value)
+
+        except (select.error, OSError) as e:
+            logging.error("device error: %s, re-scanning...", e)
+            break
+
+    cleanup()
 
 
 if __name__ == "__main__":
-    signal.signal(signal.SIGINT, signal.SIG_DFL)
+    signal.signal(signal.SIGINT, lambda s, f: (cleanup(), sys.exit(0)))
+    signal.signal(signal.SIGTERM, lambda s, f: (cleanup(), sys.exit(0)))
     main()

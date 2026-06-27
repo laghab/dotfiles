@@ -3,7 +3,7 @@ FullScreen=false
 
 [General]
 LockSidebar=true
-ShowSidebar=true
+ShowSidebar=false
 
 [MainWindow]
 ToolBarsMovable=Enabled
@@ -15,6 +15,18 @@ ToolButtonStyle=IconOnly
 File1[$e]=$HOME/Downloads/_OceanofPDF.com_ReZERO_-Starting_Life_in_Another_World_Vol_23_-_Tappei_Nagatsuki.epub
 File2[$e]=$HOME/Downloads/_OceanofPDF.com_ReZERO_-Starting_Life_in_Another_World_Vol_23_-_Tappei_Nagatsuki.pdf
 File3[$e]=$HOME/Downloads/_OceanofPDF.com_ReZERO_-Starting_Life_in_Another_World_Vol_23_-_Tappei_Nagatsuki (1).pdf
+File4[$e]=/run/media/laghab/Core/Users/Laghab/Downloads/chc_english.pdf
+File5[$e]=/run/media/laghab/Core/Users/Laghab/Downloads/DigitalApproval_Letter.pdf
+File6[$e]=$HOME/Desktop/spectrum.txt
+File7[$e]=$HOME/Downloads/TWN_Bash_Scripting_Handout.01.pdf
+File8[$e]=$HOME/Desktop/TWN_Bash_Scripting_Handout.01.pdf
+File9[$e]=$HOME/Downloads/application.log
 Name1[$e]=_OceanofPDF.com_ReZERO_-Starting_Life_in_Another_World_Vol_23_-_Tappei_Nagatsuki.epub
 Name2[$e]=_OceanofPDF.com_ReZERO_-Starting_Life_in_Another_World_Vol_23_-_Tappei_Nagatsuki.pdf
 Name3[$e]=_OceanofPDF.com_ReZERO_-Starting_Life_in_Another_World_Vol_23_-_Tappei_Nagatsuki (1).pdf
+Name4[$e]=chc_english.pdf
+Name5[$e]=DigitalApproval_Letter.pdf
+Name6[$e]=spectrum.txt
+Name7[$e]=TWN_Bash_Scripting_Handout.01.pdf
+Name8[$e]=TWN_Bash_Scripting_Handout.01.pdf
+Name9[$e]=application.log

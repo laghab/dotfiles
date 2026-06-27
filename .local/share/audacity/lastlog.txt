@@ -1,0 +1,19 @@
+11:29:49 AM IST: Audacity 3.7.7
+11:29:49 AM IST: FFmpeg libraries loaded successfully from: /usr/lib/libavformat.so.62.12.101
+11:29:50 AM IST: LV2 plugin 'http://calf.sourceforge.net/plugins/Fluidsynth' has unsupported type 'http://lv2plug.in/ns/lv2core#InstrumentPlugin'
+11:29:50 AM IST: LV2 plugin 'http://calf.sourceforge.net/plugins/Monosynth' has unsupported type 'http://lv2plug.in/ns/lv2core#InstrumentPlugin'
+11:29:50 AM IST: LV2 plugin 'http://calf.sourceforge.net/plugins/Organ' has unsupported type 'http://lv2plug.in/ns/lv2core#InstrumentPlugin'
+11:29:50 AM IST: LV2 plugin 'http://calf.sourceforge.net/plugins/Wavetable' has unsupported type 'http://lv2plug.in/ns/lv2core#InstrumentPlugin'
+11:29:50 AM IST: LV2 plugin 'http://drobilla.net/plugins/mda/DX10' has unsupported type 'http://lv2plug.in/ns/lv2core#InstrumentPlugin'
+11:29:50 AM IST: LV2 plugin 'http://drobilla.net/plugins/mda/EPiano' has unsupported type 'http://lv2plug.in/ns/lv2core#InstrumentPlugin'
+11:29:50 AM IST: LV2 plugin 'http://drobilla.net/plugins/mda/JX10' has unsupported type 'http://lv2plug.in/ns/lv2core#InstrumentPlugin'
+11:29:50 AM IST: LV2 plugin 'http://drobilla.net/plugins/mda/Piano' has unsupported type 'http://lv2plug.in/ns/lv2core#InstrumentPlugin'
+11:29:50 AM IST: LV2 plugin 'http://lsp-plug.in/plugins/lv2/multisampler_x12' has unsupported type 'http://lv2plug.in/ns/lv2core#InstrumentPlugin'
+11:29:50 AM IST: LV2 plugin 'http://lsp-plug.in/plugins/lv2/multisampler_x12_do' has unsupported type 'http://lv2plug.in/ns/lv2core#InstrumentPlugin'
+11:29:50 AM IST: LV2 plugin 'http://lsp-plug.in/plugins/lv2/multisampler_x24' has unsupported type 'http://lv2plug.in/ns/lv2core#InstrumentPlugin'
+11:29:51 AM IST: LV2 plugin 'http://lsp-plug.in/plugins/lv2/multisampler_x24_do' has unsupported type 'http://lv2plug.in/ns/lv2core#InstrumentPlugin'
+11:29:51 AM IST: LV2 plugin 'http://lsp-plug.in/plugins/lv2/multisampler_x48' has unsupported type 'http://lv2plug.in/ns/lv2core#InstrumentPlugin'
+11:29:51 AM IST: LV2 plugin 'http://lsp-plug.in/plugins/lv2/multisampler_x48_do' has unsupported type 'http://lv2plug.in/ns/lv2core#InstrumentPlugin'
+11:29:51 AM IST: LV2 plugin 'http://lsp-plug.in/plugins/lv2/sampler_mono' has unsupported type 'http://lv2plug.in/ns/lv2core#InstrumentPlugin'
+11:29:51 AM IST: LV2 plugin 'http://lsp-plug.in/plugins/lv2/sampler_stereo' has unsupported type 'http://lv2plug.in/ns/lv2core#InstrumentPlugin'
+11:30:20 AM IST: FFmpeg libraries loaded successfully from: /usr/lib/libavformat.so.62.12.101
