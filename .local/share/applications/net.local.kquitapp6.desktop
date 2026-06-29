@@ -1,7 +1,0 @@
-[Desktop Entry]
-Exec=killall plasmashell; sleep 1; nohup plasmashell >/dev/null 2>&1 &
-Name=Restart Plasma
-NoDisplay=true
-StartupNotify=false
-Type=Application
-X-KDE-GlobalAccel-CommandShortcut=true
