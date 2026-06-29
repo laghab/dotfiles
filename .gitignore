@@ -198,6 +198,9 @@ aur-pkglist.txt
 # Opentui WASM binaries + queries
 .local/share/opentui/
 
+# Container storage (root-owned, massive)
+.local/share/containers/
+
 # Go telemetry
 .config/go/telemetry/
 
