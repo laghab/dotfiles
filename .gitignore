@@ -1,7 +1,205 @@
-# YADM REPO (critical - never track yadm tracking itself)
+# ============================================
+# WHITELIST APPROACH: Ignore everything by default,
+# then explicitly un-ignore only tracked files
+# ============================================
+
+# Ignore everything at root level
+/*
+!/.gitignore
+
+# === SHELL ===
+!/.bashrc
+!/.zshrc
+
+# === GIT ===
+!/.gitconfig
+
+# === .CONFIG DIRECTORY ===
+!/.config
+/.config/*
+!/.config/fish
+.config/fish/*
+!/.config/fish/config.fish
+!/.config/fish/fish_variables
+!/.config/fish/conf.d
+.config/fish/conf.d/*
+!/.config/fish/conf.d/fish_frozen_key_bindings.fish
+
+!/.config/kitty
+.config/kitty/*
+!/.config/kitty/kitty.conf
+!/.config/kitty/current-theme.conf
+
+!/.config/fastfetch
+.config/fastfetch/*
+!/.config/fastfetch/config.jsonc
+!/.config/fastfetch/astolfo-logo.txt
+!/.config/fastfetch/purin-logo.txt
+!/.config/fastfetch/logo.png
+
+!/.config/kdeglobals
+!/.config/breezerc
+!/.config/plasmarc
+!/.config/plasmashellrc
+!/.config/plasma-org.kde.plasma.desktop-appletsrc
+!/.config/kglobalshortcutsrc
+!/.config/kwinrc
+!/.config/kwinrulesrc
+!/.config/kwinoutputconfig.json
+!/.config/kscreenlockerrc
+!/.config/powermanagementprofilesrc
+!/.config/krunnerrc
+!/.config/kcminputrc
+!/.config/dolphinrc
+!/.config/gwenviewrc
+!/.config/okularrc
+!/.config/spectaclerc
+!/.config/ksplashrc
+!/.config/auroraerc
+!/.config/arkrc
+!/.config/filetypesrc
+
+!/.config/gtk-3.0
+.config/gtk-3.0/*
+!/.config/gtk-3.0/bookmarks
+!/.config/gtk-3.0/colors.css
+!/.config/gtk-3.0/gtk.css
+!/.config/gtk-3.0/settings.ini
+
+!/.config/gtk-4.0
+.config/gtk-4.0/*
+!/.config/gtk-4.0/colors.css
+!/.config/gtk-4.0/gtk.css
+!/.config/gtk-4.0/settings.ini
+
+!/.config/Kvantum
+.config/Kvantum/*
+!/.config/Kvantum/kvantum.kvconfig
+
+!/.config/fontconfig
+.config/fontconfig/*
+!/.config/fontconfig/conf.d
+.config/fontconfig/conf.d/*
+!/.config/fontconfig/conf.d/30-apple-fonts.conf
+
+!/.config/xsettingsd
+.config/xsettingsd/*
+!/.config/xsettingsd/xsettingsd.conf
+
+!/.config/micro
+.config/micro/*
+!/.config/micro/settings.json
+!/.config/micro/bindings.json
+
+!/.config/zed
+.config/zed/*
+!/.config/zed/settings.json
+
+!/.config/systemd
+.config/systemd/*
+!/.config/systemd/user
+.config/systemd/user/*
+!/.config/systemd/user/arch-update.timer
+!/.config/systemd/user/arch-update-tray.service
+!/.config/systemd/user/plasmashell-restart.service
+!/.config/systemd/user/win-scroll-volume.service
+!/.config/systemd/user/xdg-desktop-portal-gtk.service
+!/.config/systemd/user/default.target.wants
+.config/systemd/user/default.target.wants/*
+!/.config/systemd/user/default.target.wants/syncthing.service
+!/.config/systemd/user/default.target.wants/win-scroll-volume.service
+
+!/.config/gh
+.config/gh/*
+!/.config/gh/config.yml
+
+!/.config/arch-update
+.config/arch-update/*
+!/.config/arch-update/arch-update.conf
+
+!/.config/topgrade.toml
+
+!/.config/btop
+.config/btop/*
+!/.config/btop/btop.conf
+
+!/.config/easyeffects
+.config/easyeffects/*
+!/.config/easyeffects/db
+.config/easyeffects/db/*
+!/.config/easyeffects/db/compressorrc
+!/.config/easyeffects/db/deepfilternetrc
+!/.config/easyeffects/db/deesserrc
+!/.config/easyeffects/db/easyeffectsrc
+!/.config/easyeffects/db/equalizerrc
+!/.config/easyeffects/db/filterrc
+!/.config/easyeffects/db/loudnessrc
+!/.config/easyeffects/db/rnnoiserc
+
+!/.config/input-remapper-2
+.config/input-remapper-2/*
+!/.config/input-remapper-2/config.json
+!/.config/input-remapper-2/presets
+.config/input-remapper-2/presets/*
+!/.config/input-remapper-2/presets/Compx 2.4G Wireless Receiver
+.config/input-remapper-2/presets/Compx 2.4G Wireless Receiver/*
+!/.config/input-remapper-2/presets/Compx 2.4G Wireless Receiver/new preset.json
+!/.config/input-remapper-2/presets/Compx VXE Mouse 1K Dongle
+.config/input-remapper-2/presets/Compx VXE Mouse 1K Dongle/*
+!/.config/input-remapper-2/presets/Compx VXE Mouse 1K Dongle/new preset.json
+!/.config/input-remapper-2/presets/TTGK Technology Co.,Ltd CX31993 384Khz HIFI AUDIO Consumer Control
+.config/input-remapper-2/presets/TTGK Technology Co.,Ltd CX31993 384Khz HIFI AUDIO Consumer Control/*
+!/.config/input-remapper-2/presets/TTGK Technology Co.,Ltd CX31993 384Khz HIFI AUDIO Consumer Control/new preset.json
+!/.config/input-remapper-2/presets/ws-vol-Compx VXE Mouse 1K Dongle
+.config/input-remapper-2/presets/ws-vol-Compx VXE Mouse 1K Dongle/*
+!/.config/input-remapper-2/presets/ws-vol-Compx VXE Mouse 1K Dongle/new preset.json
+
+!/.config/Vencord
+.config/Vencord/*
+!/.config/Vencord/settings
+.config/Vencord/settings/*
+!/.config/Vencord/settings/settings.json
+!/.config/Vencord/settings/quickCss.css
+!/.config/Vencord/themes
+.config/Vencord/themes/*
+!/.config/Vencord/themes/Debloat.css
+
+!/.config/vlc
+.config/vlc/*
+!/.config/vlc/vlcrc
+
+!/.config/featherpad
+.config/featherpad/*
+!/.config/featherpad/fp.conf
+
+!/.config/qBittorrent
+.config/qBittorrent/*
+!/.config/qBittorrent/qBittorrent.conf
+!/.config/qBittorrent/categories.json
+
+!/.config/pkglist.txt
+!/.config/aur-pkglist.txt
+
+!/.config/mimeapps.list
+
+!/.config/xdg-desktop-portal
+.config/xdg-desktop-portal/*
+!/.config/xdg-desktop-portal/portals.conf
+
+!/.config/user-dirs.dirs
+
+!/.config/menus
+.config/menus/*
+!/.config/menus/applications-kmenuedit.menu
+
+# ============================================
+# SAFETY IGNORES (backup layer for untracked files)
+# ============================================
+
+# YADM repo itself
 .local/share/yadm/
 
-# Standard user data dirs (not configs)
+# Standard user dirs
 Desktop/
 Documents/
 Downloads/
@@ -37,26 +235,30 @@ session/
 **/*.pid
 .local/state/
 
-# Browser profiles (massive, auto-generated)
+# Browser profiles
 .config/BraveSoftware/
 .mozilla/
 .chromium/
 google-chrome/
 
-# Gaming (massive)
+# Gaming
 Steam/
 .steam/
 .config/Proton/
 .proton/
+Games/
+Faugus/
+.local/share/umu/
+.wine/
 
-# Discord (huge binaries: 180MB app, 100MB modules)
+# Discord (binaries)
 .config/discord/
 
-# Flatpak
+# Flatpak/snap
 .var/
 snap/
 
-# Secrets (handle separately)
+# Secrets
 .ssh/
 .gnupg/
 **/secrets/
@@ -70,113 +272,61 @@ snap/
 .aws/
 .docker/
 
-# Audio state (changes constantly)
+# Rotating state
 .config/pulse/
 .config/pipewire/
 .config/wireplumber/
 .alsaequal/
-
-# Desktop trash/thumbnails
-.trash/
-.thumbnails/
-**.Trash-*/
-
-# Discord / Vesktop / Vencord caches (not config)
-.config/vesktop/sessionData/
-.config/vesktop/Crashpad/
-.config/Vencord/dist/
-
-# Shell history (changes constantly)
 .local/share/fish/fish_history
 .local/share/fish/fish_history_*
-
-# Recently-used files (changes constantly)
 .local/share/recently-used.xbel
-
-# Clipboard history (changes constantly)
 .local/share/klipper/
 
-# Opencode data + logs + binary (change constantly)
+# Opencode
 .local/share/opencode/
 .opencode/
 
-# Certificate databases (auto-generated)
+# Certificates
 .pki/
 
-
-
-# Android / ADB (keys, sockets, port files)
+# Android
 .android/
-
-# Gaming data (too large, changes constantly)
-Games/
-Faugus/
-.local/share/umu/
-.wine/
 
 # GPU state
 .nv/
 
-# Launcher game icons + backups (binaries, not configs)
+# Launcher runtime
 .config/faugus-launcher/icons/
 .config/faugus-launcher/games-backup/
 
-# Python local packages (not configs)
+# Python
 .local/lib/
 
-# Anki flashcards (SQLite DBs + backups)
+# Anki
 .local/share/Anki2/
 
-# qBittorrent state (queue, GeoIP, logs)
+# qBittorrent state
 .local/share/qBittorrent/
 
-# Volatile KDE state files (change constantly)
+# Volatile KDE state
 .config/kactivitymanagerd-statsrc
 .config/okularpartrc
 .config/plasmanotifyrc
 .config/trashrc
 
-# Tools installed to ~/.local/bin
-.local/bin/git-filter-repo
+# Tool binaries (not configs)
+.local/bin/
 
-# Package lists now live under .config/
-pkglist.txt
-aur-pkglist.txt
-
-# KDE runtime state
+# KDE runtime
 .local/share/krunnerstaterc
 .local/share/libkunitconversion/
+.local/share/kwrite/anonymous.katesession
+.local/share/plasmalogin/
+.local/share/user-places.xbel
+.local/share/user-places.xbel.bak
+.local/share/user-places.xbel.tbcache
 
-# Faugus launcher runtime files
-.local/share/faugus-launcher/running_games.json
-.local/share/faugus-launcher/version.txt
-.local/share/faugus-launcher/umu-run
-
-# CachyOS hello log
-.config/cachyos/cachyos-hello/cachyos-hello.log
-
-# yt-dlp cookies (regenerated)
-.config/yt-dlp/cookies.txt
-
-# Kitty backup
-.config/kitty/kitty.conf.bak
-
-# gh hosts (per-machine)
-.config/gh/hosts.yml
-
-# GTK asset SVGs (bundled with theme packages)
-.config/gtk-3.0/assets/
-.config/gtk-4.0/assets/
-
-# Cursor themes (reinstallable via AUR)
-.icons/Future-cursors/
-.icons/Future-cyan-cursors/
-
-# Micro editor bundled syntax/colors (reinstallable)
-.config/micro/syntax/
-.config/micro/colorschemes/
-
-# KDE secrets & wallets
+# KDE secrets/wallets
 .config/kdeconnect/privateKey.pem
 .config/kdeconnect/certificate.pem
 .config/libaccounts-glib/accounts.db
@@ -185,37 +335,51 @@ aur-pkglist.txt
 .local/share/keyrings/
 .local/share/kwalletd/
 
-# Temporary KDE state files
-.local/share/kwrite/anonymous.katesession
-.local/share/plasmalogin/
-.local/share/user-places.xbel
-.local/share/user-places.xbel.bak
-.local/share/user-places.xbel.tbcache
+# Faugus runtime
+.local/share/faugus-launcher/running_games.json
+.local/share/faugus-launcher/version.txt
+.local/share/faugus-launcher/umu-run
 
-# VLC media library
+# CachyOS logs
+.config/cachyos/cachyos-hello/cachyos-hello.log
+
+# gh per-machine state
+.config/gh/hosts.yml
+
+# GTK assets (SVGs)
+.config/gtk-3.0/assets/
+.config/gtk-4.0/assets/
+
+# Cursor themes
+.icons/
+
+# VLC state
 .local/share/vlc/ml.xspf
 
-# Opentui WASM binaries + queries
+# Opentui
 .local/share/opentui/
 
-# Container storage (root-owned, massive)
+# Go cache
+go/
+.local/share/go/
+
+# Container storage
 .local/share/containers/
 
-# Go telemetry
-.config/go/telemetry/
-
-# Kitty terminal backups
+# Kitty backups
 .config/kitty-bak/
+.config/kitty/kitty.conf.bak
 
-# Node / JS
+# Node
 node_modules/
 **/node_modules/
 **/package-lock.json
 yarn.lock
 pnpm-lock.yaml
 
-# Stremio cache (huge video blobs)
+# Stremio
 .stremio-server/
+.local/share/Smart Code/
 
 # Build artifacts
 **/*.o
@@ -233,3 +397,46 @@ pnpm-lock.yaml
 **/*.un~
 **/*.bak.*
 **/*.backup*
+
+# Zed runtime data
+.local/share/zed/db/
+.local/share/zed/logs/
+.local/share/zed/prompts/
+.local/share/zed/threads/
+
+# Stale package lists moved to .config/
+pkglist.txt
+aur-pkglist.txt
+
+# Micro editor bundled files
+.config/micro/buffers/
+.config/micro/syntax/
+.config/micro/colorschemes/
+
+# PulseAudio (per-machine, regenerated)
+.pulse-cookie
+
+# Steam (per-machine)
+.steampath
+.steampid
+
+# Wallpapers (binary images)
+.local/share/wallpapers/
+
+# Aurorae window decorations (reinstallable)
+.local/share/aurorae/
+
+# Plasma widgets (reinstallable)
+.local/share/plasma/
+
+# Autopsy (removed app)
+.autopsy/
+
+# Color schemes (reinstallable)
+.local/share/color-schemes/
+
+# Java font info
+.java/
+
+# Desktop entries (auto-generated)
+.local/share/applications/
