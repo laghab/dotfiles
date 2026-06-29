@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="717">
+  <name>Catppuccin Mocha Modern Aurora 6</name>
+  <providerid>api.kde-look.org</providerid>
+  <author>catppuccin</author>
+  <homepage>https://store.kde.org/p/2135229</homepage>
+  <licence></licence>
+  <version>v0.2.6</version>
+  <rating>50</rating>
+  <downloads>29110</downloads>
+  <installedfile>/home/laghab/.local/share/aurorae/themes/CatppuccinMocha-Modern/*</installedfile>
+  <id>2135229</id>
+  <releasedate>2024-03-05</releasedate>
+  <summary>&lt;p>----- The Plasma Window Decorations for Catppuccin's Mocha Modern Aurorae 6 -----&lt;br />&lt;br />Catppuccin is a community-driven pastel theme that aims to be a middle ground between low and high contrast themes. It consists of 4 soothing warm palettes with 26 eye-candy colours each, perfect for coding, designing, and much more! Here, it's used as a colourscheme for KDE Plasma. Hope you enjoy!&lt;br />&lt;br />Any issues can be reported here: &lt;a href="https://github.com/catppuccin/kde/issues">https://github.com/catppuccin/kde/issues&lt;/a>&lt;/p></summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/770x540-4/img/00/00/68/35/48/2135229/mocha-modern-aurorae.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-4/img/00/00/68/35/48/2135229/mocha-modern-aurorae.png</previewBig>
+  <payload>https://files06.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTcwOTY3MTcxNSwibyI6IjEiLCJzIjoiNjFlOGIxNzA0MTYzYjZiNzc0NzNlMmY3NmE1OWFhMzk4NDkzMWFjMTdkYTg5MTkxN2RkYjY2ODc3MDc2OTJmM2M0NzZkNjY4ZTM4ZDRlNWM5ZDEwNzk5MjU4OTQwZGMxZWIyYWJlYjY5MjVhOWNjZTA0NjIzYzI5Yjc1ZmUyMGEiLCJ0IjoxNzgyNzA5Mzc1LCJzdGZwIjpudWxsLCJzdGlwIjoiMTAzLjE4OS4xMDEuMjcifQ.5KGOdMlStx-8loYPRpfooS8RuLZAaeOu12ProcQqIys/CatppuccinMocha-Modern.tar.gz</payload>
+  <tags>theme,unix,catppuccin,mit-license,linux,kde,pastel,original-product,plasma</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="114">
+  <name>ketsa aurorae</name>
+  <providerid>api.kde-look.org</providerid>
+  <author>zayronXIO</author>
+  <homepage>https://store.kde.org/p/1969727</homepage>
+  <licence></licence>
+  <version>1.4.5</version>
+  <rating>63</rating>
+  <downloads>9055</downloads>
+  <installedfile>/home/laghab/.local/share/aurorae/themes/ketsa/*</installedfile>
+  <id>1969727</id>
+  <releasedate>2026-02-16</releasedate>
+  <summary>&lt;p>.&lt;/p></summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/770x540-4/img/00/00/24/01/13/1969727/ketsa.png</preview>
+  <previewBig>https://images.pling.com/cache/770x540-4/img/00/00/24/01/13/1969727/ketsa.png</previewBig>
+  <payload>https://files06.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTc3MTIwMzA2NywibyI6IjEiLCJzIjoiOTgxNDZlOGY2NTY4ZTJlNzFmNzRhOTAzNDg3YjU5YTdjYjc2ZDg0YzY4ZGE1ZGUyYmE3NTVmOTc1MGQ5MzRmMjk1MGY0ZDk3MWJlNzk2MWRhNDE4NTVlYzFmYzAxZjhlZDNiNTVjNzdiM2NlYTQ2NGE2NTk4MDM5YzEwYTBjN2IiLCJ0IjoxNzgyNzA4OTQwLCJzdGZwIjpudWxsLCJzdGlwIjoiMTAzLjE4OS4xMDEuMjcifQ.601j0jPdADOcoF3qGgaIzGsJ-C7E7FcdKz7nLLemamM/ketsa.tar.xz</payload>
+  <tags>plasma,agplv3,theme,unix,kde,ketsa,linux</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>

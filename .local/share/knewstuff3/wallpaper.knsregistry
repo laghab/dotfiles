@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="299">
+  <name>City Catppuccin</name>
+  <providerid>api.kde-look.org</providerid>
+  <author>zayronXIO</author>
+  <homepage>https://store.kde.org/p/2269979</homepage>
+  <licence></licence>
+  <version>1.0</version>
+  <rating>50</rating>
+  <downloads>7239</downloads>
+  <installedfile>/home/laghab/.local/share/wallpapers/City.Catppuccin/*</installedfile>
+  <id>2269979</id>
+  <releasedate>2025-03-27</releasedate>
+  <summary>&lt;p>Wallpaper inspired en palette color Catppuccin&lt;/p></summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/770x540-4/img/00/00/24/01/13/2269979/1920x1080.webp</preview>
+  <previewBig>https://images.pling.com/cache/770x540-4/img/00/00/24/01/13/2269979/1920x1080.webp</previewBig>
+  <payload>https://files06.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTc0MTM5NzE3MSwibyI6IjEiLCJzIjoiMWQyZmQ1M2NmYTQxOTIxNjk5MGQyMmEzZWMxMWYzMzE1MDkxMThlMTRmNjNiMTY5NjE4MDVmZTA5YzgxNWRmYmMzY2Q2NWRkNzIzNzVlZDc3OWI1MGU5YjgzOThhOGI4ZjA2NGU0NWUwYmZiODNjMmY0YWNhZjYxMzI4OWYxZWIiLCJ0IjoxNzgyNzA4OTQ5LCJzdGZwIjpudWxsLCJzdGlwIjoiMTAzLjE4OS4xMDEuMjcifQ.Tf1e4UYb6oNSUpn9iBDLP46M15_AgFRv7U_IoMxwZ1w/City.Catppuccin.tar.xz</payload>
+  <tags>wallpaper,artwork,kde,mit-license,plasma</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="298">
+  <name>GreenRiver</name>
+  <providerid>api.kde-look.org</providerid>
+  <author>zayronXIO</author>
+  <homepage>https://store.kde.org/p/2283815</homepage>
+  <licence></licence>
+  <version>1.0.4</version>
+  <rating>50</rating>
+  <downloads>13678</downloads>
+  <installedfile>/home/laghab/.local/share/wallpapers/GreenRiver/*</installedfile>
+  <id>2283815</id>
+  <releasedate>2026-02-08</releasedate>
+  <summary>&lt;p>Green River&lt;/p></summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/770x540-4/img/00/00/24/01/13/2283815/1920x1080.webp</preview>
+  <previewBig>https://images.pling.com/cache/770x540-4/img/00/00/24/01/13/2283815/1920x1080.webp</previewBig>
+  <payload>https://files06.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTc3MDU5MTkxNSwibyI6IjEiLCJzIjoiZWJhOWUyMDFhODJjMDRlNjE1YTc3OTA2ZjEyYmVjNTQxYzdhNGYwOGU3MTgxMTRmMDY5YjBlMTFhYmNmODIxMDJhMGQxMzM4ODEyY2UwMGRlOWI2NTBhMGJiYjNhYzk2NTEzZWM0MjZkOGU2Nzc0YjhkYWRhNTZhOTY0OTdmMjMiLCJ0IjoxNzgyNzA4OTUyLCJzdGZwIjpudWxsLCJzdGlwIjoiMTAzLjE4OS4xMDEuMjcifQ.bQZ5vEx93CKN26XTEJlg3k7F-A2Azo1TDEj8aoUCSNY/GreenRiver.tar.xz</payload>
+  <tags>original-product,nature,wallpaper,artwork,agplv3</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="299">
+  <name>Chess Catppuccin</name>
+  <providerid>api.kde-look.org</providerid>
+  <author>zayronXIO</author>
+  <homepage>https://store.kde.org/p/2279885</homepage>
+  <licence></licence>
+  <version>1.0.1</version>
+  <rating>50</rating>
+  <downloads>12659</downloads>
+  <installedfile>/home/laghab/.local/share/wallpapers/ChessCatppuccin/*</installedfile>
+  <id>2279885</id>
+  <releasedate>2025-05-12</releasedate>
+  <summary>&lt;p>Wallpaper catppuccin&lt;/p></summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/770x540-4/img/00/00/24/01/13/2279885/1920x1080.webp</preview>
+  <previewBig>https://images.pling.com/cache/770x540-4/img/00/00/24/01/13/2279885/1920x1080.webp</previewBig>
+  <payload>https://files06.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTc0NTQ2NzE4NywibyI6IjEiLCJzIjoiZTkyMGM4NzJkODczMjQzNWU5NDAzMGIxODJiOTMzYjQyNWEyNzQ5ZWU1N2JjOWIxZTE2YjE0ZGM1YjFjZjY1ZTZmMDFlYzJmOGUxMjdiMWQ5NGUzYmE1NDgzNzdhZjZkYTEzODA5NTlhNjJlOTFlNzhmNjRhMWYzZjU2N2JiOGEiLCJ0IjoxNzgyNzA4OTQ2LCJzdGZwIjpudWxsLCJzdGlwIjoiMTAzLjE4OS4xMDEuMjcifQ.f5YTw1jeeSKlfqrA3jtpZQBMn3AwxIp7N_C2-SeKYi4/ChessCatppuccin.tar.xz</payload>
+  <tags>artwork,catppuccin,cc0,wallpaper,original-product,plasma,kde</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="298">
+  <name>Banff</name>
+  <providerid>api.kde-look.org</providerid>
+  <author>zayronXIO</author>
+  <homepage>https://store.kde.org/p/2283884</homepage>
+  <licence></licence>
+  <version>1.0</version>
+  <rating>50</rating>
+  <downloads>9674</downloads>
+  <installedfile>/home/laghab/.local/share/wallpapers/Banff/*</installedfile>
+  <id>2283884</id>
+  <releasedate>2025-04-27</releasedate>
+  <summary>&lt;p>pink bush color&lt;/p></summary>
+  <changelog></changelog>
+  <preview>https://images.pling.com/cache/770x540-4/img/00/00/24/01/13/2283884/1920x1080.webp</preview>
+  <previewBig>https://images.pling.com/cache/770x540-4/img/00/00/24/01/13/2283884/1920x1080.webp</previewBig>
+  <payload>https://files06.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTc0NTQ3NjQzNCwibyI6IjEiLCJzIjoiZTRiNjNmZmFkYmQ0MDViM2M1Y2Y5YTEyODJhZmI2ZjU4YmVhZDNmZjBiOTQwYTU2MmU5YTk0YWY2OTIwYTVmN2U0NDdjNmFlOWI3NDVmYTkxYzU0MGUyYjQzN2UzYjY5Yzc2NDM4NjFkN2U5YWQ1Mjc5ZWRkZTM1NDMxOTZiMGIiLCJ0IjoxNzgyNzA4OTU2LCJzdGZwIjpudWxsLCJzdGlwIjoiMTAzLjE4OS4xMDEuMjcifQ.ayx_Glj-PyjiW025nDvzPsYZ4oxfj3jxeH1OwdwVtHQ/Banff.tar.xz</payload>
+  <tags>agplv3,wallpaper,nature,artwork</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>

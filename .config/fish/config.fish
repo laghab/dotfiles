@@ -11,5 +11,8 @@ alias btop "btop --force-utf"
 #    # smth smth
 #end
 
+# vencord installer
+alias vencord 'sh -c "$(curl -sS https://vencord.dev/install.sh)"'
+
 # opencode
 fish_add_path /home/laghab/.opencode/bin

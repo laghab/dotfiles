@@ -2,6 +2,7 @@
 LayoutName=org.kde.breeze.desktop
 
 [org.kde.kdecoration2]
+BorderSize=None
 NoPlugin=false
-library=org.kde.darkly
-theme=Darkly
+library=org.kde.kwin.aurorae
+theme=__aurorae__svg__CatppuccinMocha-Modern

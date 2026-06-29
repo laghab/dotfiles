@@ -47,3 +47,7 @@ enabled=true
 
 [Libinput][9610][268][BY Tech Gaming Keyboard Mouse]
 enabled=false
+
+[Mouse]
+cursorSize=24
+cursorTheme=catppuccin-mocha-pink-cursors
