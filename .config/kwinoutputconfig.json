@@ -35,7 +35,7 @@
                 "highDynamicRange": true,
                 "iccProfilePath": "",
                 "maxBitsPerColor": 0,
-                "maxPeakBrightnessOverride": 320,
+                "maxPeakBrightnessOverride": 400,
                 "mode": {
                     "flags": 0,
                     "height": 1080,
@@ -45,7 +45,7 @@
                 "overscan": 0,
                 "rgbRange": "Automatic",
                 "scale": 1,
-                "sdrBrightness": 320,
+                "sdrBrightness": 400,
                 "sdrGamutWideness": 0,
                 "sharpness": 0,
                 "transform": "Normal",
@@ -86,7 +86,6 @@
                 "hdrIccProfilePath": "",
                 "highDynamicRange": false,
                 "iccProfilePath": "",
-                "maxBitsPerColor": 0,
                 "mode": {
                     "flags": 0,
                     "height": 480,

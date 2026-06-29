@@ -6,7 +6,7 @@ Number=3
 Rows=1
 
 [EdgeBarrier]
-EdgeBarrier=1
+EdgeBarrier=0
 
 [Effect-blur]
 BlurStrength=8
@@ -125,14 +125,14 @@ padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Windows]
-ElectricBorderCooldown=400
+ElectricBorderCooldown=250
 ElectricBorderDelay=0
 ElectricBorders=1
 
 [Windows_HDR]
 MaxFrameAverage=0
-MaxLuminance=320
-Reference=320
+MaxLuminance=400
+Reference=400
 
 [Xwayland]
 Scale=1
