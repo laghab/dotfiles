@@ -8,26 +8,26 @@ MenuBar=Disabled
 PrintHeight=21.64
 
 [Recent Files]
-File1[$e]=$HOME/Desktop/12a8bb03-9388-4fd9-a30a-7e351ad7170f.sync-conflict-20260608-094415-4NT7N23.jpg
-File10[$e]=$HOME/Pictures/Walls/wallhaven-qrgqyq.jpg
-File2[$e]=$HOME/Desktop/file_00000000441061f7ae4c077ae46be61f.sync-conflict-20260608-094415-4NT7N23.png
-File3[$e]=/usr/share/wallpapers/cachyos-wallpapers/cachysurf3.jpg
-File4[$e]=/usr/share/wallpapers/cachyos-wallpapers/cachysurf4.jpg
-File5[$e]=$HOME/Desktop/(9) Instagram_files/582801238_17915218899229969_7497711397033669310_n.jpg
-File6[$e]=$HOME/Downloads/881340-timeline.png
-File7[$e]=$HOME/Pictures/Walls/wallhaven-6l2rgq.jpg
-File8[$e]=$HOME/Pictures/Walls/wallhaven-5yk8m9.jpg
-File9[$e]=$HOME/Pictures/Walls/wallhaven-w5m5xq.png
-Name1[$e]=12a8bb03-9388-4fd9-a30a-7e351ad7170f.sync-conflict-20260608-094415-4NT7N23.jpg
-Name10[$e]=wallhaven-qrgqyq.jpg
-Name2[$e]=file_00000000441061f7ae4c077ae46be61f.sync-conflict-20260608-094415-4NT7N23.png
-Name3[$e]=cachysurf3.jpg
-Name4[$e]=cachysurf4.jpg
-Name5[$e]=582801238_17915218899229969_7497711397033669310_n.jpg
-Name6[$e]=881340-timeline.png
-Name7[$e]=wallhaven-6l2rgq.jpg
-Name8[$e]=wallhaven-5yk8m9.jpg
-Name9[$e]=wallhaven-w5m5xq.png
+File1[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/wall.jpg
+File10[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/vibrant-gate.png
+File2[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/wanderer.jpg
+File3[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/wallhaven-vqoo1p.jpg
+File4[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/atlantis.jpg
+File5[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/abandoned-trainstation.jpg
+File6[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/aesthetic.jpg
+File7[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/dominik-mayer-13.jpg
+File8[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/dominik-mayer-14.jpg
+File9[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/keyboard-2.png
+Name1[$e]=wall.jpg
+Name10[$e]=vibrant-gate.png
+Name2[$e]=wanderer.jpg
+Name3[$e]=wallhaven-vqoo1p.jpg
+Name4[$e]=atlantis.jpg
+Name5[$e]=abandoned-trainstation.jpg
+Name6[$e]=aesthetic.jpg
+Name7[$e]=dominik-mayer-13.jpg
+Name8[$e]=dominik-mayer-14.jpg
+Name9[$e]=keyboard-2.png
 
 [SideBar]
 InformationSplitterSizes=211,244
