@@ -172,6 +172,10 @@
 .config/featherpad/*
 !/.config/featherpad/fp.conf
 
+!/.config/polonium
+.config/polonium/*
+!/.config/polonium/**
+
 !/.config/qBittorrent
 .config/qBittorrent/*
 !/.config/qBittorrent/qBittorrent.conf

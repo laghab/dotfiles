@@ -40,8 +40,8 @@ blurEnabled=false
 eyeonscreenEnabled=true
 fadingpopupsEnabled=false
 glideEnabled=true
-krohnkiteEnabled=false
 magiclampEnabled=true
+poloniumEnabled=true
 scaleEnabled=false
 screenedgeEnabled=false
 slidingpopupsEnabled=false
@@ -53,12 +53,9 @@ wobblywindowsEnabled=true
 PopupHideDelay=150
 TextOnly=true
 
-[Script-krohnkite]
-screenGapBetween=3
-screenGapBottom=3
-screenGapLeft=3
-screenGapRight=3
-screenGapTop=3
+[Script-polonium]
+Borders=2
+TiledWindowsBelow=false
 
 [TabBox]
 ActivitiesMode=0
@@ -70,7 +67,7 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 
 [Tiling][11fe64e9-1b3e-4ca8-947a-f57a25296c17][0d24a2da-5a79-482a-bb23-102037d6ad5a]
 padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.6057291666666667},{"width":0.39427083333333335}]}
 
 [Tiling][11fe64e9-1b3e-4ca8-947a-f57a25296c17][464f98bc-7a3b-4a6c-a49d-24f8ae7ea52d]
 padding=4
@@ -102,7 +99,7 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 
 [Tiling][85903718-38b8-4f51-aad3-0c943b8f5249][0d24a2da-5a79-482a-bb23-102037d6ad5a]
 padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+tiles={"layoutDirection":"horizontal","tiles":[]}
 
 [Tiling][85903718-38b8-4f51-aad3-0c943b8f5249][464f98bc-7a3b-4a6c-a49d-24f8ae7ea52d]
 padding=4
@@ -126,7 +123,7 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 
 [Tiling][fe4d7cdc-6a77-43ca-9c1e-a7eb2d3609de][0d24a2da-5a79-482a-bb23-102037d6ad5a]
 padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+tiles={"layoutDirection":"floating","tiles":[]}
 
 [Tiling][fe4d7cdc-6a77-43ca-9c1e-a7eb2d3609de][464f98bc-7a3b-4a6c-a49d-24f8ae7ea52d]
 padding=4
@@ -151,4 +148,5 @@ Scale=1
 
 [org.kde.kdecoration2]
 BorderSizeAuto=false
+ButtonsOnLeft=ME
 library=org.kde.kwin.aurorae.v2

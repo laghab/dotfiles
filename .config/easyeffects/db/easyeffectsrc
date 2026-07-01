@@ -16,6 +16,5 @@ visiblePage=pluginsPage
 visiblePlugin=crossfeed#0
 
 [Window]
-height=1024
-visiblePage=inputPage
+height=867
 width=1098

@@ -21,13 +21,13 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=250, 179, 135
+BackgroundAlternate=116, 199, 236
 BackgroundNormal=49, 50, 68
-DecorationFocus=250, 179, 135
-DecorationHover=250, 179, 135
+DecorationFocus=116, 199, 236
+DecorationHover=116, 199, 236
 ForegroundActive=250, 179, 135
 ForegroundInactive=166, 173, 200
-ForegroundLink=250, 179, 135
+ForegroundLink=116, 199, 236
 ForegroundNegative=243, 139, 168
 ForegroundNeutral=249, 226, 175
 ForegroundNormal=205, 214, 244
@@ -37,11 +37,11 @@ ForegroundVisited=203, 166, 247
 [Colors:Complementary]
 BackgroundAlternate=17, 17, 27
 BackgroundNormal=24, 24, 37
-DecorationFocus=250, 179, 135
-DecorationHover=250, 179, 135
+DecorationFocus=116, 199, 236
+DecorationHover=116, 199, 236
 ForegroundActive=250, 179, 135
 ForegroundInactive=166, 173, 200
-ForegroundLink=250, 179, 135
+ForegroundLink=116, 199, 236
 ForegroundNegative=243, 139, 168
 ForegroundNeutral=249, 226, 175
 ForegroundNormal=205, 214, 244
@@ -51,11 +51,11 @@ ForegroundVisited=203, 166, 247
 [Colors:Header]
 BackgroundAlternate=17, 17, 27
 BackgroundNormal=24, 24, 37
-DecorationFocus=250, 179, 135
-DecorationHover=250, 179, 135
+DecorationFocus=116, 199, 236
+DecorationHover=116, 199, 236
 ForegroundActive=250, 179, 135
 ForegroundInactive=166, 173, 200
-ForegroundLink=250, 179, 135
+ForegroundLink=116, 199, 236
 ForegroundNegative=243, 139, 168
 ForegroundNeutral=249, 226, 175
 ForegroundNormal=205, 214, 244
@@ -63,10 +63,10 @@ ForegroundPositive=166, 227, 161
 ForegroundVisited=203, 166, 247
 
 [Colors:Selection]
-BackgroundAlternate=250, 179, 135
-BackgroundNormal=250, 179, 135
-DecorationFocus=250, 179, 135
-DecorationHover=250, 179, 135
+BackgroundAlternate=116, 199, 236
+BackgroundNormal=116, 199, 236
+DecorationFocus=116, 199, 236
+DecorationHover=116, 199, 236
 ForegroundActive=17, 17, 27
 ForegroundInactive=17, 17, 27
 ForegroundLink=17, 17, 27
@@ -79,11 +79,11 @@ ForegroundVisited=17, 17, 27
 [Colors:Tooltip]
 BackgroundAlternate=17, 17, 27
 BackgroundNormal=30, 30, 46
-DecorationFocus=250, 179, 135
-DecorationHover=250, 179, 135
+DecorationFocus=116, 199, 236
+DecorationHover=116, 199, 236
 ForegroundActive=250, 179, 135
 ForegroundInactive=166, 173, 200
-ForegroundLink=250, 179, 135
+ForegroundLink=116, 199, 236
 ForegroundNegative=243, 139, 168
 ForegroundNeutral=249, 226, 175
 ForegroundNormal=205, 214, 244
@@ -93,11 +93,11 @@ ForegroundVisited=203, 166, 247
 [Colors:View]
 BackgroundAlternate=24, 24, 37
 BackgroundNormal=30, 30, 46
-DecorationFocus=250, 179, 135
-DecorationHover=250, 179, 135
+DecorationFocus=116, 199, 236
+DecorationHover=116, 199, 236
 ForegroundActive=250, 179, 135
 ForegroundInactive=166, 173, 200
-ForegroundLink=250, 179, 135
+ForegroundLink=116, 199, 236
 ForegroundNegative=243, 139, 168
 ForegroundNeutral=249, 226, 175
 ForegroundNormal=205, 214, 244
@@ -107,11 +107,11 @@ ForegroundVisited=203, 166, 247
 [Colors:Window]
 BackgroundAlternate=17, 17, 27
 BackgroundNormal=24, 24, 37
-DecorationFocus=250, 179, 135
-DecorationHover=250, 179, 135
+DecorationFocus=116, 199, 236
+DecorationHover=116, 199, 236
 ForegroundActive=250, 179, 135
 ForegroundInactive=166, 173, 200
-ForegroundLink=250, 179, 135
+ForegroundLink=116, 199, 236
 ForegroundNegative=243, 139, 168
 ForegroundNeutral=249, 226, 175
 ForegroundNormal=205, 214, 244
@@ -120,22 +120,23 @@ ForegroundVisited=203, 166, 247
 
 [General]
 BrowserApplication=brave-browser.desktop
-ColorSchemeHash=ee3b1477e68cc1cf384a46f2fdd94122f1c69d65
+ColorSchemeHash=cfc15702dd75dc69e6222dd2121f357d02656172
 TerminalApplication=kitty
 TerminalService=kitty.desktop
 fixed=JetBrainsMonoNL Nerd Font,10,-1,5,50,0,0,0,0,0
 font=Inter,10,-1,5,50,0,0,0,0,0
 smallestReadableFont=Inter,8,-1,5,50,0,0,0,0,0
+widgetStyle=Materia
 
 [Icons]
 Theme=Papirus-Dark
 
 [KDE]
 AnimationDurationFactor=0.5
-LookAndFeelPackage=Catppuccin-Mocha-Peach
+LookAndFeelPackage=Catppuccin-Mocha-Sapphire
 contrast=4
 frameContrast=0.2
-widgetStyle=kvantum
+widgetStyle=Breeze
 
 [KFileDialog Settings]
 Allow Expansion=false

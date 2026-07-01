@@ -2,12 +2,13 @@
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
 
   "logo": {
-    "type": "file",
-    "source": "/home/laghab/.config/fastfetch/purin-logo.txt",
+    "source": "/home/laghab/Pictures/Gifs/kanna.gif",
+    "type": "kitty-icat",
+    "width": 36,
+    "height": 18,
     "padding": {
-      "top": 0,
-      "left": 1,
-      "right": 3
+      "top": 1,
+      "left": 2
     }
   },
 
@@ -21,13 +22,11 @@
       "separator": "#525A6B"
     },
     "key": {
-      "width": 15
+      "width": 10
     }
   },
 
   "modules": [
-    { "type": "custom", "format": "" },
-    { "type": "custom", "format": "" },
     {
       "type": "title",
       "format": "{#1}╭───────────── {#}{user-name-colored}"
@@ -65,12 +64,12 @@
     {
       "type": "cpu",
       "key": "{#separator}│  {#keys}CPU",
-      "format": "{name} ({cores-physical}C / {cores-logical}T)"
+      "format": "{name}"
     },
     {
       "type": "gpu",
       "key": "{#separator}│  {#keys}GPU",
-      "format": "{name} [{type}]"
+      "format": "{name}"
     },
     {
       "type": "memory",
@@ -106,16 +105,10 @@
       "key": "{#separator}│  {#keys}Font"
     },
     {
-      "type": "custom",
-      "format": "{#1}│"
-    },
-    {
       "type": "colors",
-      "key": "{#separator}│",
+      "key": "{#separator}│  {#keys}",
       "symbol": "circle"
     },
-    { "type": "custom", "format": "" },
-    { "type": "custom", "format": "" },
     {
       "type": "custom",
       "format": "{#1}╰───────────────────────────────╯"
