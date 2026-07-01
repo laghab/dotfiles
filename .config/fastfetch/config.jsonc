@@ -22,7 +22,8 @@
       "separator": "#525A6B"
     },
     "key": {
-      "width": 10
+      "width": 16,
+      "type": "string"
     }
   },
 
@@ -37,20 +38,20 @@
     },
     {
       "type": "os",
-      "key": "{#separator}│  {#keys}OS"
+      "key": "│  {#keys}OS"
     },
     {
       "type": "kernel",
-      "key": "{#separator}│  {#keys}Kernel",
+      "key": "│  {#keys}Kernel",
       "format": "{release} {arch}"
     },
     {
       "type": "uptime",
-      "key": "{#separator}│  {#keys}Uptime"
+      "key": "│  {#keys}Uptime"
     },
     {
       "type": "packages",
-      "key": "{#separator}│  {#keys}Packages",
+      "key": "│  {#keys}Packages",
       "format": "{all}"
     },
     {
@@ -63,22 +64,22 @@
     },
     {
       "type": "cpu",
-      "key": "{#separator}│  {#keys}CPU",
+      "key": "│  {#keys}CPU",
       "format": "{name}"
     },
     {
       "type": "gpu",
-      "key": "{#separator}│  {#keys}GPU",
+      "key": "│  {#keys}GPU",
       "format": "{name}"
     },
     {
       "type": "memory",
-      "key": "{#separator}│  {#keys}Memory",
+      "key": "│  {#keys}Memory",
       "format": "{used} / {total}"
     },
     {
       "type": "disk",
-      "key": "{#separator}│  {#keys}Disk (/)",
+      "key": "│  {#keys}Disk (/)",
       "folders": "/",
       "format": "{size-used} / {size-total}"
     },
@@ -92,21 +93,21 @@
     },
     {
       "type": "shell",
-      "key": "{#separator}│  {#keys}Shell",
+      "key": "│  {#keys}Shell",
       "format": "{pretty-name} {version}"
     },
     {
       "type": "terminal",
-      "key": "{#separator}│  {#keys}Terminal",
+      "key": "│  {#keys}Terminal",
       "format": "{pretty-name} {version}"
     },
     {
       "type": "terminalfont",
-      "key": "{#separator}│  {#keys}Font"
+      "key": "│  {#keys}Font"
     },
     {
       "type": "colors",
-      "key": "{#separator}│  {#keys}",
+      "key": "│  {#keys}",
       "symbol": "circle"
     },
     {

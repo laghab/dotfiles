@@ -1048,6 +1048,7 @@ var WorkspaceHandler = class {
     controller().queueEvent({ t: "updateDrivers" });
   }
   windowActivated(window) {
+    if (window == null) return;
     if (config().borders == 2 /* BorderActive */ || config().borders == 3 /* BorderFloatingActive */) {
       if (windowIsTiled(window)) {
         controller().queuePostEvent({
@@ -1664,7 +1665,9 @@ function setTiledProps(window) {
     window.keepBelow = true;
   }
   if (config().borders != 4 /* BorderAll */) {
-    window.noBorder = true;
+    const activeBorderMode = config().borders == 2 /* BorderActive */ || config().borders == 3 /* BorderFloatingActive */;
+    const isActive = window == controller().workspace.activeWindow;
+    window.noBorder = !(activeBorderMode && isActive);
   }
   window.setMaximize(false, false);
 }
@@ -1728,19 +1731,19 @@ var Controller = class {
     const queue = simplifyEvents(this.eventQueue);
     this.eventQueue = new Queue();
     console().debug("Handling", queue.size, "event(s)");
-    const rebuild = queue.size != 0;
+    const modifiedDrivers = /* @__PURE__ */ new Set();
     while (!queue.isEmpty) {
-      this.handleEvent(queue.pop());
+      const ev = queue.pop();
+      if (ev == void 0) continue;
+      this.handleEvent(ev);
+      if (ev.desktop != void 0 && ev.activity != void 0 && ev.output != void 0) {
+        modifiedDrivers.add(desktopId(ev.desktop, ev.activity, ev.output));
+      }
     }
-    if (rebuild) {
-      for (const output of this.workspace.screens) {
-        const id = desktopId(
-          this.workspace.currentDesktop,
-          this.workspace.currentActivity,
-          output
-        );
-        console().debug("Rebuilding for output", output.name);
+    if (modifiedDrivers.size > 0) {
+      for (const id of modifiedDrivers) {
         if (this.drivers.has(id)) {
+          console().debug("rebuilding driver", id);
           this.drivers.get(id)?.buildLayout();
         } else {
           console().error("no driver found for desktop id", id);
@@ -1756,6 +1759,7 @@ var Controller = class {
     this.processingEvents = false;
   }
   handleEvent(ev) {
+    if (ev == void 0) return;
     console().debug("handling event", ev.t);
     switch (ev.t) {
       case "tileWindow": {
@@ -2057,10 +2061,12 @@ var Controller = class {
   }
   toggleAllTiling() {
     this.tilingEnabled = !this.tilingEnabled;
-    this.workspace.osd.show(
-      this.tilingEnabled ? "Polonium: Tiling Enabled" : "Polonium: Tiling Disabled",
-      this.tilingEnabled ? "view-list-details" : "view-list-details-off"
-    );
+    if (this.workspace.osd) {
+      this.workspace.osd.show(
+        this.tilingEnabled ? "Polonium: Tiling Enabled" : "Polonium: Tiling Disabled",
+        this.tilingEnabled ? "view-list-details" : "view-list-details-off"
+      );
+    }
     if (this.tilingEnabled) {
       for (const [window, windowHandler] of this.windowHandlers) {
         if (windowHandler.wantsTiled && windowHandler.canBeTiled() && !windowHandler.tiled) {
