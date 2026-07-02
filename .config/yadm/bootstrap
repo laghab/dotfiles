@@ -20,16 +20,6 @@ if command -v pacman &>/dev/null; then
 fi
 
 echo ""
-echo "=== Deploying Polonium patches ==="
-if [ -d ~/.config/polonium ] && [ -d /usr/share/kwin/scripts/polonium/ ]; then
-  sudo cp -a ~/.config/polonium/. /usr/share/kwin/scripts/polonium/
-  echo "Polonium patches applied to /usr/share/kwin/scripts/polonium/"
-elif [ -d ~/.config/polonium ]; then
-  echo "WARNING: ~/.config/polonium/ exists but /usr/share/kwin/scripts/polonium/ does not."
-  echo "Install kwin-polonium from AUR first, then re-run this bootstrap."
-fi
-
-echo ""
 echo "=== Setup complete ==="
 echo "All config files have been restored to ~/.config/"
 echo "You may need to log out and back in for all settings to apply."

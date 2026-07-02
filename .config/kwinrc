@@ -33,6 +33,11 @@ moveresize=100
 popupmenus=100
 tornoffmenus=100
 
+[Effect-wobblywindows]
+Drag=85
+Stiffness=10
+WobblynessLevel=1
+
 [MouseBindings]
 commandallkey=Meta
 
@@ -42,32 +47,45 @@ daytemperature=4500
 nighttemperature=2600
 
 [Plugins]
+blurEnabled=false
 blurenabled=false
 eyeonscreenenabled=true
 fadingpopupsenabled=false
 glideenabled=true
+krohnkiteEnabled=true
+magiclampEnabled=true
 magiclampenabled=true
-poloniumEnabled=true
-poloniumenabled=true
 scaleenabled=false
 screenedgeenabled=false
 slidingpopupsenabled=false
+squashEnabled=false
 squashenabled=false
 windowapertureenabled=false
+wobblywindowsEnabled=true
 wobblywindowsenabled=true
 
 [Script-desktopchangeosd]
 popuphidedelay=150
 textonly=true
 
-[Script-polonium]
-IgnoreWindowClasses=krunner, yakuake, kded, polkit, plasmashell, xwaylandvideobridge, org.kde.xdgdesktopportal, xdg-desktop-portal
-borders=4
-tiledwindowsbelow=false
+[Script-krohnkite]
+ignoreClass=krunner,yakuake,kded,polkit,plasmashell,xwaylandvideobridge,org.kde.xdgdesktopportal,xdg-desktop-portal,portal
+screenGapBetween=4
+screenGapBottom=4
+screenGapLeft=4
+screenGapRight=4
+screenGapTop=4
+threeColumnLayoutOrder=1
+tileLayoutOrder=3
 
 [TabBox]
+DesktopMode=0
+LayoutName=thumbnail_grid
 activitiesmode=0
 desktopmode=0
+
+[TabBoxAlternative]
+DesktopMode=0
 
 [Tiling][11fe64e9-1b3e-4ca8-947a-f57a25296c17][]
 padding=4
@@ -95,7 +113,7 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 
 [Tiling][2a79e7e1-1daf-467e-9d73-19e8367e6acc][0d24a2da-5a79-482a-bb23-102037d6ad5a]
 padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+tiles={"layoutDirection":"floating","tiles":[]}
 
 [Tiling][2b659a38-5ddd-46b9-a83f-7648d67f8d35][0d24a2da-5a79-482a-bb23-102037d6ad5a]
 padding=4
@@ -135,11 +153,11 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 
 [Tiling][90710eeb-1704-474a-b670-0d7d1d75c181][]
 padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+tiles={"layoutDirection":"floating","tiles":[]}
 
 [Tiling][90710eeb-1704-474a-b670-0d7d1d75c181][0d24a2da-5a79-482a-bb23-102037d6ad5a]
 padding=4
-tiles={"layoutDirection":"horizontal","tiles":[]}
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5},{"layoutDirection":"vertical","tiles":[{"height":0.5},{"height":0.5}],"width":0.5}]}
 
 [Tiling][b8a07501-5d2c-47ec-870a-6070235bd734][0d24a2da-5a79-482a-bb23-102037d6ad5a]
 padding=4
@@ -155,11 +173,11 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 
 [Tiling][f2f3c190-eb9d-4ece-a2bd-788ec871d410][]
 padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5},{"layoutDirection":"vertical","tiles":[{"height":0.5},{"height":0.5}],"width":0.5}]}
 
 [Tiling][f2f3c190-eb9d-4ece-a2bd-788ec871d410][0d24a2da-5a79-482a-bb23-102037d6ad5a]
 padding=4
-tiles={"layoutDirection":"floating","tiles":[]}
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5},{"width":0.5}]}
 
 [Tiling][fd16acfe-aca9-412a-abaa-6e15bded292d][0d24a2da-5a79-482a-bb23-102037d6ad5a]
 padding=4
@@ -181,8 +199,13 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Wayland]
+EnablePrimarySelection=true
+
 [Windows]
+ActiveMouseScreen=false
 ElectricBorders=1
+SeparateScreenFocus=true
 electricbordercooldown=250
 electricborderdelay=0
 electricborders=1

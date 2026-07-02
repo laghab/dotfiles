@@ -1,12 +1,12 @@
 [Annotations]
-annotationToolType=3
+annotationToolType=2
 
 [General]
 clipboardGroup=PostScreenshotCopyImage
 
 [ImageSave]
-lastImageSaveAsLocation=file:///home/laghab/Desktop/d.png
-lastImageSaveLocation=file:///home/laghab/Desktop/d.png
+lastImageSaveAsLocation=file:///home/laghab/Desktop/nnisha back.png
+lastImageSaveLocation=file:///home/laghab/Desktop/nnisha back.png
 translatedScreenshotsFolder=Screenshots
 
 [VideoSave]
@@ -17,3 +17,4 @@ translatedScreencastsFolder=Screencasts
 [ViewerWindow]
 1920x1080 screen: Height=570
 1920x1080 screen: Width=821
+1920x1080 screen: Window-Maximized=true

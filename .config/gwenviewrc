@@ -9,26 +9,26 @@ MenuBar=Disabled
 PrintHeight=21.64
 
 [Recent Files]
-File1[$e]=$HOME/Desktop/WA_Backup/WhatsApp Images/Private/IMG-20250918-WA0143.jpg
-File10[$e]=$HOME/Pictures/Gifs/6-1.png
-File2[$e]=$HOME/Desktop/WA_Backup/WhatsApp Images/Private/IMG-20250918-WA0144.jpg
-File3[$e]=$HOME/Desktop/WA_Backup/WhatsApp Images/Private/IMG-20250918-WA0152.jpg
-File4[$e]=$HOME/Desktop/WA_Backup/WhatsApp Images/Private/IMG-20250918-WA0154.jpg
-File5[$e]=$HOME/Desktop/WA_Backup/WhatsApp Images/Private/IMG-20250919-WA0080.jpg
-File6[$e]=$HOME/Desktop/WA_Backup/SIFT_docs/WhatsApp Images/Sent/IMG-20260123-WA0054.jpg
-File7[$e]=$HOME/Desktop/WA_Backup/SIFT_docs/WhatsApp Images/Sent/IMG-20260227-WA0015.jpg
-File8[$e]=$HOME/Desktop/WA_Backup/SIFT_docs/WhatsApp Images/Sent/IMG-20260418-WA0058.jpg
-File9[$e]=$HOME/Desktop/IMG-20260418-WA0058.jpg
-Name1[$e]=IMG-20250918-WA0143.jpg
+File1[$e]=$HOME/Desktop/WA_Backup/WhatsApp Images/Private/IMG-20250918-WA0144.jpg
+File10[$e]=$HOME/Downloads/6-1.png
+File2[$e]=$HOME/Desktop/WA_Backup/WhatsApp Images/Private/IMG-20250918-WA0152.jpg
+File3[$e]=$HOME/Desktop/WA_Backup/WhatsApp Images/Private/IMG-20250918-WA0154.jpg
+File4[$e]=$HOME/Desktop/WA_Backup/WhatsApp Images/Private/IMG-20250919-WA0080.jpg
+File5[$e]=$HOME/Desktop/WA_Backup/SIFT_docs/WhatsApp Images/Sent/IMG-20260123-WA0054.jpg
+File6[$e]=$HOME/Desktop/WA_Backup/SIFT_docs/WhatsApp Images/Sent/IMG-20260227-WA0015.jpg
+File7[$e]=$HOME/Desktop/WA_Backup/SIFT_docs/WhatsApp Images/Sent/IMG-20260418-WA0058.jpg
+File8[$e]=$HOME/Desktop/IMG-20260418-WA0058.jpg
+File9[$e]=$HOME/Pictures/Gifs/6-1.png
+Name1[$e]=IMG-20250918-WA0144.jpg
 Name10[$e]=6-1.png
-Name2[$e]=IMG-20250918-WA0144.jpg
-Name3[$e]=IMG-20250918-WA0152.jpg
-Name4[$e]=IMG-20250918-WA0154.jpg
-Name5[$e]=IMG-20250919-WA0080.jpg
-Name6[$e]=IMG-20260123-WA0054.jpg
-Name7[$e]=IMG-20260227-WA0015.jpg
+Name2[$e]=IMG-20250918-WA0152.jpg
+Name3[$e]=IMG-20250918-WA0154.jpg
+Name4[$e]=IMG-20250919-WA0080.jpg
+Name5[$e]=IMG-20260123-WA0054.jpg
+Name6[$e]=IMG-20260227-WA0015.jpg
+Name7[$e]=IMG-20260418-WA0058.jpg
 Name8[$e]=IMG-20260418-WA0058.jpg
-Name9[$e]=IMG-20260418-WA0058.jpg
+Name9[$e]=6-1.png
 
 [SideBar]
 InformationSplitterSizes=211,244
