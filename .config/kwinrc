@@ -2,13 +2,15 @@
 Id_1=90710eeb-1704-474a-b670-0d7d1d75c181
 Id_2=f2f3c190-eb9d-4ece-a2bd-788ec871d410
 Id_3=2a79e7e1-1daf-467e-9d73-19e8367e6acc
-Number=3
+Id_4=1c5edaff-0e5e-4ed8-91f0-dbf8049fc0b1
+Name_4=Gaming
+Number=4
 Rows=1
 id_1=5fd7ffc0-827d-4b7e-8ea4-44dfe98d1042
 id_2=fd16acfe-aca9-412a-abaa-6e15bded292d
 id_3=2b659a38-5ddd-46b9-a83f-7648d67f8d35
 name_1=Desktop 2
-number=3
+number=4
 rows=1
 
 [EdgeBarrier]
@@ -60,6 +62,7 @@ screenedgeenabled=false
 slidingpopupsenabled=false
 squashEnabled=false
 squashenabled=false
+steamgamingEnabled=true
 windowapertureenabled=false
 wobblywindowsEnabled=true
 wobblywindowsenabled=true
@@ -69,19 +72,20 @@ popuphidedelay=150
 textonly=true
 
 [Script-krohnkite]
+columnsLayoutOrder=6
 floatingClass=discord,org.kde.xdgdesktopportal,xdg-desktop-portal-kde
-ignoreClass=krunner,yakuake,kded,polkit,plasmashell,xwaylandvideobridge
+ignoreClass=krunner,yakuake,kded,polkit,plasmashell,xwaylandvideobridge,steam,steamwebhelper,Steam,wine,wine64,Wine,wineboot,wineconsole,steamcompmgr,gamescope,[steam_app]
+ignoreVDesktop=Gaming
+monocleLayoutOrder=2
+quarterLayoutOrder=4
 screenGapBetween=4
 screenGapBottom=4
 screenGapLeft=4
 screenGapRight=4
 screenGapTop=4
-tileLayoutOrder=1
-monocleLayoutOrder=2
-threeColumnLayoutOrder=3
-quarterLayoutOrder=4
 spiralLayoutOrder=5
-columnsLayoutOrder=6
+threeColumnLayoutOrder=3
+tileLayoutOrder=1
 
 [TabBox]
 DesktopMode=0
@@ -105,6 +109,10 @@ padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][11fe64e9-1b3e-4ca8-947a-f57a25296c17][65192e26-046c-47c5-986b-2ae13e17f147]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][1c5edaff-0e5e-4ed8-91f0-dbf8049fc0b1][0d24a2da-5a79-482a-bb23-102037d6ad5a]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Onboard
+Comment=Detect new game zips and add them as Steam shortcuts
+Exec=/home/laghab/.local/bin/steam-add-games --yes
+Terminal=true
+Type=Application
+Categories=Game;
+Icon=system-software-install

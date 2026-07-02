@@ -1,0 +1,588 @@
+#!/usr/bin/env python3
+"""
+Auto-detect game folders in zips in ~/Downloads and existing folders
+in ~/Games, add them as non-Steam shortcuts with Proton Experimental
+and launch options, launch the game, and clean up.
+"""
+
+import argparse
+import json
+import zlib
+import os
+import sys
+import time
+import subprocess
+import glob
+import zipfile
+import shutil
+
+try:
+    import vdf
+except ImportError:
+    print("Required library 'vdf' not found. Install it: paru -S python-vdf", file=sys.stderr)
+    sys.exit(1)
+
+# --- Configuration ---
+STEAM_USERDATA_BASE = os.path.expanduser("~/.steam/steam/userdata")
+STEAM_CONFIG_PATH = os.path.expanduser("~/.steam/steam/config/config.vdf")
+GAMES_DIR = os.path.expanduser("~/Games")
+DOWNLOADS_DIR = os.path.expanduser("~/Downloads")
+LAUNCH_OPTIONS = 'WINEDLLOVERRIDES="SteamOverlay64,winmm,dnet,steam_api64=n,b" %command%'
+PROTON_NAME = "proton_experimental"
+
+
+# --- Helpers ---
+
+def get_steam_userdata_dir():
+    users = sorted(os.listdir(STEAM_USERDATA_BASE))
+    if not users:
+        print("No Steam userdata found!")
+        sys.exit(1)
+    return os.path.join(STEAM_USERDATA_BASE, users[0])
+
+
+def generate_appid(name, exe):
+    crc = zlib.crc32((exe + name).encode("utf-8"))
+    appid_unsigned = crc | 0x80000000
+    signed = appid_unsigned - 0x100000000 if appid_unsigned > 0x7FFFFFFF else appid_unsigned
+    return signed
+
+
+def get_64bit_gameid(appid_signed):
+    return ((appid_signed & 0xFFFFFFFF) << 32) | 0x02000000
+
+
+def is_steam_running():
+    return subprocess.run(["pgrep", "-x", "steam"], capture_output=True).returncode == 0
+
+
+def close_steam_window():
+    if not shutil.which("xdotool"):
+        print("  (xdotool not found, can't close Steam window automatically)")
+        return
+    try:
+        subprocess.run(
+            ["xdotool", "search", "--name", "Steam", "windowclose"],
+            capture_output=True, timeout=5,
+        )
+    except Exception:
+        pass
+
+
+def read_existing_shortcuts():
+    steam_userdata = get_steam_userdata_dir()
+    shortcuts_path = os.path.join(steam_userdata, "config/shortcuts.vdf")
+    with open(shortcuts_path, "rb") as f:
+        return vdf.binary_loads(f.read())
+
+
+def write_shortcuts(data):
+    steam_userdata = get_steam_userdata_dir()
+    shortcuts_path = os.path.join(steam_userdata, "config/shortcuts.vdf")
+    with open(shortcuts_path, "wb") as f:
+        f.write(vdf.binary_dumps(data))
+
+
+def add_shortcut(name, exe, start_dir, launch_options):
+    shortcuts_data = read_existing_shortcuts()
+
+    for idx, entry in shortcuts_data["shortcuts"].items():
+        if entry["AppName"] == name or entry["Exe"].strip('"') == exe:
+            print(f"  Shortcut '{name}' already exists (index {idx}), reusing.")
+            return entry["appid"]
+
+    appid = generate_appid(name, exe)
+    next_idx = str(max(int(k) for k in shortcuts_data["shortcuts"].keys()) + 1)
+
+    shortcut = {
+        "appid": appid,
+        "AppName": name,
+        "Exe": f'"{exe}"',
+        "StartDir": start_dir,
+        "icon": "",
+        "ShortcutPath": "",
+        "LaunchOptions": launch_options,
+        "IsHidden": 0,
+        "AllowDesktopConfig": 1,
+        "AllowOverlay": 1,
+        "OpenVR": 0,
+        "Devkit": 0,
+        "DevkitGameID": "",
+        "DevkitOverrideAppID": 0,
+        "LastPlayTime": 0,
+        "FlatpakAppID": "",
+        "sortas": "",
+        "tags": {},
+    }
+
+    shortcuts_data["shortcuts"][next_idx] = shortcut
+    write_shortcuts(shortcuts_data)
+
+    print(f"  Added '{name}' as shortcut [{next_idx}] (appid={appid})")
+    return appid
+
+
+def set_compat_tool(appid_signed, proton_name):
+    with open(STEAM_CONFIG_PATH, "r", encoding="utf-8") as f:
+        config_data = vdf.loads(f.read())
+
+    ctm = config_data["InstallConfigStore"]["Software"]["Valve"]["Steam"]["CompatToolMapping"]
+    appid_key = str(appid_signed & 0xFFFFFFFF)
+    ctm[appid_key] = {"name": proton_name, "config": "", "priority": "250"}
+
+    with open(STEAM_CONFIG_PATH, "w", encoding="utf-8") as f:
+        vdf.dump(config_data, f)
+
+    print(f"  Set compatibility tool to '{proton_name}' for appid {appid_key}")
+
+
+REDIST_KEYWORDS = {"redist", "_commonredist", "directx", "dxwebsetup", "vcredist", "physx"}
+SETUP_EXE_KEYWORDS = {"setup", "install", "dxwebsetup", "vcredist", "vcredist_x86", "vcredist_x64",
+                      "dxsetup", "physx"}
+
+
+def find_game_folders_in_zip(extract_dir):
+    """Find game folders inside an extracted zip. Returns (game_folder, exe_path)
+       where game_folder is the immediate subdirectory of extract_dir."""
+    results = []
+    for root, dirs, files in os.walk(extract_dir):
+        rel = os.path.relpath(root, extract_dir)
+        parts = rel.replace("\\", "/").lower().split("/")
+        if any(kw in parts for kw in REDIST_KEYWORDS):
+            continue
+        if rel == ".":
+            continue
+
+        # Only consider exes that are at depth 1 or 2 (not deep junk)
+        if len(parts) > 3:
+            continue
+
+        for f in files:
+            fn_lower = f.lower()
+            if not fn_lower.endswith(".exe"):
+                continue
+            stem = os.path.splitext(fn_lower)[0]
+            if any(kw in stem for kw in SETUP_EXE_KEYWORDS):
+                continue
+            exe_path = os.path.join(root, f)
+            results.append((root, exe_path))
+            break
+
+    seen_dirs = set()
+    unique = []
+    for folder, exe in results:
+        if folder not in seen_dirs:
+            seen_dirs.add(folder)
+            unique.append((folder, exe))
+    return unique
+
+
+SKIP_EXE_KEYWORDS = {"unitycrashhandler", "crashhandler", "crashpad", "dxwebsetup"}
+
+
+def find_exe_in_game_folder(game_dir):
+    """Find the best .exe inside an already-identified game folder.
+       Returns absolute path to the exe."""
+    game_name = os.path.basename(game_dir).lower()
+    candidates = []
+
+    for root, dirs, files in os.walk(game_dir):
+        parts = os.path.relpath(root, game_dir).replace("\\", "/").lower().split("/")
+        if parts == ["."]:
+            parts = []
+        if any(kw in parts for kw in REDIST_KEYWORDS):
+            continue
+
+        for f in files:
+            fn_lower = f.lower()
+            if not fn_lower.endswith(".exe"):
+                continue
+            stem = os.path.splitext(fn_lower)[0]
+            if any(kw in stem for kw in SETUP_EXE_KEYWORDS | SKIP_EXE_KEYWORDS):
+                continue
+
+            exe_path = os.path.join(root, f)
+            depth = len(parts)
+            name_match = game_name in stem
+            is_x64 = any(kw in parts for kw in ("x64", "win64", "x86_64"))
+            candidates.append((exe_path, depth, name_match, is_x64))
+
+    if not candidates:
+        return None
+
+    # Score: prefer name match, then x64, then shallowest depth
+    def score(c):
+        _, depth, name_match, is_x64 = c
+        return (not name_match, not is_x64, depth)
+
+    candidates.sort(key=score)
+    return candidates[0][0]
+
+
+def extract_zips(downloads_dir):
+    zip_files = glob.glob(os.path.join(downloads_dir, "*.zip"))
+    if not zip_files:
+        return []
+
+    extracted = []
+    for zip_path in zip_files:
+        zip_name = os.path.splitext(os.path.basename(zip_path))[0]
+        extract_dir = os.path.join(downloads_dir, zip_name)
+        print(f"  Extracting {zip_path}...")
+        with zipfile.ZipFile(zip_path, "r") as zf:
+            zf.extractall(extract_dir)
+        os.remove(zip_path)
+        extracted.append(extract_dir)
+    return extracted
+
+
+def get_existing_steam_info():
+    shortcuts_data = read_existing_shortcuts()
+    exes = set()
+    names = set()
+    folders = set()
+    for entry in shortcuts_data["shortcuts"].values():
+        exes.add(entry["Exe"].strip('"'))
+        names.add(entry["AppName"].lower())
+        folders.add(os.path.normpath(entry["StartDir"]))
+    return exes, names, folders
+
+
+def is_game(name_or_exe):
+    lower = name_or_exe.lower()
+    junk = {"redist", "setup", "install", "directx", "vc_redist", "physx",
+            "dxwebsetup", "commonredist", "adobe air"}
+    return not any(k in lower for k in junk)
+
+
+ICONS_DIR = os.path.expanduser("~/.local/share/icons/steam-icons")
+
+
+def extract_exe_icon(exe_path, game_name):
+    """Extract icon from a Windows .exe and save as PNG. Returns path or None."""
+    os.makedirs(ICONS_DIR, exist_ok=True)
+    out_path = os.path.join(ICONS_DIR, f"{game_name}.png")
+
+    if os.path.exists(out_path):
+        return out_path
+
+    if not shutil.which("wrestool"):
+        return None
+
+    # Try PNG resource first (name 103 is common for app icons)
+    for res_name in (103, 101, 104, 102, 1, 2, 3):
+        try:
+            result = subprocess.run(
+                ["wrestool", "--raw", "-x", "--type=PNG", f"--name={res_name}", exe_path],
+                capture_output=True, timeout=10,
+            )
+            if result.returncode == 0 and len(result.stdout) > 100:
+                with open(out_path, "wb") as f:
+                    f.write(result.stdout)
+                if os.path.getsize(out_path) > 200:
+                    return out_path
+        except Exception:
+            continue
+
+    # Try icon resource (type=3) with group icon (type=14)
+    import struct
+    for gname in (103, 101, 102, 104):
+        try:
+            group = subprocess.run(
+                ["wrestool", "--raw", "-x", "--type=14", f"--name={gname}", exe_path],
+                capture_output=True, timeout=10,
+            )
+            if group.returncode != 0 or len(group.stdout) < 6:
+                continue
+
+            header = group.stdout
+            count = header[4]
+            for i in range(count):
+                entry_start = 6 + i * 16
+                entry = header[entry_start:entry_start + 16]
+                if len(entry) < 16:
+                    continue
+                width, height = entry[0], entry[1]
+                size = struct.unpack("<I", entry[8:12])[0]
+
+                # Skip tiny icons, prefer bigger
+                if width < 32 and height < 32:
+                    continue
+
+                res_name = i + 1
+                icon_data = subprocess.run(
+                    ["wrestool", "--raw", "-x", "--type=3", f"--name={res_name}", exe_path],
+                    capture_output=True, timeout=10,
+                )
+                if icon_data.returncode != 0 or len(icon_data.stdout) < 100:
+                    continue
+
+                data_size = len(icon_data.stdout)
+                ico_header = struct.pack("<HHH", 0, 1, 1)
+                ico_entry = struct.pack("<BBBBHHII", width, height, 0, 0, 1, 32, data_size, 22)
+                full_ico = ico_header + ico_entry + icon_data.stdout
+
+                ico_path = out_path.replace(".png", ".ico")
+                with open(ico_path, "wb") as f:
+                    f.write(full_ico)
+
+                result = subprocess.run(
+                    ["icotool", "-x", ico_path, "-o", out_path],
+                    capture_output=True, timeout=10,
+                )
+                if result.returncode == 0 and os.path.exists(out_path):
+                    os.remove(ico_path)
+                    return out_path
+                os.remove(ico_path)
+        except Exception:
+            continue
+
+    return None
+
+
+def apply_icons():
+    """Extract and set icons for all non-Steam game shortcuts."""
+    shortcuts_data = read_existing_shortcuts()
+    changed = False
+
+    for idx, entry in list(shortcuts_data["shortcuts"].items()):
+        name = entry["AppName"]
+        exe = entry["Exe"].strip('"')
+        current_icon = entry.get("icon", "")
+
+        if current_icon and os.path.exists(current_icon):
+            print(f"  [{idx}] {name}: icon already set, skipping")
+            continue
+
+        if not os.path.exists(exe):
+            print(f"  [{idx}] {name}: exe not found, skipping")
+            continue
+
+        print(f"  [{idx}] {name}: extracting icon...")
+        icon_path = extract_exe_icon(exe, name)
+
+        if icon_path:
+            entry["icon"] = icon_path
+            changed = True
+            print(f"    -> {icon_path}")
+        else:
+            # Fall back to using the exe itself as icon source
+            entry["icon"] = exe
+            changed = True
+            print(f"    -> using exe directly")
+
+    if changed:
+        write_shortcuts(shortcuts_data)
+        print("  Icons updated in shortcuts.vdf")
+
+
+def add_favorites(game_ids):
+    """Add games to Steam Favorites collection via direct text edit
+       to avoid clobbering Steam's file format."""
+    lc_path = os.path.join(get_steam_userdata_dir(), "config/localconfig.vdf")
+    with open(lc_path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    changed = False
+    for _, appid in game_ids:
+        uid = int(appid & 0xFFFFFFFF)
+
+        # Find the user-collections value and modify the added array
+        marker = '"user-collections"'
+        idx = content.find(marker)
+        if idx < 0:
+            continue
+
+        # Find the JSON value portion (after the tabs between key and value)
+        val_start = content.find('"', idx + len(marker))
+        if val_start < 0:
+            continue
+        val_start += 1  # move past opening quote
+        # Find closing quote — must not be escaped (\")
+        val_end = val_start
+        while val_end < len(content):
+            if content[val_end] == '"' and content[val_end - 1] != '\\':
+                break
+            val_end += 1
+        if val_end >= len(content):
+            continue
+
+        raw_json = content[val_start:val_end]
+        # Unescape the JSON (VDF stores it with \")
+        unescaped = raw_json.replace('\\"', '"')
+        import json
+        cols = json.loads(unescaped)
+        fav = cols.setdefault("favorite", {"id": "favorite", "added": [], "removed": []})
+        if uid not in fav["added"]:
+            fav["added"].append(uid)
+            new_raw = json.dumps(cols, ensure_ascii=False, separators=(",", ":"))
+            # Re-escape quotes for VDF storage
+            new_raw_vdf = new_raw.replace('"', '\\"')
+            content = content[:val_start] + new_raw_vdf + content[val_end:]
+            changed = True
+            print(f"  Added appid {uid} to Favorites")
+
+    if changed:
+        with open(lc_path, "w", encoding="utf-8") as f:
+            f.write(content)
+
+
+# --- Main ---
+
+def main(yes=False):
+    print("=== Steam Auto-Add Games ===\n")
+
+    # 1. Extract zips from Downloads
+    print("[1] Looking for zip files in ~/Downloads...")
+    extract_dirs = extract_zips(DOWNLOADS_DIR)
+    if extract_dirs:
+        for d in extract_dirs:
+            print(f"  Extracted to {d}")
+
+    # 2. Find game folders from zips and from ~/Games
+    print("\n[2] Scanning for game folders...")
+
+    # Gather all candidate folders
+    candidate_folders = []
+    seen_extract_dirs = set()
+
+    for extract_dir in extract_dirs:
+        seen_extract_dirs.add(extract_dir)
+        game_folders = find_game_folders_in_zip(extract_dir)
+        for folder, exe_path in game_folders:
+            candidate_folders.append((folder, exe_path, extract_dir))
+        if not game_folders:
+            print(f"  No game exe found in '{extract_dir}'.")
+            if not yes:
+                choice = input("  Delete this folder? [Y/n] ").strip().lower()
+                should_delete = choice != "n"
+            else:
+                should_delete = True
+            if should_delete:
+                shutil.rmtree(extract_dir)
+                print("  Deleted.")
+            else:
+                print("  Leaving it.")
+
+    if os.path.isdir(GAMES_DIR):
+        for item in sorted(os.listdir(GAMES_DIR)):
+            subdir = os.path.join(GAMES_DIR, item)
+            if not os.path.isdir(subdir) or item == ".directory":
+                continue
+            exe_path = find_exe_in_game_folder(subdir)
+            if exe_path:
+                candidate_folders.append((subdir, exe_path, None))
+            else:
+                print(f"  No game exe found in '{item}', skipping.")
+
+    if not candidate_folders:
+        print("No game folders found.")
+        return
+
+    # 3. Filter to only new games (not already in Steam)
+    print("\n[3] Checking which are already in Steam...")
+    existing_exes, existing_names, existing_folders = get_existing_steam_info()
+    new_games = []
+    for folder, exe_path, src_extract in candidate_folders:
+        game_name = os.path.basename(folder)
+
+        # Check by shortcut name (fuzzy: ignore spacing and case)
+        game_name_flat = "".join(game_name.lower().split())
+        if any("".join(n.split()) == game_name_flat for n in existing_names):
+            print(f"  Skipping '{game_name}' (already in Steam, matched by name)")
+            continue
+
+        # Check by normalized StartDir
+        if os.path.normpath(folder) in existing_folders:
+            print(f"  Skipping '{game_name}' (already in Steam, matched by folder)")
+            continue
+
+        # Check if any exe in this folder is registered
+        folder_exes = set()
+        for r, _, fs in os.walk(folder):
+            for f in fs:
+                if f.lower().endswith(".exe"):
+                    folder_exes.add(os.path.join(r, f))
+        if folder_exes & existing_exes:
+            print(f"  Skipping '{game_name}' (already in Steam, matched by exe)")
+            continue
+
+        if not is_game(os.path.basename(exe_path)):
+            print(f"  Skipping '{game_name}' (looks like junk)")
+            continue
+
+        new_games.append((folder, exe_path, src_extract))
+
+    if not new_games:
+        print("All games already in Steam. Nothing to add.")
+        return
+
+    print(f"  New games to add: {[os.path.basename(f) for f, _, _ in new_games]}")
+
+    # 4. Copy new games from zips to ~/Games
+    print("\n[4] Copying to ~/Games...")
+    os.makedirs(GAMES_DIR, exist_ok=True)
+    to_add = []
+    for folder, exe_path, src_extract in new_games:
+        game_name = os.path.basename(folder)
+        dest = os.path.join(GAMES_DIR, game_name)
+        exe_rel = os.path.relpath(exe_path, folder)
+
+        if src_extract is not None:
+            if os.path.exists(dest):
+                print(f"  '{dest}' exists, skipping copy.")
+            else:
+                shutil.copytree(folder, dest)
+                print(f"  Copied {os.path.basename(folder)} -> ~/Games/")
+        else:
+            print(f"  Already in ~/Games/{game_name}")
+
+        new_exe = os.path.join(dest, exe_rel)
+        if os.path.exists(new_exe):
+            to_add.append((game_name, new_exe, dest))
+        else:
+            print(f"  ERROR: exe not found at {new_exe}, skipping")
+
+    if not to_add:
+        print("Nothing to add to Steam.")
+        return
+
+    # 5. Add to Steam
+    print("\n[5] Adding to Steam...")
+    for name, exe, start_dir in to_add:
+        print(f"  Processing '{name}'...")
+        appid = add_shortcut(name, exe, start_dir + "/", LAUNCH_OPTIONS)
+        set_compat_tool(appid, PROTON_NAME)
+
+    # 6. Apply icons
+    print("\n[6] Applying icons...")
+    apply_icons()
+
+    # 7. Restart Steam to pick up new shortcuts
+    print("\n[7] Restarting Steam...")
+    if is_steam_running():
+        subprocess.run(["steam", "-shutdown"], capture_output=True, timeout=15)
+        time.sleep(3)
+    subprocess.Popen(["steam"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    print("  Steam restarted.")
+
+    # 8. Clean up Downloads
+    print("\n[8] Cleaning up ~/Downloads...")
+    for extract_dir in extract_dirs:
+        if os.path.exists(extract_dir):
+            shutil.rmtree(extract_dir)
+            print(f"  Removed {extract_dir}")
+
+    # 9. On-demand deps note
+    print("\n[9] Note: if a game prompts for DirectX/VC++ dependencies,")
+    print("    install them later with: protontricks <appid> vcrun2019 directx9 d3dx11_43 faudio")
+
+    print("\n=== Done ===")
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Auto-detect and add non-Steam games")
+    parser.add_argument("-y", "--yes", action="store_true",
+                        help="Non-interactive: auto-delete junk folders without prompting")
+    args = parser.parse_args()
+    main(yes=args.yes)
