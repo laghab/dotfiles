@@ -9,26 +9,26 @@ MenuBar=Disabled
 PrintHeight=21.64
 
 [Recent Files]
-File1[$e]=$HOME/Desktop/WA_Backup/WhatsApp Images/Private/IMG-20250918-WA0154.jpg
-File10[$e]=$HOME/Pictures/Gifs/download.gif
-File2[$e]=$HOME/Desktop/WA_Backup/WhatsApp Images/Private/IMG-20250919-WA0080.jpg
-File3[$e]=$HOME/Desktop/WA_Backup/SIFT_docs/WhatsApp Images/Sent/IMG-20260123-WA0054.jpg
-File4[$e]=$HOME/Desktop/WA_Backup/SIFT_docs/WhatsApp Images/Sent/IMG-20260227-WA0015.jpg
-File5[$e]=$HOME/Desktop/WA_Backup/SIFT_docs/WhatsApp Images/Sent/IMG-20260418-WA0058.jpg
-File6[$e]=$HOME/Desktop/IMG-20260418-WA0058.jpg
-File7[$e]=$HOME/Pictures/Gifs/6-1.png
-File8[$e]=$HOME/Downloads/6-1.png
-File9[$e]=$HOME/Pictures/Gifs/download_nobg.gif
-Name1[$e]=IMG-20250918-WA0154.jpg
-Name10[$e]=download.gif
-Name2[$e]=IMG-20250919-WA0080.jpg
-Name3[$e]=IMG-20260123-WA0054.jpg
-Name4[$e]=IMG-20260227-WA0015.jpg
-Name5[$e]=IMG-20260418-WA0058.jpg
-Name6[$e]=IMG-20260418-WA0058.jpg
-Name7[$e]=6-1.png
-Name8[$e]=6-1.png
-Name9[$e]=download_nobg.gif
+File1[$e]=$HOME/Desktop/IMG-20260418-WA0058.jpg
+File10[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/dwarf-saber.jpg
+File2[$e]=$HOME/Pictures/Gifs/6-1.png
+File3[$e]=$HOME/Downloads/6-1.png
+File4[$e]=$HOME/Pictures/Gifs/download_nobg.gif
+File5[$e]=$HOME/Pictures/Gifs/download.gif
+File6[$e]=$HOME/Pictures/Gifs/6-1_nobg.png
+File7[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/dragon.jpg
+File8[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/droplets.png
+File9[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/eclipse.jpg
+Name1[$e]=IMG-20260418-WA0058.jpg
+Name10[$e]=dwarf-saber.jpg
+Name2[$e]=6-1.png
+Name3[$e]=6-1.png
+Name4[$e]=download_nobg.gif
+Name5[$e]=download.gif
+Name6[$e]=6-1_nobg.png
+Name7[$e]=dragon.jpg
+Name8[$e]=droplets.png
+Name9[$e]=eclipse.jpg
 
 [SideBar]
 InformationSplitterSizes=211,244
