@@ -1,6 +1,6 @@
 [1]
 Description=Steam
-desktop=4
+desktop=1
 desktoprule=2
 types=1
 wmclass=steam
@@ -8,7 +8,7 @@ wmclassmatch=1
 
 [2]
 Description=Steam Games (steam_app_)
-desktop=4
+desktop=1
 desktoprule=2
 types=1
 wmclass=steam_app_.*
