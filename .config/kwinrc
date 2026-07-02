@@ -69,14 +69,19 @@ popuphidedelay=150
 textonly=true
 
 [Script-krohnkite]
-ignoreClass=krunner,yakuake,kded,polkit,plasmashell,xwaylandvideobridge,org.kde.xdgdesktopportal,xdg-desktop-portal,portal
+floatingClass=discord,org.kde.xdgdesktopportal,xdg-desktop-portal-kde
+ignoreClass=krunner,yakuake,kded,polkit,plasmashell,xwaylandvideobridge
 screenGapBetween=4
 screenGapBottom=4
 screenGapLeft=4
 screenGapRight=4
 screenGapTop=4
-threeColumnLayoutOrder=1
-tileLayoutOrder=3
+tileLayoutOrder=1
+monocleLayoutOrder=2
+threeColumnLayoutOrder=3
+quarterLayoutOrder=4
+spiralLayoutOrder=5
+columnsLayoutOrder=6
 
 [TabBox]
 DesktopMode=0

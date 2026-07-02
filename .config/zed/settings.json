@@ -16,8 +16,8 @@
   "buffer_font_size": 15,
   "theme": {
     "mode": "system",
-    "light": "Gruvbox Light",
-    "dark": "Gruvbox Dark",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha",
   },
   "credential_store": "none",
 }
