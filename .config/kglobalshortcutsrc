@@ -3,7 +3,7 @@ _k_friendly_name=Activity Manager
 switch-to-activity-558f32a4-2d65-4a46-a508-f70f62939d63=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
-Switch to Last-Used Keyboard Layout=none,Meta+Alt+L,Switch to Last-Used Keyboard Layout
+Switch to Last-Used Keyboard Layout=none,none,Switch to Last-Used Keyboard Layout
 Switch to Next Keyboard Layout=none,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
@@ -29,9 +29,9 @@ push_to_talk=none,none,Push to talk
 
 [ksmserver]
 Halt Without Confirmation=none,none,Shut Down Without Confirmation
-Lock Session=Screensaver\tMeta+L,Screensaver\tMeta+L,Lock Session
+Lock Session=Screensaver,Screensaver,Lock Session
 Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Show Logout Screen
-Log Out Without Confirmation=none,none,Log Out Without Confirmation
+Log Out Without Confirmation=none,Meta+L,Log Out Without Confirmation
 LogOut=none,none,Log Out
 Reboot=none,none,Reboot
 Reboot Without Confirmation=none,none,Reboot Without Confirmation
@@ -40,7 +40,6 @@ _k_friendly_name=Session Management
 
 [kwin]
 Activate Window Demanding Attention=Meta+Ctrl+A,Meta+Ctrl+A,Activate Window Demanding Attention
-Cube=Meta+C,none,Toggle Cube
 Cycle Overview=none,none,Cycle through Overview and Grid View
 Cycle Overview Opposite=none,none,Cycle through Grid View and Overview
 Decrease Opacity=none,none,Decrease Opacity of Active Window by 5%
@@ -54,14 +53,14 @@ Increase Opacity=none,none,Increase Opacity of Active Window by 5%
 Kill Window=Meta+Ctrl+Esc,Meta+Ctrl+Esc,Kill Window
 KrohnkiteBTreeLayout=none,none,Krohnkite: BTree Layout
 KrohnkiteColumnsLayout=none,none,Krohnkite: Columns Layout
-KrohnkiteDecrease=Meta+D,Meta+O,Krohnkite: Decrease
+KrohnkiteDecrease=none,Meta+O,Krohnkite: Decrease
 KrohnkiteFloatAll=Meta+Shift+F,none,Krohnkite: Toggle Float All
 KrohnkiteFloatingLayout=none,none,Krohnkite: Floating Layout
 KrohnkiteFocusDown=Meta+J,none,Krohnkite: Focus Down
 KrohnkiteFocusLeft=Meta+H,none,Krohnkite: Focus Left
 KrohnkiteFocusNext=Meta+.,none,Krohnkite: Focus Next
 KrohnkiteFocusPrev=Meta+\\,,none,Krohnkite: Focus Previous
-KrohnkiteFocusRight=Meta+L,none,Krohnkite: Focus Right
+KrohnkiteFocusRight=Meta+Alt+L,none,Krohnkite: Focus Right
 KrohnkiteFocusUp=Meta+K,none,Krohnkite: Focus Up
 KrohnkiteGrowHeight=Meta+Ctrl+J,none,Krohnkite: Grow Height
 KrohnkiteIncrease=Meta+I,none,Krohnkite: Increase
@@ -279,10 +278,10 @@ powerProfile=Battery\tMeta+B,Battery\tMeta+B,Switch Power Profile
 Slideshow Wallpaper Next Image=none,none,Next Wallpaper Image
 _k_friendly_name=plasmashell
 activate application launcher=Meta\tAlt+F1,Meta\tAlt+F1,Activate Application Launcher
-activate task manager entry 1=none,Meta+1,Activate Task Manager Entry 1
+activate task manager entry 1=none,Meta+Ctrl+1,Activate Task Manager Entry 1
 activate task manager entry 10=none,none,Activate Task Manager Entry 10
-activate task manager entry 2=none,Meta+2,Activate Task Manager Entry 2
-activate task manager entry 3=none,Meta+3,Activate Task Manager Entry 3
+activate task manager entry 2=none,Meta+Ctrl+2,Activate Task Manager Entry 2
+activate task manager entry 3=none,Meta+Ctrl+3,Activate Task Manager Entry 3
 activate task manager entry 4=Meta+4,Meta+4,Activate Task Manager Entry 4
 activate task manager entry 5=Meta+5,Meta+5,Activate Task Manager Entry 5
 activate task manager entry 6=Meta+6,Meta+6,Activate Task Manager Entry 6
@@ -321,9 +320,6 @@ _launch=Ctrl+Alt+B
 
 [services][kitty.desktop]
 _launch=Ctrl+Alt+T
-
-[services][net.local.restart-plasmashell-now.desktop]
-_launch=Meta+Shift+Esc
 
 [services][org.kde.konsole.desktop]
 _launch=none

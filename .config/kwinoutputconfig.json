@@ -3,8 +3,8 @@
         "data": [
             {
                 "abmLevel": 0,
-                "allowDdcCi": true,
-                "allowSdrSoftwareBrightness": false,
+                "allowDdcCi": false,
+                "allowSdrSoftwareBrightness": true,
                 "autoBrightnessCurve": [
                     0,
                     0,
@@ -20,7 +20,7 @@
                 ],
                 "autoRotation": "InTabletMode",
                 "automaticBrightness": false,
-                "brightness": 0.75,
+                "brightness": 1,
                 "colorPowerTradeoff": "PreferAccuracy",
                 "colorProfileSource": "sRGB",
                 "connectorName": "DP-1",
@@ -32,7 +32,7 @@
                 "edrPolicy": "always",
                 "hdrColorProfileSource": "EDID",
                 "hdrIccProfilePath": "",
-                "highDynamicRange": true,
+                "highDynamicRange": false,
                 "iccProfilePath": "",
                 "maxBitsPerColor": 0,
                 "maxPeakBrightnessOverride": 400,
@@ -51,7 +51,7 @@
                 "transform": "Normal",
                 "uuid": "0d24a2da-5a79-482a-bb23-102037d6ad5a",
                 "vrrPolicy": "Never",
-                "wideColorGamut": true
+                "wideColorGamut": false
             },
             {
                 "abmLevel": 0,

@@ -1,18 +1,14 @@
 [Desktops]
-Id_1=1c5edaff-0e5e-4ed8-91f0-dbf8049fc0b1
-Id_2=90710eeb-1704-474a-b670-0d7d1d75c181
-Id_3=f2f3c190-eb9d-4ece-a2bd-788ec871d410
-Id_4=2a79e7e1-1daf-467e-9d73-19e8367e6acc
-Name_1=Gaming
+Id_1=90710eeb-1704-474a-b670-0d7d1d75c181
+Id_2=f2f3c190-eb9d-4ece-a2bd-788ec871d410
+Id_3=2a79e7e1-1daf-467e-9d73-19e8367e6acc
+Id_4=d529c018-ff70-4718-8f93-93a62d540ad0
+Name_1=Desktop 2
+Name_2=Desktop 3
+Name_3=Desktop 4
+Name_4=Gaming
 Number=4
 Rows=1
-id_1=1c5edaff-0e5e-4ed8-91f0-dbf8049fc0b1
-id_2=5fd7ffc0-827d-4b7e-8ea4-44dfe98d1042
-id_3=fd16acfe-aca9-412a-abaa-6e15bded292d
-id_4=2b659a38-5ddd-46b9-a83f-7648d67f8d35
-name_1=Gaming
-number=4
-rows=1
 
 [EdgeBarrier]
 edgebarrier=0
@@ -51,22 +47,19 @@ nighttemperature=2600
 
 [Plugins]
 blurEnabled=false
-blurenabled=false
 eyeonscreenenabled=true
 fadingpopupsenabled=false
 glideenabled=true
 krohnkiteEnabled=true
 magiclampEnabled=true
-magiclampenabled=true
 scaleenabled=false
 screenedgeenabled=false
 slidingpopupsenabled=false
 squashEnabled=false
-squashenabled=false
-steamgamingEnabled=true
+steamgamingEnabled=false
+tilingEnabled=false
 windowapertureenabled=false
 wobblywindowsEnabled=true
-wobblywindowsenabled=true
 
 [Script-desktopchangeosd]
 popuphidedelay=150
@@ -74,9 +67,10 @@ textonly=true
 
 [Script-krohnkite]
 columnsLayoutOrder=6
-floatingClass=discord,org.kde.xdgdesktopportal,xdg-desktop-portal-kde
+floatedWindowsLayer=1
+floatingClass=discord,org.kde.xdgdesktopportal,xdg-desktop-portal-kde,steam_app_default
 ignoreClass=krunner,yakuake,kded,polkit,plasmashell,xwaylandvideobridge,steam,steamwebhelper,Steam,wine,wine64,Wine,wineboot,wineconsole,steamcompmgr,gamescope,[steam_app]
-ignoreVDesktop=Gaming
+ignoreVDesktop=
 monocleLayoutOrder=2
 quarterLayoutOrder=4
 screenGapBetween=4
@@ -87,43 +81,14 @@ screenGapTop=4
 spiralLayoutOrder=5
 threeColumnLayoutOrder=3
 tileLayoutOrder=1
+tiledWindowsLayer=1
 
 [TabBox]
 DesktopMode=0
 LayoutName=thumbnail_grid
-activitiesmode=0
-desktopmode=0
 
 [TabBoxAlternative]
 DesktopMode=0
-
-[Tiling][11fe64e9-1b3e-4ca8-947a-f57a25296c17][]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][11fe64e9-1b3e-4ca8-947a-f57a25296c17][0d24a2da-5a79-482a-bb23-102037d6ad5a]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5},{"width":0.5}]}
-
-[Tiling][11fe64e9-1b3e-4ca8-947a-f57a25296c17][464f98bc-7a3b-4a6c-a49d-24f8ae7ea52d]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][11fe64e9-1b3e-4ca8-947a-f57a25296c17][65192e26-046c-47c5-986b-2ae13e17f147]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][1c5edaff-0e5e-4ed8-91f0-dbf8049fc0b1][]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][1c5edaff-0e5e-4ed8-91f0-dbf8049fc0b1][0d24a2da-5a79-482a-bb23-102037d6ad5a]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][1ecca742-ee24-418b-8691-8ee6b14587f7][0d24a2da-5a79-482a-bb23-102037d6ad5a]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][2a79e7e1-1daf-467e-9d73-19e8367e6acc][]
 padding=4
@@ -131,89 +96,29 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 
 [Tiling][2a79e7e1-1daf-467e-9d73-19e8367e6acc][0d24a2da-5a79-482a-bb23-102037d6ad5a]
 padding=4
-tiles={"layoutDirection":"floating","tiles":[]}
-
-[Tiling][2b659a38-5ddd-46b9-a83f-7648d67f8d35][0d24a2da-5a79-482a-bb23-102037d6ad5a]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][41d2e885-fe18-4e1a-aadc-142e0d3a8128][]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][41d2e885-fe18-4e1a-aadc-142e0d3a8128][0d24a2da-5a79-482a-bb23-102037d6ad5a]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][507e0881-50ba-4d64-897a-defe5788d71c][0d24a2da-5a79-482a-bb23-102037d6ad5a]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][5fd7ffc0-827d-4b7e-8ea4-44dfe98d1042][0d24a2da-5a79-482a-bb23-102037d6ad5a]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5},{"layoutDirection":"vertical","tiles":[{"height":0.5},{"height":0.5}],"width":0.5}]}
-
-[Tiling][85903718-38b8-4f51-aad3-0c943b8f5249][]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][85903718-38b8-4f51-aad3-0c943b8f5249][0d24a2da-5a79-482a-bb23-102037d6ad5a]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[]}
-
-[Tiling][85903718-38b8-4f51-aad3-0c943b8f5249][464f98bc-7a3b-4a6c-a49d-24f8ae7ea52d]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][85903718-38b8-4f51-aad3-0c943b8f5249][65192e26-046c-47c5-986b-2ae13e17f147]
-padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][90710eeb-1704-474a-b670-0d7d1d75c181][]
 padding=4
-tiles={"layoutDirection":"floating","tiles":[]}
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][90710eeb-1704-474a-b670-0d7d1d75c181][0d24a2da-5a79-482a-bb23-102037d6ad5a]
 padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5},{"layoutDirection":"vertical","tiles":[{"height":0.5},{"height":0.5}],"width":0.5}]}
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
-[Tiling][b8a07501-5d2c-47ec-870a-6070235bd734][0d24a2da-5a79-482a-bb23-102037d6ad5a]
+[Tiling][d529c018-ff70-4718-8f93-93a62d540ad0][]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
-[Tiling][f06256b7-f2f1-49f6-a74d-aa58fab48132][]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][f06256b7-f2f1-49f6-a74d-aa58fab48132][0d24a2da-5a79-482a-bb23-102037d6ad5a]
+[Tiling][d529c018-ff70-4718-8f93-93a62d540ad0][0d24a2da-5a79-482a-bb23-102037d6ad5a]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][f2f3c190-eb9d-4ece-a2bd-788ec871d410][]
 padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5},{"layoutDirection":"vertical","tiles":[{"height":0.5},{"height":0.5}],"width":0.5}]}
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][f2f3c190-eb9d-4ece-a2bd-788ec871d410][0d24a2da-5a79-482a-bb23-102037d6ad5a]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5},{"width":0.5}]}
-
-[Tiling][fd16acfe-aca9-412a-abaa-6e15bded292d][0d24a2da-5a79-482a-bb23-102037d6ad5a]
-padding=4
-tiles={"layoutDirection":"floating","tiles":[]}
-
-[Tiling][fe4d7cdc-6a77-43ca-9c1e-a7eb2d3609de][]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][fe4d7cdc-6a77-43ca-9c1e-a7eb2d3609de][0d24a2da-5a79-482a-bb23-102037d6ad5a]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[]}
-
-[Tiling][fe4d7cdc-6a77-43ca-9c1e-a7eb2d3609de][464f98bc-7a3b-4a6c-a49d-24f8ae7ea52d]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][fe4d7cdc-6a77-43ca-9c1e-a7eb2d3609de][65192e26-046c-47c5-986b-2ae13e17f147]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -222,11 +127,15 @@ EnablePrimarySelection=true
 
 [Windows]
 ActiveMouseScreen=false
+AutoRaise=false
+AutoRaiseInterval=750
+BorderlessMaximizedWindows=false
+ClickRaise=true
 ElectricBorders=1
+FocusStealingPreventionLevel=1
 SeparateScreenFocus=true
 electricbordercooldown=250
 electricborderdelay=0
-electricborders=1
 
 [Windows_HDR]
 maxframeaverage=0
@@ -235,7 +144,6 @@ reference=400
 
 [Xwayland]
 Scale=1
-scale=1
 
 [org.kde.kdecoration2]
 bordersize=Normal
