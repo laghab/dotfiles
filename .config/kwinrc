@@ -2,12 +2,10 @@
 Id_1=90710eeb-1704-474a-b670-0d7d1d75c181
 Id_2=f2f3c190-eb9d-4ece-a2bd-788ec871d410
 Id_3=2a79e7e1-1daf-467e-9d73-19e8367e6acc
-Id_4=d529c018-ff70-4718-8f93-93a62d540ad0
 Name_1=Desktop 2
 Name_2=Desktop 3
 Name_3=Desktop 4
-Name_4=Gaming
-Number=4
+Number=3
 Rows=1
 
 [EdgeBarrier]
@@ -89,38 +87,6 @@ LayoutName=thumbnail_grid
 
 [TabBoxAlternative]
 DesktopMode=0
-
-[Tiling][2a79e7e1-1daf-467e-9d73-19e8367e6acc][]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][2a79e7e1-1daf-467e-9d73-19e8367e6acc][0d24a2da-5a79-482a-bb23-102037d6ad5a]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][90710eeb-1704-474a-b670-0d7d1d75c181][]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][90710eeb-1704-474a-b670-0d7d1d75c181][0d24a2da-5a79-482a-bb23-102037d6ad5a]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][d529c018-ff70-4718-8f93-93a62d540ad0][]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][d529c018-ff70-4718-8f93-93a62d540ad0][0d24a2da-5a79-482a-bb23-102037d6ad5a]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][f2f3c190-eb9d-4ece-a2bd-788ec871d410][]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
-
-[Tiling][f2f3c190-eb9d-4ece-a2bd-788ec871d410][0d24a2da-5a79-482a-bb23-102037d6ad5a]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Wayland]
 EnablePrimarySelection=true
