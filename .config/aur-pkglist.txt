@@ -1,0 +1,12 @@
+catppuccin-gtk-theme-mocha
+catppuccin-konsole-theme-git
+deepfilternet-plugin-pipewire-bin
+epson-inkjet-printer-201601w
+epson-inkjet-printer-escpr
+epson-inkjet-printer-filter
+input-remapper
+kwin-scripts-krohnkite
+papirus-folders-catppuccin-git
+rustdesk-bin
+topgrade
+xwaylandvideobridge

@@ -315,7 +315,9 @@ snap/
 .config/trashrc
 
 # Tool binaries (not configs)
-.local/bin/
+.local/bin/*
+!/.local/bin/restore-kde-configs.sh
+!/.local/bin/dotfiles-sync
 
 # KDE runtime
 .local/share/krunnerstaterc
