@@ -29,7 +29,7 @@ audio/x-vorbis+ogg=vlc.desktop;
 audio/x-wav=vlc.desktop;
 text/html=brave-browser.desktop;zen.desktop;userapp-Zen-4GZKP3.desktop;
 text/markdown=org.kde.kwrite.desktop;
-text/plain=featherpad.desktop;vim.desktop;dev.zed.Zed.desktop;micro.desktop;libreoffice-writer.desktop;okularApplication_txt.desktop;
+text/plain=dev.zed.Zed.desktop;micro.desktop;vim.desktop;libreoffice-writer.desktop;okularApplication_txt.desktop;
 text/x-cmake=org.kde.kwrite.desktop;
 video/3gp=vlc.desktop;
 video/3gpp=vlc.desktop;
@@ -73,6 +73,7 @@ x-scheme-handler/thorium=thorium.desktop;
 
 [Default Applications]
 application/json=org.kde.kwrite.desktop;
+application/pdf=com.github.xournalpp.xournalpp.desktop
 application/x-docbook+xml=org.kde.kwrite.desktop;
 application/x-extension-htm=zen.desktop
 application/x-extension-html=zen.desktop
@@ -102,7 +103,7 @@ audio/x-vorbis+ogg=vlc.desktop;
 audio/x-wav=vlc.desktop;
 text/html=brave-browser.desktop
 text/markdown=org.kde.kwrite.desktop;
-text/plain=featherpad.desktop;
+text/plain=dev.zed.Zed.desktop;
 text/x-cmake=org.kde.kwrite.desktop;
 video/3gp=vlc.desktop;
 video/3gpp=vlc.desktop;

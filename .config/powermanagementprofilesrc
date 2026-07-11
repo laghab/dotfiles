@@ -1,2 +1,5 @@
+[AC][SuspendSession]
+idleTimeout=600
+
 [Migration]
 MigratedProfilesToPlasma6=powerdevilrc

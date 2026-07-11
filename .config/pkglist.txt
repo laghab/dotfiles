@@ -83,14 +83,17 @@ inetutils
 input-remapper
 inter-font
 kcalc
+kclock
 kde-gtk-config
 kdeconnect
 kdegraphics-thumbnailers
 kdeplasma-addons
 kdialog
+kdotool-bin
 kinfocenter
 kio-admin
 kitty
+kolourpaint
 konsole
 kscreen
 kwallet-pam
@@ -186,7 +189,6 @@ ranger
 rebuild-detector
 ripgrep
 rsync
-rustdesk-bin
 s-nail
 scrcpy
 sg3_utils

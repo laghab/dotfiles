@@ -1,49 +1,28 @@
-[Libinput][1][1][ws-vol-Compx 2.4G Wireless Receiver Mouse]
-Enabled=false
-PointerAcceleration=-0.400
-PointerAccelerationProfile=1
-
-[Libinput][1][1][ws-vol-Compx VXE Mouse 1K Dongle]
-PointerAcceleration=-0.400
-PointerAccelerationProfile=1
-ScrollMethod=4
-
 [Libinput][13652][62862][Compx VXE Mouse 1K Dongle]
 Enabled=true
 PointerAcceleration=-0.400
 PointerAccelerationProfile=1
 ScrollMethod=4
-enabled=true
-pointeracceleration=-0.400
-pointeraccelerationprofile=1
 
 [Libinput][13652][62862][Compx VXE Mouse 1K Dongle Consumer Control]
 Enabled=false
-enabled=false
 
 [Libinput][13652][62863][Compx VXE R1]
 PointerAcceleration=-0.400
 PointerAccelerationProfile=1
-pointeracceleration=-0.200
-pointeraccelerationprofile=1
 
 [Libinput][13652][62863][Compx VXE R1 Consumer Control]
 Enabled=false
-enabled=false
 
 [Libinput][13652][64009][Compx 2.4G Wireless Receiver Consumer Control]
 Enabled=false
-enabled=false
 
 [Libinput][13652][64009][Compx 2.4G Wireless Receiver Mouse]
 Enabled=false
-enabled=false
 
 [Libinput][9610][268][BY Tech Gaming Keyboard Consumer Control]
-enabled=true
 
 [Libinput][9610][268][BY Tech Gaming Keyboard Mouse]
-enabled=false
 
 [Mouse]
 cursorSize=24

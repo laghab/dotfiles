@@ -7,3 +7,5 @@
 [user]
 	name = laghab
 	email = laghab@users.noreply.github.com
+[core]
+	editor = nano

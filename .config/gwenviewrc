@@ -1,6 +1,7 @@
 [General]
 LastTargetDir[$e]=file:$HOME/Desktop
 LastUsedVersion=210800
+SideBarPage=operations
 
 [MainWindow]
 MenuBar=Disabled
@@ -9,26 +10,28 @@ MenuBar=Disabled
 PrintHeight=21.64
 
 [Recent Files]
-File1[$e]=$HOME/Desktop/IMG-20260418-WA0058.jpg
-File10[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/dwarf-saber.jpg
-File2[$e]=$HOME/Pictures/Gifs/6-1.png
-File3[$e]=$HOME/Downloads/6-1.png
-File4[$e]=$HOME/Pictures/Gifs/download_nobg.gif
-File5[$e]=$HOME/Pictures/Gifs/download.gif
-File6[$e]=$HOME/Pictures/Gifs/6-1_nobg.png
-File7[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/dragon.jpg
-File8[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/droplets.png
-File9[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/eclipse.jpg
-Name1[$e]=IMG-20260418-WA0058.jpg
-Name10[$e]=dwarf-saber.jpg
-Name2[$e]=6-1.png
-Name3[$e]=6-1.png
-Name4[$e]=download_nobg.gif
-Name5[$e]=download.gif
-Name6[$e]=6-1_nobg.png
-Name7[$e]=dragon.jpg
-Name8[$e]=droplets.png
-Name9[$e]=eclipse.jpg
+File1[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/dwarf-saber.jpg
+File10[$e]=$HOME/Downloads/dere_spin_logo.png
+File2[$e]=$HOME/Downloads/WhatsApp Image 2026-07-05 at 13.33.25.jpeg
+File3[$e]=$HOME/Downloads/IMG20260129163750.jpg.jpeg
+File4[$e]=$HOME/Downloads/IMG20260129163743.jpg.jpeg
+File5[$e]=$HOME/Downloads/IMG20260129163756.jpg.jpeg
+File6[$e]=$HOME/Downloads/IMG20251103092024.jpg.jpeg
+File7[$e]=$HOME/Pictures/Gifs/6-1.png
+File8[$e]=$HOME/Pictures/Gifs/download.gif
+File9[$e]=$HOME/Pictures/Gifs/kanna.gif
+Name1[$e]=dwarf-saber.jpg
+Name10[$e]=dere_spin_logo.png
+Name2[$e]=WhatsApp Image 2026-07-05 at 13.33.25.jpeg
+Name3[$e]=IMG20260129163750.jpg.jpeg
+Name4[$e]=IMG20260129163743.jpg.jpeg
+Name5[$e]=IMG20260129163756.jpg.jpeg
+Name6[$e]=IMG20251103092024.jpg.jpeg
+Name7[$e]=6-1.png
+Name8[$e]=download.gif
+Name9[$e]=kanna.gif
 
 [SideBar]
-InformationSplitterSizes=211,244
+InformationSplitterSizes=220,255
+IsVisible ViewMode=true
+SideBarSplitterSizes=210,735

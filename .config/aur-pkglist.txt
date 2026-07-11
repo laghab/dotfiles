@@ -5,8 +5,8 @@ epson-inkjet-printer-201601w
 epson-inkjet-printer-escpr
 epson-inkjet-printer-filter
 input-remapper
+kdotool-bin
 kwin-scripts-krohnkite
 papirus-folders-catppuccin-git
-rustdesk-bin
 topgrade
 xwaylandvideobridge
