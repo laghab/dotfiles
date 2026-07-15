@@ -4,6 +4,7 @@ deepfilternet-plugin-pipewire-bin
 epson-inkjet-printer-201601w
 epson-inkjet-printer-escpr
 epson-inkjet-printer-filter
+google-chrome
 input-remapper
 kdotool-bin
 kwin-scripts-krohnkite

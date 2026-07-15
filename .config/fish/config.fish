@@ -19,4 +19,5 @@ alias vencord 'sh -c "$(curl -sS https://vencord.dev/install.sh)"'
 
 # opencode
 fish_add_path /home/laghab/.opencode/bin
+fish_add_path /home/laghab/.local/share/pnpm/bin
 alias oc opencode

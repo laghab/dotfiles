@@ -69,6 +69,7 @@ fwupd
 gdu
 git
 github-cli
+google-chrome
 gst-libav
 gst-plugin-pipewire
 gst-plugins-bad
@@ -172,6 +173,7 @@ plasma-thunderbolt
 plocate
 plymouth
 plymouth-kcm
+pnpm
 poppler-glib
 power-profiles-daemon
 powerdevil
@@ -180,10 +182,12 @@ pv
 python
 python-defusedxml
 python-gbinder
+python-numpy
 python-packaging
 python-pip
 python-pipx
 python-vdf
+python-zstandard
 qbittorrent
 ranger
 rebuild-detector

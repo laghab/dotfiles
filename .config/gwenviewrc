@@ -7,29 +7,29 @@ SideBarPage=operations
 MenuBar=Disabled
 
 [Print]
-PrintHeight=21.64
+PrintHeight=33.33
 
 [Recent Files]
-File1[$e]=$HOME/Pictures/Walls/walls-catppuccin-mocha-master/dwarf-saber.jpg
-File10[$e]=$HOME/Downloads/dere_spin_logo.png
-File2[$e]=$HOME/Downloads/WhatsApp Image 2026-07-05 at 13.33.25.jpeg
-File3[$e]=$HOME/Downloads/IMG20260129163750.jpg.jpeg
-File4[$e]=$HOME/Downloads/IMG20260129163743.jpg.jpeg
-File5[$e]=$HOME/Downloads/IMG20260129163756.jpg.jpeg
-File6[$e]=$HOME/Downloads/IMG20251103092024.jpg.jpeg
-File7[$e]=$HOME/Pictures/Gifs/6-1.png
-File8[$e]=$HOME/Pictures/Gifs/download.gif
-File9[$e]=$HOME/Pictures/Gifs/kanna.gif
-Name1[$e]=dwarf-saber.jpg
-Name10[$e]=dere_spin_logo.png
-Name2[$e]=WhatsApp Image 2026-07-05 at 13.33.25.jpeg
-Name3[$e]=IMG20260129163750.jpg.jpeg
-Name4[$e]=IMG20260129163743.jpg.jpeg
-Name5[$e]=IMG20260129163756.jpg.jpeg
-Name6[$e]=IMG20251103092024.jpg.jpeg
-Name7[$e]=6-1.png
-Name8[$e]=download.gif
-Name9[$e]=kanna.gif
+File1[$e]=$HOME/Desktop/stake-game/web-sdk/documentation/get-started-launch-publish.png
+File10[$e]=$HOME/Desktop/stake-game/web-sdk/documentation/context_diagram.png
+File2[$e]=$HOME/Desktop/stake-game/web-sdk/documentation/get-started-launch-sync.png
+File3[$e]=$HOME/Desktop/stake-game/web-sdk/documentation/get-started-launch-test.png
+File4[$e]=$HOME/Desktop/stake-game/web-sdk/documentation/get-started-storybook-action.png
+File5[$e]=$HOME/Desktop/stake-game/web-sdk/documentation/get-started-storybook-run.png
+File6[$e]=$HOME/Desktop/stake-game/web-sdk/documentation/storybook_symbol.png
+File7[$e]=$HOME/Desktop/stake-game/web-sdk/documentation/storybook_symbols.png
+File8[$e]=$HOME/Desktop/stake-game/web-sdk/documentation/task_breakdown.png
+File9[$e]=$HOME/Desktop/stake-game/web-sdk/documentation/book_event_intellisense.png
+Name1[$e]=get-started-launch-publish.png
+Name10[$e]=context_diagram.png
+Name2[$e]=get-started-launch-sync.png
+Name3[$e]=get-started-launch-test.png
+Name4[$e]=get-started-storybook-action.png
+Name5[$e]=get-started-storybook-run.png
+Name6[$e]=storybook_symbol.png
+Name7[$e]=storybook_symbols.png
+Name8[$e]=task_breakdown.png
+Name9[$e]=book_event_intellisense.png
 
 [SideBar]
 InformationSplitterSizes=220,255
