@@ -44,6 +44,7 @@ deepfilternet-plugin-pipewire-bin
 device-mapper
 diffutils
 discord
+discord-chat-exporter-cli-bin
 dmidecode
 dmraid
 dolphin
@@ -69,7 +70,6 @@ fwupd
 gdu
 git
 github-cli
-google-chrome
 gst-libav
 gst-plugin-pipewire
 gst-plugins-bad
@@ -77,6 +77,7 @@ gst-plugins-ugly
 gutenprint
 gwenview
 hdparm
+helium-browser-bin
 hwdetect
 hwinfo
 icoutils
@@ -150,6 +151,7 @@ obs-studio
 obsidian
 okular
 opencl-nvidia
+openspec
 openssh
 os-prober
 pacman-contrib
@@ -193,6 +195,7 @@ ranger
 rebuild-detector
 ripgrep
 rsync
+rust
 s-nail
 scrcpy
 sg3_utils
@@ -226,6 +229,7 @@ vim
 vlc
 vlc-plugins-all
 vulkan-icd-loader
+webkit2gtk-4.1
 wev
 wget
 which
@@ -233,9 +237,11 @@ wireplumber
 wl-clipboard
 wpa_supplicant
 xdg-user-dirs
+xdotool
 xfsprogs
 xsettingsd
 xwaylandvideobridge
 yadm
+ydotool
 zam-plugins
 zed

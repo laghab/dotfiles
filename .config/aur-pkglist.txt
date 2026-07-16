@@ -1,13 +1,14 @@
 catppuccin-gtk-theme-mocha
 catppuccin-konsole-theme-git
 deepfilternet-plugin-pipewire-bin
+discord-chat-exporter-cli-bin
 epson-inkjet-printer-201601w
 epson-inkjet-printer-escpr
 epson-inkjet-printer-filter
-google-chrome
 input-remapper
 kdotool-bin
 kwin-scripts-krohnkite
+openspec
 papirus-folders-catppuccin-git
 topgrade
 xwaylandvideobridge
