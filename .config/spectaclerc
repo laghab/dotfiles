@@ -6,7 +6,7 @@ clipboardGroup=PostScreenshotCopyImage
 
 [ImageSave]
 lastImageSaveAsLocation=file:///home/laghab/Desktop/Screenshot_20260712_123216.png
-lastImageSaveLocation=file:///tmp/mnemoo-screenshot.png
+lastImageSaveLocation=file:///home/laghab/Pictures/Screenshots/Screenshot_20260717_102414.png
 translatedScreenshotsFolder=Screenshots
 
 [VideoSave]
@@ -15,5 +15,5 @@ saveVideoFormat=mp4
 translatedScreencastsFolder=Screencasts
 
 [ViewerWindow]
-1920x1080 screen: Height=1017
+1920x1080 screen: Height=543
 1920x1080 screen: Width=806

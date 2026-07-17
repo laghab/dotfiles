@@ -10,5 +10,5 @@ kdotool-bin
 kwin-scripts-krohnkite
 openspec
 papirus-folders-catppuccin-git
-topgrade
+topgrade-bin
 xwaylandvideobridge

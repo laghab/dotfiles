@@ -103,7 +103,8 @@
     },
     {
       "type": "terminalfont",
-      "key": "│  {#keys}Font"
+      "key": "│  {#keys}Font",
+      "format": "{name} ({size})"
     },
     {
       "type": "colors",
