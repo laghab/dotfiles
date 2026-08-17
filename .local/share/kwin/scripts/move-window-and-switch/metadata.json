@@ -1,0 +1,21 @@
+{
+  "KPackageStructure": "KWin/Script",
+  "KPlugin": {
+    "Name": "Move Window and Switch to Desktop",
+    "Description": "Move the focused window to a desktop and switch to it (Meta+1..5)",
+    "Icon": "virtual-desktops",
+    "Authors": [
+      {
+        "Email": "",
+        "Name": "laghab"
+      }
+    ],
+    "Id": "move-window-and-switch",
+    "Version": "1.0",
+    "License": "GPL-2.0-or-later"
+  },
+  "X-Plasma-API": "javascript",
+  "X-Plasma-API-Minimum-Version": "6.0",
+  "X-Plasma-MainScript": "code/main.js",
+  "X-KDE-ConfigModule": "kwin/effects/configs/kcm_kwin4_genericscripted"
+}

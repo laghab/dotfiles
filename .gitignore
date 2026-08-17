@@ -1,0 +1,8 @@
+# zsh plugins are self-installing (see .config/zsh/plugins.zsh), don't track their git checkouts
+.config/zsh/plugins/
+
+# per-device pairing keys, never sync these
+.config/kdeconnect/
+
+# gh stores the oauth token here
+.config/gh/hosts.yml
