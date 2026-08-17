@@ -1,0 +1,233 @@
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "defs": {
+    "crust": "#11111b",
+    "mantle": "#181825",
+    "base": "#1e1e2e",
+    "surface0": "#45475a",
+    "surface1": "#585b70",
+    "surface2": "#6c7086",
+    "overlay0": "#6c7086",
+    "overlay1": "#9399b2",
+    "overlay2": "#bac2de",
+    "subtext0": "#a6adc8",
+    "subtext1": "#bac2de",
+    "text": "#cdd6f4",
+    "rosewater": "#f5e0dc",
+    "flamingo": "#f2cdcd",
+    "pink": "#f5c2e7",
+    "mauve": "#cba6f7",
+    "red": "#f38ba8",
+    "maroon": "#eba0ac",
+    "peach": "#fab387",
+    "yellow": "#f9e2af",
+    "green": "#a6e3a1",
+    "teal": "#94e2d5",
+    "sky": "#89dceb",
+    "sapphire": "#74c7ec",
+    "blue": "#89b4fa",
+    "lavender": "#b4befe"
+  },
+  "theme": {
+    "primary": {
+      "dark": "lavender",
+      "light": "mauve"
+    },
+    "secondary": {
+      "dark": "mauve",
+      "light": "blue"
+    },
+    "accent": {
+      "dark": "teal",
+      "light": "teal"
+    },
+    "error": {
+      "dark": "red",
+      "light": "red"
+    },
+    "warning": {
+      "dark": "yellow",
+      "light": "peach"
+    },
+    "success": {
+      "dark": "green",
+      "light": "green"
+    },
+    "info": {
+      "dark": "blue",
+      "light": "blue"
+    },
+    "text": {
+      "dark": "text",
+      "light": "text"
+    },
+    "textMuted": {
+      "dark": "subtext0",
+      "light": "subtext1"
+    },
+    "background": {
+      "dark": "#000000",
+      "light": "#000000"
+    },
+    "backgroundPanel": {
+      "dark": "mantle",
+      "light": "mantle"
+    },
+    "backgroundElement": {
+      "dark": "crust",
+      "light": "crust"
+    },
+    "border": {
+      "dark": "surface0",
+      "light": "surface1"
+    },
+    "borderActive": {
+      "dark": "lavender",
+      "light": "mauve"
+    },
+    "borderSubtle": {
+      "dark": "surface1",
+      "light": "surface2"
+    },
+    "diffAdded": {
+      "dark": "green",
+      "light": "green"
+    },
+    "diffRemoved": {
+      "dark": "red",
+      "light": "red"
+    },
+    "diffContext": {
+      "dark": "surface0",
+      "light": "surface0"
+    },
+    "diffHunkHeader": {
+      "dark": "surface0",
+      "light": "surface0"
+    },
+    "diffHighlightAdded": {
+      "dark": "green",
+      "light": "green"
+    },
+    "diffHighlightRemoved": {
+      "dark": "red",
+      "light": "red"
+    },
+    "diffAddedBg": {
+      "dark": "#1e1e2e",
+      "light": "#1e1e2e"
+    },
+    "diffRemovedBg": {
+      "dark": "#1e1e2e",
+      "light": "#1e1e2e"
+    },
+    "diffContextBg": {
+      "dark": "crust",
+      "light": "crust"
+    },
+    "diffLineNumber": {
+      "dark": "surface0",
+      "light": "surface0"
+    },
+    "diffAddedLineNumberBg": {
+      "dark": "#1e1e2e",
+      "light": "#1e1e2e"
+    },
+    "diffRemovedLineNumberBg": {
+      "dark": "#1e1e2e",
+      "light": "#1e1e2e"
+    },
+    "markdownText": {
+      "dark": "text",
+      "light": "text"
+    },
+    "markdownHeading": {
+      "dark": "blue",
+      "light": "blue"
+    },
+    "markdownLink": {
+      "dark": "lavender",
+      "light": "lavender"
+    },
+    "markdownLinkText": {
+      "dark": "teal",
+      "light": "teal"
+    },
+    "markdownCode": {
+      "dark": "green",
+      "light": "green"
+    },
+    "markdownBlockQuote": {
+      "dark": "surface0",
+      "light": "surface0"
+    },
+    "markdownEmph": {
+      "dark": "peach",
+      "light": "peach"
+    },
+    "markdownStrong": {
+      "dark": "yellow",
+      "light": "yellow"
+    },
+    "markdownHorizontalRule": {
+      "dark": "surface0",
+      "light": "surface0"
+    },
+    "markdownListItem": {
+      "dark": "blue",
+      "light": "blue"
+    },
+    "markdownListEnumeration": {
+      "dark": "teal",
+      "light": "teal"
+    },
+    "markdownImage": {
+      "dark": "mauve",
+      "light": "mauve"
+    },
+    "markdownImageText": {
+      "dark": "teal",
+      "light": "teal"
+    },
+    "markdownCodeBlock": {
+      "dark": "text",
+      "light": "text"
+    },
+    "syntaxComment": {
+      "dark": "surface2",
+      "light": "surface2"
+    },
+    "syntaxKeyword": {
+      "dark": "mauve",
+      "light": "mauve"
+    },
+    "syntaxFunction": {
+      "dark": "blue",
+      "light": "blue"
+    },
+    "syntaxVariable": {
+      "dark": "lavender",
+      "light": "lavender"
+    },
+    "syntaxString": {
+      "dark": "green",
+      "light": "green"
+    },
+    "syntaxNumber": {
+      "dark": "peach",
+      "light": "peach"
+    },
+    "syntaxType": {
+      "dark": "yellow",
+      "light": "yellow"
+    },
+    "syntaxOperator": {
+      "dark": "sky",
+      "light": "sky"
+    },
+    "syntaxPunctuation": {
+      "dark": "subtext1",
+      "light": "subtext1"
+    }
+  }
+}

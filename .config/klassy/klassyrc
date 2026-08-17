@@ -1,0 +1,10 @@
+[Global]
+LookAndFeelSet=org.kde.breezedark.desktop
+RefreshedConfig=6.5.3
+
+[Windeco]
+IconSize=IconVerySmall
+
+[WindowOutlineStyle]
+WindowOutlineStyleActive=WindowOutlineAccentColor
+WindowOutlineThickness=1.5
