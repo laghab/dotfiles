@@ -1,0 +1,43 @@
+{
+    "ai": {
+        "defaultProvider": "claude-code",
+        "ollamaHistoryJson": "[]"
+    },
+    "appearance": {
+        "anim": {
+            "durations": {
+                "scale": 0.71
+            }
+        },
+        "blur": true,
+        "blurMask": true,
+        "padding": {
+            "scale": 0.8
+        },
+        "spacing": {
+            "scale": 0.8
+        },
+        "transparency": {
+            "base": 0.65,
+            "enabled": true,
+            "layers": 0.3
+        }
+    },
+    "background": {
+        "wallpaperFillMode": 2
+    },
+    "bar": {
+        "persistent": true,
+        "position": "top",
+        "scale": 0.3
+    },
+    "border": {
+        "rounding": 8
+    },
+    "launcher": {
+        "favouriteApps": [
+            "org.kde.dolphin",
+            "brave-origin"
+        ]
+    }
+}

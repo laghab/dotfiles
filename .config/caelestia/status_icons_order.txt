@@ -1,0 +1,1 @@
+lockstatus,microphone,kblayout,network,ethernet,bluetooth,audio,battery,peripheralBattery,nightlight,notifications

@@ -1,0 +1,252 @@
+[
+    {
+        "action": "activate task manager entry 5",
+        "actionFriendlyName": "Activate Task Manager Entry 5",
+        "component": "plasmashell",
+        "componentFriendlyName": "plasmashell",
+        "keys": [
+            "Meta+5"
+        ]
+    },
+    {
+        "action": "moveWindowAndSwitchToDesktop5",
+        "actionFriendlyName": "Move Window and Switch to Desktop 5",
+        "component": "kwin",
+        "componentFriendlyName": "KWin",
+        "keys": [
+            "Meta+5"
+        ]
+    },
+    {
+        "action": "previous activity",
+        "actionFriendlyName": "Walk through activities (Reverse)",
+        "component": "plasmashell",
+        "componentFriendlyName": "plasmashell",
+        "keys": [
+            "Meta+Shift+A"
+        ]
+    },
+    {
+        "action": "activate task manager entry 1",
+        "actionFriendlyName": "Activate Task Manager Entry 1",
+        "component": "plasmashell",
+        "componentFriendlyName": "plasmashell",
+        "keys": [
+            "Meta+1"
+        ]
+    },
+    {
+        "action": "moveWindowAndSwitchToDesktop1",
+        "actionFriendlyName": "Move Window and Switch to Desktop 1",
+        "component": "kwin",
+        "componentFriendlyName": "KWin",
+        "keys": [
+            "Meta+1"
+        ]
+    },
+    {
+        "action": "activate task manager entry 6",
+        "actionFriendlyName": "Activate Task Manager Entry 6",
+        "component": "plasmashell",
+        "componentFriendlyName": "plasmashell",
+        "keys": [
+            "Meta+6"
+        ]
+    },
+    {
+        "action": "show-on-mouse-pos",
+        "actionFriendlyName": "Show Clipboard Items at Mouse Position",
+        "component": "plasmashell",
+        "componentFriendlyName": "plasmashell",
+        "keys": [
+            "Meta+V"
+        ]
+    },
+    {
+        "action": "activate task manager entry 7",
+        "actionFriendlyName": "Activate Task Manager Entry 7",
+        "component": "plasmashell",
+        "componentFriendlyName": "plasmashell",
+        "keys": [
+            "Meta+7"
+        ]
+    },
+    {
+        "action": "activate task manager entry 4",
+        "actionFriendlyName": "Activate Task Manager Entry 4",
+        "component": "plasmashell",
+        "componentFriendlyName": "plasmashell",
+        "keys": [
+            "Meta+4"
+        ]
+    },
+    {
+        "action": "moveWindowAndSwitchToDesktop4",
+        "actionFriendlyName": "Move Window and Switch to Desktop 4",
+        "component": "kwin",
+        "componentFriendlyName": "KWin",
+        "keys": [
+            "Meta+4"
+        ]
+    },
+    {
+        "action": "activate task manager entry 9",
+        "actionFriendlyName": "Activate Task Manager Entry 9",
+        "component": "plasmashell",
+        "componentFriendlyName": "plasmashell",
+        "keys": [
+            "Meta+9"
+        ]
+    },
+    {
+        "action": "activate task manager entry 3",
+        "actionFriendlyName": "Activate Task Manager Entry 3",
+        "component": "plasmashell",
+        "componentFriendlyName": "plasmashell",
+        "keys": [
+            "Meta+3"
+        ]
+    },
+    {
+        "action": "moveWindowAndSwitchToDesktop3",
+        "actionFriendlyName": "Move Window and Switch to Desktop 3",
+        "component": "kwin",
+        "componentFriendlyName": "KWin",
+        "keys": [
+            "Meta+3"
+        ]
+    },
+    {
+        "action": "Grid View",
+        "actionFriendlyName": "Toggle Grid View",
+        "component": "kwin",
+        "componentFriendlyName": "KWin",
+        "keys": [
+            "Meta+G"
+        ]
+    },
+    {
+        "action": "activate task manager entry 2",
+        "actionFriendlyName": "Activate Task Manager Entry 2",
+        "component": "plasmashell",
+        "componentFriendlyName": "plasmashell",
+        "keys": [
+            "Meta+2"
+        ]
+    },
+    {
+        "action": "moveWindowAndSwitchToDesktop2",
+        "actionFriendlyName": "Move Window and Switch to Desktop 2",
+        "component": "kwin",
+        "componentFriendlyName": "KWin",
+        "keys": [
+            "Meta+2"
+        ]
+    },
+    {
+        "action": "Overview",
+        "actionFriendlyName": "Toggle Overview",
+        "component": "kwin",
+        "componentFriendlyName": "KWin",
+        "keys": [
+            "Meta+W"
+        ]
+    },
+    {
+        "action": "Walk Through Windows",
+        "actionFriendlyName": "Walk Through Windows",
+        "component": "kwin",
+        "componentFriendlyName": "KWin",
+        "keys": [
+            "Alt+Tab",
+            "Meta+Tab"
+        ]
+    },
+    {
+        "action": "activate application launcher",
+        "actionFriendlyName": "Activate Application Launcher",
+        "component": "plasmashell",
+        "componentFriendlyName": "plasmashell",
+        "keys": [
+            "Meta",
+            "Alt+F1"
+        ]
+    },
+    {
+        "action": "view_actual_size",
+        "actionFriendlyName": "Zoom to Actual Size",
+        "component": "kwin",
+        "componentFriendlyName": "KWin",
+        "keys": [
+            "Meta+0"
+        ]
+    },
+    {
+        "action": "Walk Through Windows",
+        "actionFriendlyName": "Walk Through Windows",
+        "component": "kwin",
+        "componentFriendlyName": "KWin",
+        "keys": [
+            "Alt+Tab",
+            "Meta+Tab"
+        ]
+    },
+    {
+        "action": "Log Out",
+        "actionFriendlyName": "Show Logout Screen",
+        "component": "ksmserver",
+        "componentFriendlyName": "Session Management",
+        "keys": [
+            "Ctrl+Alt+Del"
+        ]
+    },
+    {
+        "action": "activate task manager entry 8",
+        "actionFriendlyName": "Activate Task Manager Entry 8",
+        "component": "plasmashell",
+        "componentFriendlyName": "plasmashell",
+        "keys": [
+            "Meta+8"
+        ]
+    },
+    {
+        "action": "Walk Through Windows (Reverse)",
+        "actionFriendlyName": "Walk Through Windows (Reverse)",
+        "component": "kwin",
+        "componentFriendlyName": "KWin",
+        "keys": [
+            "Alt+Shift+Tab",
+            "Meta+Shift+Tab"
+        ]
+    },
+    {
+        "action": "_launch",
+        "actionFriendlyName": "Spectacle",
+        "component": "org.kde.spectacle.desktop",
+        "componentFriendlyName": "Spectacle",
+        "keys": [
+            "Meta+Shift+S",
+            "Print"
+        ]
+    },
+    {
+        "action": "Capture",
+        "actionFriendlyName": "Take screenshot",
+        "component": "org.flameshot.Flameshot.desktop",
+        "componentFriendlyName": "Flameshot",
+        "keys": [
+            "Meta+Shift+S",
+            "Print"
+        ]
+    },
+    {
+        "action": "powerProfile",
+        "actionFriendlyName": "Switch Power Profile",
+        "component": "org_kde_powerdevil",
+        "componentFriendlyName": "Power Management",
+        "keys": [
+            "Meta+B",
+            "Battery"
+        ]
+    }
+]

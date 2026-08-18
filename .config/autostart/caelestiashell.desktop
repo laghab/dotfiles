@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Caelestia Shell
+Comment=Start Caelestia Shell
+Exec=/home/laghab/.local/bin/caelestia-autostart.sh
+Icon=quickshell
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+X-KDE-AutostartPhase=2
+X-KDE-Wayland-Interfaces=zkde_screencast_unstable_v1
