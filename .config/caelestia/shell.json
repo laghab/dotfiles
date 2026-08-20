@@ -1,43 +1,216 @@
 {
     "ai": {
-        "defaultProvider": "claude-code",
-        "ollamaHistoryJson": "[]"
+        "showNews": false
     },
     "appearance": {
-        "anim": {
-            "durations": {
-                "scale": 0.71
-            }
-        },
         "blur": true,
         "blurMask": true,
-        "padding": {
-            "scale": 0.8
-        },
-        "spacing": {
-            "scale": 0.8
-        },
+        "islands": false,
+        "pitchBlack": true,
         "transparency": {
-            "base": 0.65,
+            "base": 0.7049033717105263,
             "enabled": true,
-            "layers": 0.3
+            "layers": 0.4
         }
     },
     "background": {
+        "desktopClock": {
+            "enabled": true
+        },
+        "desktopIconsEnabled": true,
+        "desktopLyrics": {
+            "autoHide": false,
+            "enabled": false
+        },
+        "materialYouIconsEnabled": false,
+        "materialYouIconsVibrant": true,
+        "videoWallpaperPaused": false,
+        "visualiser": {
+            "autoHide": false,
+            "enabled": false
+        },
+        "wallpaperEnabled": true,
         "wallpaperFillMode": 2
     },
     "bar": {
-        "persistent": true,
-        "position": "top",
-        "scale": 0.3
+        "dodgeFocusedOnly": false,
+        "dodgeWindows": false,
+        "dragThreshold": 0,
+        "entries": [
+            {
+                "enabled": true,
+                "id": "logo",
+                "zone": "left"
+            },
+            {
+                "enabled": true,
+                "id": "workspaces",
+                "zone": "left"
+            },
+            {
+                "enabled": true,
+                "id": "activeWindow",
+                "zone": "left"
+            },
+            {
+                "enabled": true,
+                "id": "dock",
+                "zone": "middle"
+            },
+            {
+                "enabled": true,
+                "id": "tray",
+                "zone": "right"
+            },
+            {
+                "enabled": true,
+                "id": "github",
+                "zone": "right"
+            },
+            {
+                "enabled": true,
+                "id": "clock",
+                "zone": "right"
+            },
+            {
+                "enabled": true,
+                "id": "statusIcons",
+                "zone": "right"
+            },
+            {
+                "enabled": true,
+                "id": "power",
+                "zone": "right"
+            },
+            {
+                "enabled": true,
+                "id": "showDesktop",
+                "zone": "right"
+            },
+            {
+                "enabled": false,
+                "id": "kbLayoutIndicator",
+                "zone": "left"
+            },
+            {
+                "enabled": false,
+                "id": "notificationsIndicator",
+                "zone": "left"
+            },
+            {
+                "enabled": false,
+                "id": "perfCpu",
+                "zone": "left"
+            },
+            {
+                "enabled": false,
+                "id": "perfMemory",
+                "zone": "left"
+            },
+            {
+                "enabled": false,
+                "id": "perfStorage",
+                "zone": "left"
+            },
+            {
+                "enabled": false,
+                "id": "perfNetwork",
+                "zone": "left"
+            },
+            {
+                "enabled": false,
+                "id": "perfGpu",
+                "zone": "left"
+            },
+            {
+                "enabled": false,
+                "id": "perfBattery",
+                "zone": "left"
+            }
+        ],
+        "fontScaleOffset": -0.17,
+        "livePreviews": false,
+        "perElementFontScale": false,
+        "perElementPreviewScale": false,
+        "popouts": {
+            "activeWindow": false
+        },
+        "position": "bottom",
+        "previewScale": 1.32,
+        "previewScaleWithBar": true,
+        "scale": 0.6,
+        "scrollActions": {
+            "brightness": true
+        },
+        "status": {
+            "showPeripheralBattery": false
+        }
     },
     "border": {
-        "rounding": 8
+        "rounding": 5,
+        "thickness": 5
+    },
+    "dashboard": {
+        "colorizeMediaGif": false,
+        "showOnHover": true,
+        "showTerminal": false,
+        "showWeather": false,
+        "useMediaShapes": true
+    },
+    "general": {
+        "apps": {
+            "terminal": [
+                "kitty"
+            ]
+        },
+        "idle": {
+            "timeouts": [
+                {
+                    "idleAction": "lock",
+                    "timeout": 180
+                },
+                {
+                    "idleAction": "dpms off",
+                    "returnAction": "dpms on",
+                    "timeout": 300
+                },
+                {
+                    "enabled": true,
+                    "idleAction": [
+                        "suspendThenHibernate"
+                    ],
+                    "timeout": 900
+                }
+            ]
+        },
+        "logo": ""
     },
     "launcher": {
+        "enableDangerousActions": true,
+        "enabled": true,
         "favouriteApps": [
             "org.kde.dolphin",
-            "brave-origin"
-        ]
+            "kitty"
+        ],
+        "showOnHover": false,
+        "useFuzzy": {
+            "apps": true
+        },
+        "vimKeybinds": true
+    },
+    "notifs": {
+        "openExpanded": true
+    },
+    "osd": {
+        "enableMicrophone": true
+    },
+    "overview": {
+        "layoutType": 0
+    },
+    "shimeji": {
+        "enabled": false
+    },
+    "utilities": {
+        "enabled": true
     }
 }

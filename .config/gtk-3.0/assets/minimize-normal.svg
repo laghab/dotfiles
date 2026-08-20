@@ -12,30 +12,10 @@ font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal"
 >
 </g>
 
-<g fill="none" stroke="#fcfcfc" stroke-opacity="1" stroke-width="1.001" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
+<g fill="none" stroke="#e8e4eb" stroke-opacity="1" stroke-width="1.001" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,2.5,2.5)"
 font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
 >
-</g>
-
-<g fill="none" stroke="#fcfcfc" stroke-opacity="1" stroke-width="1.001" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#fcfcfc" stroke-opacity="1" stroke-width="1.001" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="#fcfcfc" fill-opacity="0.349996" stroke="#fcfcfc" stroke-opacity="0.809995" stroke-width="1.2012" stroke-linecap="round" stroke-linejoin="bevel" transform="matrix(2.5,0,0,2.5,21.5,21.5)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
-<rect x="0" y="0" width="2.8" height="2.8"/>
-</g>
-
-<g fill="none" stroke="#fcfcfc" stroke-opacity="1" stroke-width="1.001" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
+<image x="0" y="0" width="45" height="45" preserveAspectRatio="none" image-rendering="optimizeSpeed" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAYklEQVRYhe3SsQmDYBSF0RuxlFgJKcQRsv8AmSAzpBCsDA7gDv+DBOGc/uO+4iUAAAAAwBXcWsP1s72T3Avb38c8PVvCvjC6JBkL/d4adoXRv3H0r1R++pVkKPRHoQUArukEyb0H8qlLD7AAAAAASUVORK5CYII=" />
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"

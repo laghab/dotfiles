@@ -2,11 +2,44 @@
 _k_friendly_name=Activity Manager
 switch-to-activity-96a55a2c-5a48-47d9-ad92-88052921e2d4=none,none,Switch to activity "Default"
 switch-to-activity-d1148a6c-53e5-4fb7-8fdd-46ef0f27db20=none,none,Switch to activity "Default"
+switch-to-activity-f7a0503c-941d-4888-96c7-dfad7d05f8a4=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
-Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,
-Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,
+Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Keyboard Layout
+Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
+
+[caelestia-shell]
+_k_friendly_name=caelestia-shell
+caelestia-shortcut-clipboard=Meta+V,none,Open clipboard history
+caelestia-shortcut-code=Meta+C,none,Launch Editor
+caelestia-shortcut-emoji=Meta+Shift+V,none,Open emoji picker
+caelestia-shortcut-firefox=Meta+W,none,Launch Browser
+caelestia-shortcut-foot=Meta+Return,none,Launch Terminal
+caelestia-shortcut-github-desktop=Meta+G,none,Launch GitHub Desktop
+caelestia-shortcut-googleLens=Meta+Shift+A,none,Toggle Google Lens search
+caelestia-shortcut-kcolorpicker=Meta+Shift+C,none,Color Picker
+caelestia-shortcut-keybinds=Meta+/,none,Open keybinds list
+caelestia-shortcut-launcher=Meta\tMeta+Space,none,Toggle launcher
+caelestia-shortcut-nemo=Meta+Alt+E,none,Launch File Manager
+caelestia-shortcut-overview=Meta+Tab,none,Toggle overview
+caelestia-shortcut-screenRecording=Meta+Ctrl+S,none,Toggle screen recording
+caelestia-shortcut-screenshot=Meta+Shift+S,none,Toggle screenshot overlay
+caelestia-shortcut-session=Ctrl+Alt+Del,none,Toggle session menu
+caelestia-shortcut-sidebar=Meta+B,none,Toggle sidebar
+caelestia-shortcut-wallpaper=Meta+Ctrl+T,none,Open wallpaper picker
+caelestia-shortcut-windowSwitcher=Alt+Tab,none,Open window switcher
+caelestia-shortcut-windowSwitcherReverse=Alt+Shift+Tab,none,Open window switcher (reverse)
+caelestia-shortcut-workspace1=Alt+1,none,Switch to workspace 1
+caelestia-shortcut-workspace10=Meta+0,none,Switch to workspace 10
+caelestia-shortcut-workspace2=Alt+2,none,Switch to workspace 2
+caelestia-shortcut-workspace3=Alt+3,none,Switch to workspace 3
+caelestia-shortcut-workspace4=Alt+4,none,Switch to workspace 4
+caelestia-shortcut-workspace5=Alt+5,none,Switch to workspace 5
+caelestia-shortcut-workspace6=Meta+6,none,Switch to workspace 6
+caelestia-shortcut-workspace7=Meta+7,none,Switch to workspace 7
+caelestia-shortcut-workspace8=Meta+8,none,Switch to workspace 8
+caelestia-shortcut-workspace9=Meta+9,none,Switch to workspace 9
 
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
@@ -27,7 +60,7 @@ push_to_talk=none,none,Push to talk
 [ksmserver]
 Halt Without Confirmation=none,none,Shut Down Without Confirmation
 Lock Session=Screensaver\tMeta+L,Screensaver\tMeta+L,Lock Session
-Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Show Logout Screen
+Log Out=none,Ctrl+Alt+Del,Show Logout Screen
 Log Out Without Confirmation=none,none,Log Out Without Confirmation
 LogOut=none,none,Log Out
 Reboot=none,none,Reboot
@@ -45,12 +78,12 @@ Expose=Ctrl+F9,Ctrl+F9\tMeta+F9,Toggle Present Windows (Current desktop)
 ExposeAll=Launch (C)\tCtrl+F10,Launch (C)\tCtrl+F10\tMeta+F10,Toggle Present Windows (All desktops)
 ExposeClass=Ctrl+F7,Ctrl+F7\tMeta+F7,Toggle Present Windows (Window class)
 ExposeClassCurrentDesktop=none,none,Toggle Present Windows (Window class on current desktop)
-Grid View=Meta+G,Meta+G,Toggle Grid View
+Grid View=none,Meta+G,Toggle Grid View
 Increase Opacity=none,none,Increase Opacity of Active Window by 5%
 Kill Window=Meta+Ctrl+Esc,Meta+Ctrl+Esc,Kill Window
 KrohnkiteBTreeLayout=none,none,Krohnkite: BTree Layout
 KrohnkiteColumnsLayout=none,none,Krohnkite: Columns Layout
-KrohnkiteDecrease=Meta+O,Meta+D,Krohnkite: Decrease
+KrohnkiteDecrease=none,Meta+D,Krohnkite: Decrease
 KrohnkiteFloatAll=Meta+Shift+F,none,Krohnkite: Toggle Float All
 KrohnkiteFloatingLayout=none,none,Krohnkite: Floating Layout
 KrohnkiteFocusDown=Meta+J,none,Krohnkite: Focus Down
@@ -60,7 +93,7 @@ KrohnkiteFocusPrev=Meta+\\,,none,Krohnkite: Focus Previous
 KrohnkiteFocusRight=Meta+Alt+L,Meta+L,Krohnkite: Focus Right
 KrohnkiteFocusUp=Meta+K,none,Krohnkite: Focus Up
 KrohnkiteGrowHeight=Meta+Ctrl+J,none,Krohnkite: Grow Height
-KrohnkiteIncrease=Meta+I,none,Krohnkite: Increase
+KrohnkiteIncrease=none,none,Krohnkite: Increase
 KrohnkiteMonocleLayout=Meta+M,none,Krohnkite: Monocle Layout
 KrohnkiteNextLayout=Meta+U,Meta+\\\\,Krohnkite: Next Layout
 KrohnkitePreviousLayout=Meta+Y,Meta+|,Krohnkite: Previous Layout
@@ -90,7 +123,7 @@ MoveZoomDown=none,none,Move Zoomed Area Downwards
 MoveZoomLeft=none,none,Move Zoomed Area to Left
 MoveZoomRight=none,none,Move Zoomed Area to Right
 MoveZoomUp=none,none,Move Zoomed Area Upwards
-Overview=Meta+W,Meta+W,Toggle Overview
+Overview=none,Meta+W,Toggle Overview
 Setup Window Shortcut=none,none,Setup Window Shortcut
 Show Desktop=Meta+D,Meta+D,Peek at Desktop
 Suspend Compositing=Alt+Shift+F12,Alt+Shift+F12,Suspend Compositing
@@ -102,7 +135,7 @@ Switch Window Down=Meta+Alt+Down,Meta+Alt+Down,Switch to Window Below
 Switch Window Left=Meta+Alt+Left,Meta+Alt+Left,Switch to Window to the Left
 Switch Window Right=Meta+Alt+Right,Meta+Alt+Right,Switch to Window to the Right
 Switch Window Up=Meta+Alt+Up,Meta+Alt+Up,Switch to Window Above
-Switch to Desktop 1=Ctrl+F1\tMeta+F1,Ctrl+F1\tMeta+F1,Switch to Desktop 1
+Switch to Desktop 1=none,Ctrl+F1\tMeta+F1,Switch to Desktop 1
 Switch to Desktop 10=none,none,Switch to Desktop 10
 Switch to Desktop 11=none,none,Switch to Desktop 11
 Switch to Desktop 12=none,none,Switch to Desktop 12
@@ -113,15 +146,15 @@ Switch to Desktop 16=none,none,Switch to Desktop 16
 Switch to Desktop 17=none,none,Switch to Desktop 17
 Switch to Desktop 18=none,none,Switch to Desktop 18
 Switch to Desktop 19=none,none,Switch to Desktop 19
-Switch to Desktop 2=Ctrl+F2\tMeta+F2,Ctrl+F2\tMeta+F2,Switch to Desktop 2
+Switch to Desktop 2=none,Ctrl+F2\tMeta+F2,Switch to Desktop 2
 Switch to Desktop 20=none,none,Switch to Desktop 20
 Switch to Desktop 21=none,none,Switch to Desktop 21
 Switch to Desktop 22=none,none,Switch to Desktop 22
 Switch to Desktop 23=none,none,Switch to Desktop 23
 Switch to Desktop 24=none,none,Switch to Desktop 24
 Switch to Desktop 25=none,none,Switch to Desktop 25
-Switch to Desktop 3=Ctrl+F3\tMeta+F3,Ctrl+F3\tMeta+F3,Switch to Desktop 3
-Switch to Desktop 4=Ctrl+F4\tMeta+F4,Ctrl+F4\tMeta+F4,Switch to Desktop 4
+Switch to Desktop 3=none,Ctrl+F3\tMeta+F3,Switch to Desktop 3
+Switch to Desktop 4=none,Ctrl+F4\tMeta+F4,Switch to Desktop 4
 Switch to Desktop 5=none,none,Switch to Desktop 5
 Switch to Desktop 6=none,none,Switch to Desktop 6
 Switch to Desktop 7=none,none,Switch to Desktop 7
@@ -145,8 +178,8 @@ Switch to Screen to the Left=none,none,Switch to Screen to the Left
 Switch to Screen to the Right=none,none,Switch to Screen to the Right
 Toggle Night Color=none,none,Suspend/Resume Night Light
 Toggle Window Raise/Lower=none,none,Toggle Window Raise/Lower
-Walk Through Windows=Alt+Tab\tMeta+Tab,Alt+Tab\tMeta+Tab,Walk Through Windows
-Walk Through Windows (Reverse)=Alt+Shift+Tab\tMeta+Shift+Tab,Alt+Shift+Tab\tMeta+Shift+Tab,Walk Through Windows (Reverse)
+Walk Through Windows=none,Alt+Tab\tMeta+Tab,Walk Through Windows
+Walk Through Windows (Reverse)=none,Alt+Shift+Tab\tMeta+Shift+Tab,Walk Through Windows (Reverse)
 Walk Through Windows Alternative=none,none,Walk Through Windows Alternative
 Walk Through Windows Alternative (Reverse)=none,none,Walk Through Windows Alternative (Reverse)
 Walk Through Windows of Current Application=Alt+`\tMeta+`,Alt+`\tMeta+`,Walk Through Windows of Current Application
@@ -243,7 +276,7 @@ moveWindowAndSwitchToDesktop2=Meta+2,Meta+2,Move Window and Switch to Desktop 2
 moveWindowAndSwitchToDesktop3=Meta+3,Meta+3,Move Window and Switch to Desktop 3
 moveWindowAndSwitchToDesktop4=Meta+4,Meta+4,Move Window and Switch to Desktop 4
 moveWindowAndSwitchToDesktop5=Meta+5,Meta+5,Move Window and Switch to Desktop 5
-view_actual_size=Meta+0,Meta+0,Zoom to Actual Size
+view_actual_size=none,Meta+0,Zoom to Actual Size
 view_zoom_in=Meta++\tMeta+=,Meta++\tMeta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
 
@@ -280,22 +313,22 @@ Sleep=Sleep,Sleep,Suspend
 Toggle Keyboard Backlight=Keyboard Light On/Off,Keyboard Light On/Off,Toggle Keyboard Backlight
 Turn Off Screen=none,none,Turn Off Screen
 _k_friendly_name=Power Management
-powerProfile=Battery\tMeta+B,Battery\tMeta+B,Switch Power Profile
+powerProfile=none,Battery\tMeta+B,Switch Power Profile
 
 [plasmashell]
 Slideshow Wallpaper Next Image=none,none,Next Wallpaper Image
 _k_friendly_name=plasmashell
-activate application launcher=Meta\tAlt+F1,Meta\tAlt+F1,Activate Application Launcher
-activate task manager entry 1=Meta+1,Meta+1,Activate Task Manager Entry 1
+activate application launcher=none,Meta\tAlt+F1,Activate Application Launcher
+activate task manager entry 1=none,Meta+1,Activate Task Manager Entry 1
 activate task manager entry 10=none,none,Activate Task Manager Entry 10
-activate task manager entry 2=Meta+2,Meta+2,Activate Task Manager Entry 2
-activate task manager entry 3=Meta+3,Meta+3,Activate Task Manager Entry 3
-activate task manager entry 4=Meta+4,Meta+4,Activate Task Manager Entry 4
-activate task manager entry 5=Meta+5,Meta+5,Activate Task Manager Entry 5
-activate task manager entry 6=Meta+6,Meta+6,Activate Task Manager Entry 6
-activate task manager entry 7=Meta+7,Meta+7,Activate Task Manager Entry 7
-activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
-activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
+activate task manager entry 2=none,Meta+2,Activate Task Manager Entry 2
+activate task manager entry 3=none,Meta+3,Activate Task Manager Entry 3
+activate task manager entry 4=none,Meta+4,Activate Task Manager Entry 4
+activate task manager entry 5=none,Meta+5,Activate Task Manager Entry 5
+activate task manager entry 6=none,Meta+6,Activate Task Manager Entry 6
+activate task manager entry 7=none,Meta+7,Activate Task Manager Entry 7
+activate task manager entry 8=none,Meta+8,Activate Task Manager Entry 8
+activate task manager entry 9=none,Meta+9,Activate Task Manager Entry 9
 activate widget 46=none,none,Activate Icons-and-Text Task Manager Widget
 clear history=none,none,Clear Notification History
 clear-history=none,none,Clear Clipboard History
@@ -306,11 +339,11 @@ cyclePrevAction=none,none,Previous History Item
 edit_clipboard=none,none,Edit Contents…
 manage activities=Meta+Q,Meta+Q,Show Activity Switcher
 next activity=Meta+A,none,Walk through activities
-previous activity=Meta+Shift+A,none,Walk through activities (Reverse)
+previous activity=none,none,Walk through activities (Reverse)
 repeat_action=none,none,Manually Invoke Action on Current Clipboard
 show dashboard=Ctrl+F12,Ctrl+F12,Show Desktop
 show-barcode=none,none,Show Barcode…
-show-on-mouse-pos=Meta+V,Meta+V,Show Clipboard Items at Mouse Position
+show-on-mouse-pos=none,Meta+V,Show Clipboard Items at Mouse Position
 switch to next activity=none,none,Switch to Next Activity
 switch to previous activity=none,none,Switch to Previous Activity
 toggle do not disturb=none,none,Toggle do not disturb
@@ -319,12 +352,14 @@ toggle do not disturb=none,none,Toggle do not disturb
 _launch=Meta+Z
 
 [services][kitty.desktop]
-_launch=Shift+Return\tCtrl+Alt+T
+_launch=Ctrl+Alt+T
 
 [services][org.flameshot.Flameshot.desktop]
-Capture=Print\tMeta+Shift+S
 Launcher=none
 _launch=none
 
 [services][org.kde.konsole.desktop]
+_launch=none
+
+[services][org.kde.spectacle.desktop]
 _launch=none

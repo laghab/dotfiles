@@ -12,30 +12,10 @@ font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal"
 >
 </g>
 
-<g fill="none" stroke="#a1a9b1" stroke-opacity="1" stroke-width="1.001" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
+<g fill="none" stroke="#c0becb" stroke-opacity="1" stroke-width="1.001" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,2.5,2.5)"
 font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
 >
-</g>
-
-<g fill="none" stroke="#a1a9b1" stroke-opacity="1" stroke-width="1.001" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#a1a9b1" stroke-opacity="1" stroke-width="1.001" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#a1a9b1" stroke-opacity="1" stroke-width="1.2012" stroke-linecap="round" stroke-linejoin="round" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
-<polygon fill-rule="nonzero" vector-effect="none" points="4.5,9 9,4.5 13.5,9 9,13.5 " />
-</g>
-
-<g fill="none" stroke="#a1a9b1" stroke-opacity="1" stroke-width="1.001" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
+<image x="0" y="0" width="45" height="45" preserveAspectRatio="none" image-rendering="optimizeSpeed" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA50lEQVRYhe2XIQ7CQBBFH1CDJkFQwRVA1JMKLtPzcBnEpn4vgQFBgkaRYNYCO+nQsOE//efPE5M2C0IIIYQolIl1oA+xBTpg4bD/Bhx2bRMsQybpJHwEZma91zyAvUV8alzQOQuT+jrLgFXa4yQG91qlfwJJj0WR0pVTzwWIGbkGWA1d5iF9B7a7trl+CvYhLoETMB+y0OM8rjnCACmXlX1HkTct6bGQ9Fh4SNd9iJucYMrVQxd6fKcrIPYhnjOytcdOrz9iBayduj7yFzd9+5KHqdcqfUhvOk8eqTebIl/jQgghhCiWJyBfLsII9Z4XAAAAAElFTkSuQmCC" />
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"

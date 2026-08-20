@@ -1,2 +1,19 @@
+[1]
+Description=Hide xwaylandvideobridge
+minimize=true
+minimizerule=1
+noborder=true
+noborderrule=1
+skippager=true
+skippagerrule=1
+skipswitcher=true
+skipswitcherrule=1
+skiptaskbar=true
+skiptaskbarrule=1
+wmclass=xwaylandvideobridge
+wmclasscomplete=false
+wmclassmatch=1
+
 [General]
-rules=
+count=1
+rules=1

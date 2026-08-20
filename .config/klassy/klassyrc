@@ -2,9 +2,32 @@
 LookAndFeelSet=org.kde.breezedark.desktop
 RefreshedConfig=6.5.3
 
+[ShadowStyle]
+ShadowSize=ShadowNone
+
+[TitleBarOpacity]
+ActiveTitleBarOpacity=70
+InactiveTitleBarOpacity=70
+
 [Windeco]
-IconSize=IconVerySmall
+ButtonIconStyle=StyleSystemIconTheme
+IconSize=IconSmallMedium
+RoundAllCornersWhenNoBorders=false
+WindowCornerRadius=5
 
 [WindowOutlineStyle]
-WindowOutlineStyleActive=WindowOutlineAccentColor
-WindowOutlineThickness=1.5
+ThinWindowOutlineCustomColorActive=#d1cfe7
+ThinWindowOutlineCustomColorInactive=#2a292e
+ThinWindowOutlineStyleActive=WindowOutlineCustomColor
+ThinWindowOutlineStyleInactive=WindowOutlineCustomColor
+WindowOutlineAccentColorOpacityActive=77
+WindowOutlineAccentWithContrastOpacityActive=100
+WindowOutlineCustomColorActive=#d1cfe7
+WindowOutlineCustomColorInactive=#2a292e
+WindowOutlineCustomColorOpacityActive=100
+WindowOutlineCustomColorOpacityInactive=100
+WindowOutlineSnapToWholePixel=false
+WindowOutlineStyleActive=WindowOutlineCustomColor
+WindowOutlineStyleInactive=WindowOutlineCustomColor
+WindowOutlineThickness=2.6
+

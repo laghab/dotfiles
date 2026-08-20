@@ -1,9 +1,14 @@
 [Desktops]
-Id_1=ce9afe89-ec71-4403-a021-9a581f63892b
-Id_2=00639961-ac02-4ebd-a788-2404a3166bd3
-Id_3=df9666c6-4b47-49fa-965f-82b63fcd1545
-Id_4=4e29a61d-9cd8-4b79-ad26-60902aab2e32
-Id_5=36a37607-02a7-49e7-941d-15bcea41b85c
+Id_1=00639961-ac02-4ebd-a788-2404a3166bd3
+Id_2=df9666c6-4b47-49fa-965f-82b63fcd1545
+Id_3=4e29a61d-9cd8-4b79-ad26-60902aab2e32
+Id_4=36a37607-02a7-49e7-941d-15bcea41b85c
+Id_5=df5f75e2-ce27-4be0-b2d3-41fef3030744
+Name_1=Desktop 1
+Name_2=Desktop 2
+Name_3=Desktop 3
+Name_4=Desktop 4
+Name_5=Desktop 5
 Number=5
 Rows=1
 
@@ -22,30 +27,39 @@ DayTemperature=5000
 NightTemperature=3700
 
 [Plugins]
+blurEnabled=true
 diminactiveEnabled=true
 krohnkiteEnabled=true
 kwin_gesturesEnabled=false
+kwin_workspace_trackerEnabled=true
 magiclampEnabled=true
 move-window-and-switchEnabled=true
+quickshell-kde-bridgeEnabled=false
 squashEnabled=false
 tilingEnabled=false
 
 [Script-krohnkite]
-columnsLayoutOrder=6
+binaryTreeLayoutOrder=0
+cascadeLayoutOrder=0
+columnsLayoutOrder=0
 floatedWindowsLayer=1
 floatingClass=discord,org.
-ignoreClass=krunner,yakuake,kded,polkit,plasmashell,xwaylandvideobridge,
+floatingLayoutOrder=0
+ignoreClass=krunner,yakuake,kded,polkit,plasmashell,xwaylandvideobridge,,quickshell
 ignoreVDesktop=
-monocleLayoutOrder=2
-quarterLayoutOrder=4
-screenGapBetween=4
+monocleLayoutOrder=0
+quarterLayoutOrder=0
+screenGapBetween=10
 screenGapBottom=4
 screenGapLeft=4
 screenGapRight=4
 screenGapTop=4
-spiralLayoutOrder=5
-threeColumnLayoutOrder=3
-tileLayoutOrder=1
+spiralLayoutOrder=1
+spreadLayoutOrder=0
+stackedLayoutOrder=0
+stairLayoutOrder=0
+threeColumnLayoutOrder=0
+tileLayoutOrder=0
 tiledWindowsLayer=1
 
 [TabBox]
@@ -68,6 +82,10 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][df5f75e2-ce27-4be0-b2d3-41fef3030744][ff15d286-37cb-4fb6-b491-028712418d07]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][df9666c6-4b47-49fa-965f-82b63fcd1545][ff15d286-37cb-4fb6-b491-028712418d07]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
@@ -83,4 +101,4 @@ Scale=1.1
 
 [org.kde.kdecoration2]
 library=org.kde.klassy
-theme=
+theme=Klassy
