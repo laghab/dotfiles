@@ -3,18 +3,18 @@ DataCount=2
 
 [Data_1]
 Comment=Flameshot region capture
-Enabled=true
+Enabled=false
+Gestures=
 Name=Flameshot
 Type=SIMPLE_ACTION_DATA
 TypeComment=Shortcut Trigger
-Gestures=
 
 [Data_1Actions]
 ActionsCount=1
 
 [Data_1Actions0]
-Type=COMMAND_URL
 CommandURL=flameshot gui
+Type=COMMAND_URL
 
 [Data_1Triggers]
 Comment=Simple_action
@@ -22,24 +22,24 @@ Types=SHORTCUT
 Uuid={D40D140F-0CBD-4B0E-886C-85CFB8B331B1}
 
 [Data_1Triggers0]
-Type=SHORTCUT_TRIGGER
 Key=Print
+Type=SHORTCUT_TRIGGER
 Uuid={D40D140F-0CBD-4B0E-886C-85CFB8B331B1}
 
 [Data_2]
 Comment=xhisper dictation
 Enabled=true
+Gestures=
 Name=xhisper
 Type=SIMPLE_ACTION_DATA
 TypeComment=Shortcut Trigger
-Gestures=
 
 [Data_2Actions]
 ActionsCount=1
 
 [Data_2Actions0]
-Type=COMMAND_URL
 CommandURL=/usr/local/bin/xhisper
+Type=COMMAND_URL
 
 [Data_2Triggers]
 Comment=Simple_action
@@ -47,6 +47,6 @@ Types=SHORTCUT
 Uuid={0004BCD6-7F70-4D62-9999-4CE98E91DA61}
 
 [Data_2Triggers0]
-Type=SHORTCUT_TRIGGER
 Key=Meta+X
+Type=SHORTCUT_TRIGGER
 Uuid={0004BCD6-7F70-4D62-9999-4CE98E91DA61}
