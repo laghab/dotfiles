@@ -199,6 +199,7 @@
         "vimKeybinds": true
     },
     "notifs": {
+        "defaultExpireTimeout": 3000,
         "openExpanded": true
     },
     "osd": {
