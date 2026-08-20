@@ -17,10 +17,10 @@ font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal"
 >
 </g>
 
-<g fill="#3daee9" fill-opacity="0.719997" stroke="#3daee9" stroke-opacity="1" stroke-width="2.5025" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,2.5,2.5)"
+<g fill="#9d9cb3" fill-opacity="0.719997" stroke="#9d9cb3" stroke-opacity="1" stroke-width="2.5025" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,2.5,2.5)"
 font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
 >
-<path vector-effect="none" fill-rule="evenodd" d="M-1.25125,2.74875 C-1.25125,0.539611 0.539611,-1.25125 2.74875,-1.25125 L42.2512,-1.25125 C44.4604,-1.25125 46.2512,0.539611 46.2512,2.74875 L46.2512,42.2512 C46.2512,44.4604 44.4604,46.2512 42.2512,46.2512 L2.74875,46.2512 C0.539611,46.2512 -1.25125,44.4604 -1.25125,42.2512 L-1.25125,2.74875 Z "/>
+<path vector-effect="none" fill-rule="evenodd" d="M-1.25125,3.74875 C-1.25125,0.987326 0.987326,-1.25125 3.74875,-1.25125 L41.2512,-1.25125 C44.0127,-1.25125 46.2512,0.987326 46.2512,3.74875 L46.2512,41.2512 C46.2512,44.0127 44.0127,46.2512 41.2512,46.2512 L3.74875,46.2512 C0.987326,46.2512 -1.25125,44.0127 -1.25125,41.2512 L-1.25125,3.74875 Z "/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
@@ -28,30 +28,10 @@ font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal"
 >
 </g>
 
-<g fill="none" stroke="#fcfcfc" stroke-opacity="1" stroke-width="1.001" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
+<g fill="none" stroke="#e8e4eb" stroke-opacity="1" stroke-width="1.001" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,2.5,2.5)"
 font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
 >
-</g>
-
-<g fill="none" stroke="#fcfcfc" stroke-opacity="1" stroke-width="1.001" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#fcfcfc" stroke-opacity="1" stroke-width="1.001" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#fcfcfc" stroke-opacity="1" stroke-width="1.2012" stroke-linecap="round" stroke-linejoin="round" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
-<polygon fill-rule="nonzero" vector-effect="none" points="4.5,9 9,4.5 13.5,9 9,13.5 " />
-</g>
-
-<g fill="none" stroke="#fcfcfc" stroke-opacity="1" stroke-width="1.001" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
+<image x="0" y="0" width="45" height="45" preserveAspectRatio="none" image-rendering="optimizeSpeed" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA6klEQVRYhe2XMQrCQBBFn5rGWiJiBK+ghRew8DI5j5ex8AJewiJKMFhbCTbbanbIGFz8r/7z5xVDwoIQQgghEmVgHairZguUwMRh/x3Yzxb50TJkkg7CB2Bk1nvPE9hZxIfGBaWzMKGvtAxYpT1OonOvVfonkHRfJCmdOfVcgVNEbgPMuy7zkH4A69kiv7UF66qZAmdg3GWhx3ncYoQBQi4q+4kkb1rSfSHpvvCQLuqqWcUEQ67outDjO50Bp7pqLhHZwmOn1x8xA5ZOXa38xU3fv+Rh6rVK78ObzpNn6I0myde4EEIIIZLlBeXILzDWEuF8AAAAAElFTkSuQmCC" />
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"

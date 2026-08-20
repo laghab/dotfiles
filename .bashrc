@@ -20,3 +20,8 @@ export OMNIROUTE_API_KEY=sk-29fec26575384a21-c11850-80b370e9
 export PATH="/home/laghab/.local/bin:$PATH"
 
 . "$HOME/.local/share/../bin/env"
+export QML2_IMPORT_PATH="$HOME/.local/lib/qt6/qml"
+export QML2_IMPORT_PATH="$HOME/.local/lib/qt6/qml"
+export QML2_IMPORT_PATH="$HOME/.local/lib/qt6/qml"
+export QML2_IMPORT_PATH="$HOME/.local/lib/qt6/qml"
+export CAELESTIA_LIB_DIR="$HOME/.local/lib/caelestia"

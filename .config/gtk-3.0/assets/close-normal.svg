@@ -12,31 +12,10 @@ font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal"
 >
 </g>
 
-<g fill="none" stroke="#fcfcfc" stroke-opacity="1" stroke-width="1.001" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
+<g fill="none" stroke="#e8e4eb" stroke-opacity="1" stroke-width="1.001" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,2.5,2.5)"
 font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
 >
-</g>
-
-<g fill="none" stroke="#fcfcfc" stroke-opacity="1" stroke-width="1.001" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#fcfcfc" stroke-opacity="1" stroke-width="1.001" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#fcfcfc" stroke-opacity="1" stroke-width="1.2012" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="4.4,4.4 13.6,13.6 " />
-<polyline fill="none" vector-effect="none" points="13.6,4.4 4.4,13.6 " />
-</g>
-
-<g fill="none" stroke="#fcfcfc" stroke-opacity="1" stroke-width="1.001" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
+<image x="0" y="0" width="45" height="45" preserveAspectRatio="none" image-rendering="optimizeSpeed" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABiklEQVRYhe2Xy23CQBBAXxKJDiz54GoSKVBAfKYAN4BTQKABCuCapIA4EqmGAxIdICXKgUVCZj8za1+Q5h33Mzyh8cwOGIZhGIZxo9xpL+x3h0egASbApqyKz4wYNTAHjsC6rIqt5r5K2gl/Aw8Xy21ZFStFjBZ4u1j6A5414vdi4xNNTxhgud8dFpLLHuGzQ6OR0EpPAutJ8YBwKq4XrfQmshcUTwin4l6hknYfXRs5ciUuEH4tq+JD46GuHk5kASwjR9qyKlZC4VgcL1nSyMQ7YBrZzxJmiDQy8RDZwgyVJk98kDBjSKMTHyzMWNKcxL8SOdyVVTEb47e0ddqLqxIxYYCptHOmGCOnU2Wtj+qt4mNo9dAKnxkknp0eAuEusid+ZPnIkhZ2upm25UvJGQJUrVna8jUO2iGgBt4jR7x1WCBeayYgbXrMI3vBxuH+yViqxOJeoZU+BtaTnS4hHorrRSu9djPdJeLWHBD/dXHF5HyIT71pXPWAdzFeetP4jzaGYRiGYRg3yT8n56tsM/UxygAAAABJRU5ErkJggg==" />
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"

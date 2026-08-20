@@ -12,20 +12,10 @@ font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal"
 >
 </g>
 
-<g fill="none" stroke="#a1a9b1" stroke-opacity="1" stroke-width="1.001" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
+<g fill="none" stroke="#c0becb" stroke-opacity="1" stroke-width="1.001" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,2.5,2.5)"
 font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
 >
-</g>
-
-<g fill="none" stroke="#a1a9b1" stroke-opacity="0.900008" stroke-width="1.2012" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="none" fill-rule="evenodd" d="M4.4,4.40115 C4.4,4.40051 4.40051,4.4 4.40115,4.4 L13.5989,4.4 C13.5995,4.4 13.6,4.40051 13.6,4.40115 L13.6,13.5989 C13.6,13.5995 13.5995,13.6 13.5989,13.6 L4.40115,13.6 C4.40051,13.6 4.4,13.5995 4.4,13.5989 L4.4,4.40115 Z "/>
-</g>
-
-<g fill="none" stroke="#a1a9b1" stroke-opacity="1" stroke-width="1.001" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
-font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
+<image x="0" y="0" width="45" height="45" preserveAspectRatio="none" image-rendering="optimizeSpeed" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABkklEQVRYhe2XvUpDQRBGjyZi7U9noYXcykKLi2Djcos8g6j4AoKtdmKnD5DGNAqSx1jWdLJNCitNoUXAJl1KRZtFDBhhdieCsqe83G/mY5id2YVMJpPJZDJ/lCnNYM76TeBCIBkATVOVVpJH2/Qq8CiUvQENifFpubXxmKrsAQ9CWQ04lAhUTQfOIjQLkp/VTZuqbAv7WswkKo2pyhNgG7gB7oEn4Bl41Yhf1wjyHaYqO0Dn6zdn/TrgU/NOpNLjMFXZBfqpcUSmnfWFs76WmPM9US+u9CXw4qy/dtZvROYcRuo+iWmPReAAuHPW70TouxGaEVJ6ega4ctYXQl0rIScoHMRZ4EgiCFMlaY5rTI8tqSDM8b2IlQ9Kc3ouRhQ2ZztcskRrXMN00k0xXLJ6Eo1GeyyFTfdraFS6DnhnfT8sjmEYa61w6NTRWuN1YBlYAdaAfeDWWX+uFH+ESd89jp31u9pBpaYHETlOIzQ/IjXdDG86CUUYa2qIDqKpSuusb4Q3nWS2zsutZTKZTCaT+Yd8APt1XipVT5vEAAAAAElFTkSuQmCC" />
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"

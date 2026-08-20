@@ -7,12 +7,16 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "base_keymap": "Zed",
-  "cli_default_open_behavior": "existing_window",
-  "ui_font_size": 16,
-  "buffer_font_size": 15,
+  "agent_servers": {
+    "gemini": {
+      "type": "registry"
+    }
+  },
+  "icon_theme": "VSCode Icons for Zed (Dark Official Icons)",
+  "ui_font_size": 18.0,
+  "buffer_font_size": 16.0,
   "theme": {
-    "mode": "system",
+    "mode": "dark",
     "light": "Ayu Light",
     "dark": "Ayu Dark",
   },
