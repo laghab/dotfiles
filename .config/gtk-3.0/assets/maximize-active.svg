@@ -12,26 +12,28 @@ font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal"
 >
 </g>
 
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(3.125,0,0,3.125,-853.125,595.743)"
 font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
+opacity="0" >
+<path vector-effect="none" fill-rule="evenodd" d="M273,-190.638 C273,-190.638 273,-190.638 273,-190.638 L289,-190.638 C289,-190.638 289,-190.638 289,-190.638 L289,-174.638 C289,-174.638 289,-174.638 289,-174.638 L273,-174.638 C273,-174.638 273,-174.638 273,-174.638 L273,-190.638 Z "/>
 </g>
 
-<g fill="#9d9cb3" fill-opacity="0.719997" stroke="#9d9cb3" stroke-opacity="1" stroke-width="2.5025" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,2.5,2.5)"
+<g fill="#59c837" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" transform="matrix(3.125,0,0,3.125,-12.5,-3226.13)"
 font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
 >
-<path vector-effect="none" fill-rule="evenodd" d="M-1.25125,3.74875 C-1.25125,0.987326 0.987326,-1.25125 3.74875,-1.25125 L41.2512,-1.25125 C44.0127,-1.25125 46.2512,0.987326 46.2512,3.74875 L46.2512,41.2512 C46.2512,44.0127 44.0127,46.2512 41.2512,46.2512 L3.74875,46.2512 C0.987326,46.2512 -1.25125,44.0127 -1.25125,41.2512 L-1.25125,3.74875 Z "/>
+<path vector-effect="none" fill-rule="evenodd" d="M12.0001,1047.36 C15.866,1047.36 19,1044.23 19,1040.36 C19,1036.5 15.866,1033.36 12.0001,1033.36 C8.13402,1033.36 5,1036.5 5,1040.36 C5,1044.23 8.13402,1047.36 12.0001,1047.36 Z "/>
 </g>
 
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(3.125,0,0,3.125,-12.5,-3226.13)"
 font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
+opacity="0.5" >
+<path vector-effect="none" fill-rule="nonzero" d="M10.4141,1037.36 L15,1041.95 L15,1038.36 C15,1037.95 14.4155,1037.36 14,1037.36 L10.4141,1037.36 Z M9,1038.78 L9,1042.36 C9,1042.78 9.5845,1043.36 10,1043.36 L13.5859,1043.36 L9,1038.78 Z "/>
 </g>
 
-<g fill="none" stroke="#e8e4eb" stroke-opacity="1" stroke-width="1.001" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,2.5,2.5)"
+<g fill="#000000" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" transform="matrix(3.125,0,0,3.125,-12.5,-3226.13)"
 font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
-<image x="0" y="0" width="45" height="45" preserveAspectRatio="none" image-rendering="optimizeSpeed" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABk0lEQVRYhe2XvUpDQRBGjyZi7c+FBS9oIakstBJs7PIMouILCLbaiZ0+QBrTKEgeI2A6SZPCSlMobGBhsUupaLOIASPM7kRQ9pSX+818DLMzu5DJZDKZTOaPMqUZzFm/CVwIJC9Aw5RFW5JH2/Qq8CiUvQF1ifFpubXxmLLoAw9CWQU4lAhUTQfOIjQLkp/VTZuyaAn7WswkKo0pixNgG7gB7oEn4Bl41Yhf1QjyHaYsOkDn6zdn/TrQTc07kUqPw5RFDxikxhGZdtbXnPWVxJzviXpxpS8B56y/dtZvROYcRuo+iWmPReAAuHPW70ToexGaEVJ6ega4ctbXhLpmQk5QOIizwJFEEKZK0hzXmB5bUkGY43sRKx+U5vRcjChszla4ZInWuIbppJtiuGT1JRqN9lgKm+7X0Kh0Feg66wdhcQzDWGuGQ6eO1hqvAsvACrAG7AO3zvpzpfgjTPruceys39UOKjX9EpHjNELzI1LTjfCmk1ALY00N0UE0ZdF21tfDm04yW+fl1jKZTCaTyfxDPgCbiV90rpE1KQAAAABJRU5ErkJggg==" />
+opacity="0.2" >
+<path vector-effect="none" fill-rule="evenodd" d="M12.0001,1047.36 C15.866,1047.36 19,1044.23 19,1040.36 C19,1036.5 15.866,1033.36 12.0001,1033.36 C8.13402,1033.36 5,1036.5 5,1040.36 C5,1044.23 8.13402,1047.36 12.0001,1047.36 Z "/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
