@@ -7,8 +7,12 @@ Id_5=36a37607-02a7-49e7-941d-15bcea41b85c
 Number=5
 Rows=1
 
+[Effect-blur]
+BlurStrength=8
+NoiseStrength=0
+
 [Effect-magiclamp]
-AnimationDuration=700
+AnimationDuration=270
 
 [Effect-overview]
 BorderActivate=9
@@ -16,19 +20,29 @@ BorderActivate=9
 [Effect-slide]
 SlideBackground=false
 
+[Effect-wobblywindows]
+Drag=85
+Stiffness=10
+WobblynessLevel=1
+
 [NightColor]
 Active=true
 DayTemperature=5000
 NightTemperature=3700
 
 [Plugins]
+blurEnabled=true
 diminactiveEnabled=true
+fallapartEnabled=true
 krohnkiteEnabled=true
 kwin_gesturesEnabled=false
 magiclampEnabled=true
 move-window-and-switchEnabled=true
 squashEnabled=false
 tilingEnabled=false
+touchpointsEnabled=true
+translucencyEnabled=true
+wobblywindowsEnabled=true
 
 [Script-krohnkite]
 columnsLayoutOrder=6
@@ -82,4 +96,9 @@ ElectricBorders=1
 Scale=1.1
 
 [org.kde.kdecoration2]
+BorderSize=Normal
+BorderSizeAuto=false
+ButtonsOnLeft=MS
+ButtonsOnRight=HIAX
 library=org.kde.klassy
+theme=Klassy

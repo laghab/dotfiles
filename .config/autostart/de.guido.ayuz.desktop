@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Ayuz
+Exec=ayuz --hidden
+Hidden=false
+StartupNotify=false
+X-GNOME-Autostart-enabled=true

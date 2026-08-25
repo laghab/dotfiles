@@ -1,9 +1,13 @@
 [Global]
-LookAndFeelSet=com.github.vinceliuice.MacTahoe-Dark
+LookAndFeelSet=Sweet
 RefreshedConfig=6.5.3
 
-[Windeco]
-ButtonIconStyle=StyleSuessigKite
+[Style]
+MenuOpacity=49
+
+[TitleBarOpacity]
+ActiveTitleBarOpacity=72
+InactiveTitleBarOpacity=67
 
 [WindowOutlineStyle]
 ThinWindowOutlineCustomColorActive=#d1cfe7
