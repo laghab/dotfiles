@@ -137,7 +137,8 @@ no_self_update = true
 # Commands to run after anything
 [post_commands]
 # "Emacs Snapshot" = "rm -rf ~/.emacs.d/elpa.bak && cp -rl ~/.emacs.d/elpa ~/.emacs.d/elpa.bak"
-"Autoremove" = "sudo dnf autoremove -y"
+# zypper has no autoremove; remove auto-installed packages nothing depends on anymore
+"Autoremove" = '''zypper -q --no-refresh packages --unneeded | awk -F'|' '$1 ~ /i/ {gsub(/ /,"",$3); print $3}' | sort -u | xargs -r sudo zypper -n rm -u'''
 
 
 # Custom commands
