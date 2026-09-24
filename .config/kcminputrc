@@ -17,6 +17,7 @@ PointerAccelerationProfile=1
 Enabled=false
 
 [Libinput][2808/564/ASUF1415:00 2808:0224 Touchpad]
+DisableWhileTyping=true
 TapToClick=false
 
 [Libinput][9639][64108][VXE R1 Mouse]

@@ -1,9 +1,11 @@
 [Added Associations]
 text/markdown=dev.zed.Zed.desktop;vim.desktop;nvim.desktop;micro.desktop;
+text/plain=dev.zed.Zed.desktop;nvim.desktop;okularApplication_txt.desktop;libreoffice-writer.desktop;
 
 [Default Applications]
 text/html=brave-origin.desktop
 text/markdown=dev.zed.Zed.desktop;
+text/plain=dev.zed.Zed.desktop;
 x-scheme-handler/claude-cli=claude-code-url-handler.desktop
 x-scheme-handler/http=brave-origin.desktop
 x-scheme-handler/https=brave-origin.desktop

@@ -1,13 +1,16 @@
 [Global]
-LookAndFeelSet=Sweet
+LookAndFeelSet=Sweet-Mars
 RefreshedConfig=6.5.3
 
 [Style]
 MenuOpacity=49
 
 [TitleBarOpacity]
-ActiveTitleBarOpacity=72
-InactiveTitleBarOpacity=67
+ActiveTitleBarOpacity=82
+InactiveTitleBarOpacity=77
+
+[Windeco]
+IconSize=IconSmall
 
 [WindowOutlineStyle]
 ThinWindowOutlineCustomColorActive=#d1cfe7

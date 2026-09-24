@@ -1,6 +1,6 @@
 main.config_file_version 2
 main.exclude_metadata false
-main.hotkeys_enable_option enable_hotkeys
+main.hotkeys_enable_option enable_hotkeys_no_grab
 main.joystick_hotkeys_enable_option disable_hotkeys
 main.language 
 main.notification_speed normal

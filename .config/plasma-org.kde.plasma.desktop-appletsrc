@@ -168,8 +168,10 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][23][Applets][50][Configuration][General]
+displayedText=Number
 showOnlyCurrentScreen=true
 showWindowIcons=true
+wrapPage=true
 
 [Containments][23][Applets][57]
 immutability=1
@@ -184,7 +186,7 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][23][Applets][57][Configuration][General]
-launchers=applications:brave-origin.desktop,applications:com.discordapp.Discord.desktop,applications:FFPWA-01M0TS5MQDKTYE5WSK8A5QYB9Q.desktop
+launchers=applications:brave-origin.desktop,applications:com.discordapp.Discord.desktop
 showOnlyCurrentActivity=false
 showOnlyCurrentDesktop=false
 sortingStrategy=6
@@ -193,38 +195,6 @@ wheelEnabled=AdjustVolume
 
 [Containments][23][General]
 AppletOrder=24;57;50;49;28;38;39
-
-[Containments][28]
-activityId=f7a0503c-941d-4888-96c7-dfad7d05f8a4
-formfactor=0
-immutability=1
-lastScreen=1
-location=0
-plugin=org.kde.desktopcontainment
-wallpaperplugin=org.kde.image
-
-[Containments][28][Applets][29][Configuration]
-popupHeight=540
-
-[Containments][28][Applets][31][Configuration][General]
-launchers=applications:systemsettings.desktop,preferred://filemanager,preferred://browser
-
-[Containments][28][Wallpaper][org.kde.image][General]
-Image=file:///home/laghab/Pictures/Walls/wallhaven-qrol6l.jpg
-
-[Containments][4]
-activityId=f7a0503c-941d-4888-96c7-dfad7d05f8a4
-formfactor=0
-immutability=1
-lastScreen=2
-location=0
-plugin=org.kde.desktopcontainment
-wallpaperplugin=org.kde.image
-
-[Containments][4][Wallpaper][org.kde.image][General]
-Image=file:///home/laghab/Pictures/Walls/wallhaven-qrol6l.jpg
-PreviewImage=/usr/share/wallpapers/cachyos-wallpapers/north.png
-SlidePaths=/usr/share/wallpapers/
 
 [Containments][58]
 ItemGeometries-0x0=
@@ -235,17 +205,29 @@ formfactor=0
 immutability=1
 lastScreen=0
 location=0
-plugin=org.kde.desktopcontainment
+plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][58][ConfigDialog]
 DialogHeight=630
 DialogWidth=810
 
+[Containments][58][General]
+iconSize=2
+
 [Containments][58][Wallpaper][org.kde.image][General]
-Image=file:///home/laghab/Pictures/Walls/wallhaven-qrol6l.jpg
+Image=/home/laghab/Pictures/Walls/wallhaven-ogjjx9.jpg
 SlidePaths=/home/laghab/.local/share/wallpapers/,/usr/share/wallpapers/
 
+[Containments][59]
+activityId=f7a0503c-941d-4888-96c7-dfad7d05f8a4
+formfactor=0
+immutability=1
+lastScreen=1
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
 [ScreenMapping]
-itemsOnDisabledScreens=0,,2,desktop:/work,desktop:/temp
-screenMapping=desktop:/temp,0,96a55a2c-5a48-47d9-ad92-88052921e2d4,desktop:/temp,0,d1148a6c-53e5-4fb7-8fdd-46ef0f27db20,desktop:/k1ac1xpb31wy.png,0,96a55a2c-5a48-47d9-ad92-88052921e2d4,desktop:/vim-mastery-plan.md,0,96a55a2c-5a48-47d9-ad92-88052921e2d4,desktop:/work,0,96a55a2c-5a48-47d9-ad92-88052921e2d4,desktop:/cascade_6x5_backup_20260802_163536,0,96a55a2c-5a48-47d9-ad92-88052921e2d4
+itemsOnDisabledScreens=
+screenMapping=desktop:/ADHD,0,f7a0503c-941d-4888-96c7-dfad7d05f8a4,desktop:/publish file,0,f7a0503c-941d-4888-96c7-dfad7d05f8a4,desktop:/Beyreels_PRD,0,f7a0503c-941d-4888-96c7-dfad7d05f8a4,desktop:/work,0,f7a0503c-941d-4888-96c7-dfad7d05f8a4
