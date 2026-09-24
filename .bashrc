@@ -1,25 +1,24 @@
+# Sample .bashrc for SUSE Linux
+# Copyright (c) SUSE Software Solutions Germany GmbH
+
+# There are 3 different types of shells in bash: the login shell, normal shell
+# and interactive shell. Login shells read ~/.profile and interactive shells
+# read ~/.bashrc; in our setup, /etc/profile sources ~/.bashrc - thus all
+# settings made here will also take effect in a login shell.
 #
-# ~/.bashrc
-#
+# NOTE: It is recommended to make language settings in ~/.profile rather than
+# here, since multilingual X sessions would not work properly if LANG is over-
+# ridden in every subshell.
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+test -s ~/.alias && . ~/.alias || true
 
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-PS1='[\u@\h \W]\$ '
-
-export PATH="$HOME/.npm-global/bin:$PATH"
-
-export OMNIROUTE_API_KEY=REDACTED
-
+# --- restored from Fedora backup ---
+export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:$HOME/.bun/bin:$HOME/.local/share/pnpm/bin:$PATH"
 [[ -f ~/.config/yadm/aliases.sh ]] && source ~/.config/yadm/aliases.sh
-
-
-# Added by Antigravity CLI installer
-export PATH="/home/laghab/.local/bin:$PATH"
-
-. "$HOME/.local/share/../bin/env"
+[[ -f ~/.local/bin/env ]] && . ~/.local/bin/env
 export QML2_IMPORT_PATH="$HOME/.local/lib/qt6/qml"
-export QML2_IMPORT_PATH="$HOME/.local/lib/qt6/qml"
-export QML2_IMPORT_PATH="$HOME/.local/lib/qt6/qml"
+export EDITOR=nvim VISUAL=nvim
+command -v starship >/dev/null && eval "$(starship init bash)"
+command -v zoxide   >/dev/null && eval "$(zoxide init bash)"
+command -v atuin    >/dev/null && eval "$(atuin init bash)"
+command -v eza      >/dev/null && alias ls='eza --icons' ll='eza -la --icons --git'

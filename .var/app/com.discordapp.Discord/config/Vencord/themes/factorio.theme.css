@@ -1,0 +1,110 @@
+/**
+ * @name Factorio
+ * @author laghab
+ * @description Factorio UI colours. Variables only: no blur, no images, no remote imports (zero perf cost).
+ * @version 1.0
+ */
+
+:root, .theme-dark, .theme-darker, .theme-midnight, .visual-refresh {
+  /* palette (matches KDE FactorioTheme.colors) */
+  --fac-deep: #1e1d1e;
+  --fac-bg: #242324;
+  --fac-panel: #2a292a;
+  --fac-frame: #313031;
+  --fac-raised: #383838;
+  --fac-button: #494949;
+  --fac-hover: #403f40;
+  --fac-orange: #e39827;
+  --fac-orange-hi: #ffc266;
+  --fac-cream: #ffe6c0;
+  --fac-muted: #a0a0a0;
+  --fac-green: #5eb663;
+  --fac-red: #e04e39;
+  --fac-yellow: #ffdd00;
+  --fac-blue: #2eb8e6;
+
+  --font-primary: "Titillium Web", "gg sans", "Noto Sans", sans-serif;
+  --font-display: "Titillium Web", "gg sans", "Noto Sans", sans-serif;
+
+  /* backgrounds: current names */
+  --background-base-lowest: var(--fac-deep);
+  --background-base-lower: var(--fac-bg);
+  --background-base-low: var(--fac-panel);
+  --background-surface-high: var(--fac-frame);
+  --background-surface-higher: var(--fac-raised);
+  --background-surface-highest: var(--fac-button);
+  --chat-background-default: var(--fac-bg);
+  --channeltextarea-background: var(--fac-frame);
+  --input-background: var(--fac-deep);
+  --modal-background: var(--fac-frame);
+  --modal-footer-background: var(--fac-panel);
+  --card-background-default: var(--fac-frame);
+  --background-floating: var(--fac-frame);
+  --bg-overlay-floating: var(--fac-frame);
+  --home-background: var(--fac-bg);
+
+  /* backgrounds: legacy names, still read by parts of the client */
+  --background-primary: var(--fac-bg);
+  --background-secondary: var(--fac-panel);
+  --background-secondary-alt: var(--fac-frame);
+  --background-tertiary: var(--fac-deep);
+  --background-accent: var(--fac-button);
+  --background-modifier-hover: var(--fac-hover);
+  --background-modifier-active: #4a3a22;
+  --background-modifier-selected: #5c4420;
+  --background-mod-subtle: var(--fac-hover);
+  --background-mod-normal: #4a3a22;
+  --background-mod-strong: #5c4420;
+
+  /* text */
+  --text-default: var(--fac-cream);
+  --text-normal: var(--fac-cream);
+  --text-strong: #ffffff;
+  --header-primary: #ffffff;
+  --header-secondary: var(--fac-muted);
+  --text-muted: var(--fac-muted);
+  --text-link: var(--fac-blue);
+  --text-positive: var(--fac-green);
+  --text-warning: var(--fac-yellow);
+  --text-danger: var(--fac-red);
+  --channels-default: var(--fac-muted);
+  --interactive-normal: #c8c8c8;
+  --interactive-hover: var(--fac-cream);
+  --interactive-active: #ffffff;
+  --interactive-muted: #5e5e5e;
+
+  /* accent: Discord blurple -> Factorio orange */
+  --brand-experiment: var(--fac-orange);
+  --brand-500: var(--fac-orange);
+  --brand-560: #c98420;
+  --brand-600: #b0731c;
+  --brand-400: var(--fac-orange-hi);
+  --brand-360: var(--fac-orange-hi);
+  --control-brand-foreground: var(--fac-orange);
+  --control-brand-foreground-new: var(--fac-orange);
+  --mention-foreground: var(--fac-orange-hi);
+  --mention-background: #e3982733;
+  --info-warning-foreground: var(--fac-yellow);
+
+  /* buttons: Factorio's green confirm / red cancel */
+  --button-positive-background: var(--fac-green);
+  --button-danger-background: var(--fac-red);
+  --status-positive: var(--fac-green);
+  --status-danger: var(--fac-red);
+  --status-warning: var(--fac-yellow);
+
+  --scrollbar-thin-thumb: #e3982766;
+  --scrollbar-auto-thumb: #e3982766;
+  --scrollbar-auto-track: transparent;
+  --border-subtle: #1a1a1a;
+  --border-faint: #1a1a1a;
+}
+
+/* primary buttons use the orange with dark text, like Factorio's action buttons */
+[class*="colorBrand_"], [class*="lookFilled_"][class*="colorBrand"] {
+  background-color: var(--fac-orange) !important;
+  color: #000 !important;
+}
+[class*="colorBrand_"]:hover { background-color: var(--fac-orange-hi) !important; }
+
+::selection { background: #e3982766; }

@@ -1,0 +1,23 @@
+{
+    "KPackageStructure": "KWin/FactorioTheme",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "wbar13@outlook.com",
+                "Name": "Bartusew"
+            }
+        ],
+        "Category": "Plasma Window Decorations",
+        "ServiceTypes": [
+            "KWin/FactorioTheme"
+        ],
+        "EnabledByDefault": true,
+        "Name": "FactorioTheme",
+        "Description": "Theme based on game 'Factorio'. ",
+        "Id": "FactorioTheme",
+        "Version": "0.3",
+        "License": "GPLv3",
+        "X-KPackage-Dependencies": [
+        ]
+    }
+}

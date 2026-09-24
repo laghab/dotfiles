@@ -52,11 +52,11 @@ ignoreClass=krunner,yakuake,kded,polkit,plasmashell,xwaylandvideobridge,
 ignoreVDesktop=
 monocleLayoutOrder=2
 quarterLayoutOrder=4
-screenGapBetween=4
+screenGapBetween=6
 screenGapBottom=4
-screenGapLeft=4
+screenGapLeft=6
 screenGapRight=4
-screenGapTop=4
+screenGapTop=5
 spiralLayoutOrder=5
 threeColumnLayoutOrder=3
 tileLayoutOrder=1
@@ -66,11 +66,19 @@ tiledWindowsLayer=1
 ActivitiesMode=0
 DesktopMode=0
 
+[Tiling][00639961-ac02-4ebd-a788-2404a3166bd3][8a3d7dfc-d5f3-414b-a92a-9acc34aa4ed9]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][00639961-ac02-4ebd-a788-2404a3166bd3][be444293-c30a-4238-bd4f-492cfaefb324]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][00639961-ac02-4ebd-a788-2404a3166bd3][ff15d286-37cb-4fb6-b491-028712418d07]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][36a37607-02a7-49e7-941d-15bcea41b85c][8a3d7dfc-d5f3-414b-a92a-9acc34aa4ed9]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -82,6 +90,10 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][4e29a61d-9cd8-4b79-ad26-60902aab2e32][8a3d7dfc-d5f3-414b-a92a-9acc34aa4ed9]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][4e29a61d-9cd8-4b79-ad26-60902aab2e32][be444293-c30a-4238-bd4f-492cfaefb324]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
@@ -90,11 +102,19 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][ce9afe89-ec71-4403-a021-9a581f63892b][8a3d7dfc-d5f3-414b-a92a-9acc34aa4ed9]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][ce9afe89-ec71-4403-a021-9a581f63892b][be444293-c30a-4238-bd4f-492cfaefb324]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][ce9afe89-ec71-4403-a021-9a581f63892b][ff15d286-37cb-4fb6-b491-028712418d07]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][df9666c6-4b47-49fa-965f-82b63fcd1545][8a3d7dfc-d5f3-414b-a92a-9acc34aa4ed9]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -113,12 +133,12 @@ InputMethod[$d]
 ElectricBorders=1
 
 [Xwayland]
-Scale=1.1
+Scale=1
 
 [org.kde.kdecoration2]
 BorderSize=Normal
 BorderSizeAuto=false
 ButtonsOnLeft=MS
 ButtonsOnRight=HIAX
-library=org.kde.klassy
-theme=Klassy
+library=org.kde.kwin.aurorae
+theme=__aurorae__svg__Factorio-window-decorations

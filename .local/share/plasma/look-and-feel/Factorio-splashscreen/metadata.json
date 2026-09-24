@@ -1,0 +1,19 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel/Splash",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Bartusew"
+            }
+        ],
+        "Category": "",
+        "Description": "Factorio Themed Splashcreen",
+        "Id": "Factorio-splashscreen",
+        "License": "GPLv3",
+        "Name": "FactorioSplash",
+        "Website": ""
+    },
+    "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;",
+    "X-Plasma-APIVersion": "2"
+}
+

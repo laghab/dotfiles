@@ -28,10 +28,13 @@ DialogWidth=720
 
 [Containments][23][Applets][24][Configuration][General]
 favoritesPortedToKAstats=true
-icon=distributor-logo-fedora
+icon=distributor-logo-opensuse
 systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
 [Containments][23][Applets][24][Configuration][Shortcuts]
+global=Alt+F1
+
+[Containments][23][Applets][24][Shortcuts]
 global=Alt+F1
 
 [Containments][23][Applets][28]
@@ -132,10 +135,10 @@ DialogWidth=810
 
 [Containments][23][Applets][28][General]
 disabledStatusNotifiers=flameshot
-extraItems=org.kde.kscreen,org.kde.plasma.cameraindicator,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.kdeconnect,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.clipboard,org.kde.plasma.battery,org.kde.plasma.vault,org.kde.plasma.printmanager
+extraItems=org.kde.kscreen,org.kde.plasma.cameraindicator,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.clipboard,org.kde.plasma.battery,org.kde.plasma.printmanager,org.kde.kdeconnect
 hiddenItems=Ayuz,ROG Control Center,org.kde.plasma.brightness,org.kde.plasma.clipboard
 iconSpacing=1
-knownItems=org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.plasma.vault,org.kde.plasma.printmanager
+knownItems=org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.plasma.printmanager,org.kde.kdeconnect
 reverseIconOrder=true
 shownItems=org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.battery
 
@@ -196,9 +199,8 @@ wheelEnabled=AdjustVolume
 [Containments][23][General]
 AppletOrder=24;57;50;49;28;38;39
 
-[Containments][58]
-ItemGeometries-0x0=
-ItemGeometries-1745x1091=
+[Containments][61]
+ItemGeometries-1920x1200=
 ItemGeometriesHorizontal=
 activityId=f7a0503c-941d-4888-96c7-dfad7d05f8a4
 formfactor=0
@@ -208,26 +210,9 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
-[Containments][58][ConfigDialog]
-DialogHeight=630
-DialogWidth=810
-
-[Containments][58][General]
-iconSize=2
-
-[Containments][58][Wallpaper][org.kde.image][General]
-Image=/home/laghab/Pictures/Walls/wallhaven-ogjjx9.jpg
-SlidePaths=/home/laghab/.local/share/wallpapers/,/usr/share/wallpapers/
-
-[Containments][59]
-activityId=f7a0503c-941d-4888-96c7-dfad7d05f8a4
-formfactor=0
-immutability=1
-lastScreen=1
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
+[Containments][61][Wallpaper][org.kde.image][General]
+Image=/home/laghab/Pictures/Walls/wallhaven-k8dzkm.png
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/ADHD,0,f7a0503c-941d-4888-96c7-dfad7d05f8a4,desktop:/publish file,0,f7a0503c-941d-4888-96c7-dfad7d05f8a4,desktop:/Beyreels_PRD,0,f7a0503c-941d-4888-96c7-dfad7d05f8a4,desktop:/work,0,f7a0503c-941d-4888-96c7-dfad7d05f8a4
+screenMapping=desktop:/trash.desktop,0,f7a0503c-941d-4888-96c7-dfad7d05f8a4,desktop:/ADHD,0,f7a0503c-941d-4888-96c7-dfad7d05f8a4,desktop:/work,0,f7a0503c-941d-4888-96c7-dfad7d05f8a4,desktop:/Screenshot_20260924_231836.png,0,f7a0503c-941d-4888-96c7-dfad7d05f8a4,desktop:/PRD Beyreels grid 5*5.md,0,f7a0503c-941d-4888-96c7-dfad7d05f8a4,desktop:/publish file,0,f7a0503c-941d-4888-96c7-dfad7d05f8a4

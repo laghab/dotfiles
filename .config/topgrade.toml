@@ -417,7 +417,7 @@ no_self_update = true
 
 [flatpak]
 # Use sudo for updating the system-wide installation
-# use_sudo = true
+use_sudo = true
 
 
 [distrobox]

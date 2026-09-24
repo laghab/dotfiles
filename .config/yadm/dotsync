@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+# dotsync: commit + push dotfiles to github.com/laghab/dotfiles (yadm), refusing to push secrets.
+#   dotsync            stage tracked changes + everything in dotsync.list, scan, commit, push
+#   dotsync -n         dry run: show what would be committed, don't commit
+#   dotsync --deletes  also commit deleted tracked files (off by default: a fresh install "deletes" things)
+# The repo is PUBLIC. Put secrets in ~/.config/secrets.env (untracked) and source that instead.
+set -u
+cd "$HOME" || exit 1
+LIST="$HOME/.config/yadm/dotsync.list"
+DRY=0 DELETES=0
+for a in "$@"; do case $a in -n|--dry-run) DRY=1;; --deletes) DELETES=1;; *) echo "unknown option $a"; exit 2;; esac; done
+
+# 1. extra paths to track (new files never get picked up by `add -u`)
+if [ -f "$LIST" ]; then
+  grep -v -E '^\s*(#|$)' "$LIST" | while read -r p; do
+    [ -e "$p" ] && yadm add -- "$p"
+  done
+fi
+
+# 2. modified tracked files; deletions only on request
+yadm diff --name-only --diff-filter=M -z | xargs -0 -r yadm add --
+if [ $DELETES = 1 ]; then yadm add -u; else
+  del=$(yadm ls-files --deleted)
+  [ -n "$del" ] && { echo "Skipping deleted files (use --deletes to commit):"; echo "$del" | sed 's/^/  /'; }
+fi
+
+if yadm diff --cached --quiet; then echo "Nothing to sync."; exit 0; fi
+
+# 3. secret scan of what's about to be pushed (added lines only)
+PAT='(^|[^A-Za-z0-9])(sk-[A-Za-z0-9_-]{20,}|sk-ant-[A-Za-z0-9_-]{20,}|gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|npm_[A-Za-z0-9]{30,}|AKIA[0-9A-Z]{16}|AIza[0-9A-Za-z_-]{35}|xox[abpr]-[A-Za-z0-9-]{10,})|-----BEGIN [A-Z ]*PRIVATE KEY-----|(api[_-]?key|secret|password|passwd|token)["'"'"']?[[:space:]]*[:=][[:space:]]*["'"'"']?[A-Za-z0-9_/+.-]{16,}'
+hits=$(yadm diff --cached -U0 --no-color -- . ':!*.svg' ':!*.png' | grep -E '^\+[^+]' | grep -i -E -e "$PAT" | grep -v -E '\{env:|\$\{?[A-Z_]+\}?' )
+if [ -n "$hits" ]; then
+  echo "!! Possible secrets in staged changes. Nothing was committed:"
+  echo "$hits" | sed -E 's/([A-Za-z0-9_-]{6})[A-Za-z0-9_/+.-]{10,}/\1…<redacted>/g' | cut -c1-150 | sed 's/^/  /'
+  echo "Move them to ~/.config/secrets.env (untracked) and source it, then re-run."
+  yadm reset -q
+  exit 1
+fi
+
+echo "Changes:"; yadm diff --cached --stat | tail -25
+[ $DRY = 1 ] && { yadm reset -q; echo "(dry run, nothing committed)"; exit 0; }
+
+yadm commit -q -m "sync $(date '+%F %T')" && yadm push -q && echo "Pushed to $(yadm remote get-url origin)"

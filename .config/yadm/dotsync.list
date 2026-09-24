@@ -1,0 +1,22 @@
+# Extra paths dotsync tracks (relative to ~). Tracked files are always synced; list NEW things here.
+# Never list: ~/.claude (credentials), ~/.config/gh/hosts.yml, browser profiles, anything with keys.
+
+# shell
+.config/fish/config.fish
+.config/fish/functions
+.config/yadm
+
+# Factorio theme (master copy + apply-factorio.sh live in ~/Documents/distrohop-kit/factorio)
+.config/kitty/factorio.conf
+.config/zed/themes/factorio.json
+.claude/themes/factorio.json
+.config/fastfetch/config.jsonc
+.config/Kvantum/kvantum.kvconfig
+.config/Kvantum/Factorio-Kvantum
+.config/ksplashrc
+.local/share/color-schemes/FactorioTheme.colors
+.local/share/aurorae/themes/Factorio-window-decorations
+.local/share/plasma/desktoptheme/Factorio-desktop-Theme
+.local/share/plasma/look-and-feel/Factorio-splashscreen
+.local/share/konsole/Factorio.colorscheme
+.var/app/com.discordapp.Discord/config/Vencord/themes/factorio.theme.css

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=FactorioTheme
+Comment=Theme based on game 'Factorio'.
+X-KDE-PluginInfo-Author=Bartusew
+X-KDE-PluginInfo-Email=wbar13@outlook.com
+X-KDE-PluginInfo-Name=FactorioTheme
+X-KDE-PluginInfo-Version=0.5.0
+X-KDE-PluginInfo-Category=Plasma Theme
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true
+X-Plasma-API=5.0
+
+[AdaptiveTransparency]
+enabled=false
